@@ -74,6 +74,11 @@ Declaration(Class(<http://w3id.org/cacao/CACAO_0000075>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000076>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000077>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000078>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000079>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000080>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000081>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000082>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000083>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E21_Person>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E30_Right>))
@@ -865,6 +870,42 @@ AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000078> <https://o
 AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000078> "2025-06-06T16:09:13Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000078> "Underskirts"@en)
 SubClassOf(<http://w3id.org/cacao/CACAO_0000078> <http://w3id.org/cacao/CACAO_0000065>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000079> (Documents)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000079> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000079> "2025-06-06T16:16:03Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000079> "Documents"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000079> <http://w3id.org/cacao/CACAO_0000023>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000080> (Letters)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000080> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000080> "2025-06-06T16:16:12Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000080> "Letters"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000080> <http://w3id.org/cacao/CACAO_0000079>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000081> (Medals)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000081> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000081> "2025-06-06T16:18:13Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000081> "Medals"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000081> <http://w3id.org/cacao/CACAO_0000024>)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000081> <http://w3id.org/cacao/CACAO_0000082>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000082> (Awards)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000082> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000082> "2025-06-06T16:23:00Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000082> "Awards"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000082> <http://w3id.org/cacao/CACAO_0000023>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000083> (Cup)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000083> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000083> "2025-06-06T16:23:05Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000083> "Cup"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000083> <http://w3id.org/cacao/CACAO_0000082>)
 
 # Class: <http://www.w3.org/ns/odrl/2/Asset> (Asset)
 
