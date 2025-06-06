@@ -7,11 +7,58 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://w3id.org/cacao/cacao/imports/foaf_import.owl>
-<http://w3id.org/cacao/cacao/releases/2025-05-11/imports/foaf_import.owl>
-Annotation(owl:versionInfo "2025-05-11")
+<http://w3id.org/cacao/cacao/releases/2025-06-06/imports/foaf_import.owl>
+Annotation(owl:versionInfo "2025-06-06")
 
+Declaration(Class(<http://purl.org/dc/terms/Agent>))
+Declaration(Class(<http://schema.org/CreativeWork>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Agent>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Document>))
+Declaration(ObjectProperty(<http://xmlns.com/foaf/0.1/interest>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://xmlns.com/foaf/0.1/interest> (interest)
+
+AnnotationAssertion(rdfs:comment <http://xmlns.com/foaf/0.1/interest> "A page about a topic of interest to this person.")
+AnnotationAssertion(rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/interest> <http://xmlns.com/foaf/0.1/>)
+AnnotationAssertion(rdfs:label <http://xmlns.com/foaf/0.1/interest> "interest")
+AnnotationAssertion(<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://xmlns.com/foaf/0.1/interest> "testing")
+ObjectPropertyDomain(<http://xmlns.com/foaf/0.1/interest> <http://xmlns.com/foaf/0.1/Agent>)
+ObjectPropertyRange(<http://xmlns.com/foaf/0.1/interest> <http://xmlns.com/foaf/0.1/Document>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/dc/terms/Agent> (<http://purl.org/dc/terms/Agent>)
+
+EquivalentClasses(<http://purl.org/dc/terms/Agent> <http://xmlns.com/foaf/0.1/Agent>)
+
+# Class: <http://schema.org/CreativeWork> (<http://schema.org/CreativeWork>)
+
+EquivalentClasses(<http://schema.org/CreativeWork> <http://xmlns.com/foaf/0.1/Document>)
+
+# Class: <http://xmlns.com/foaf/0.1/Agent> (Agent)
+
+AnnotationAssertion(rdfs:comment <http://xmlns.com/foaf/0.1/Agent> "An agent (eg. person, group, software or physical artifact).")
+AnnotationAssertion(rdfs:label <http://xmlns.com/foaf/0.1/Agent> "Agent")
+AnnotationAssertion(<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://xmlns.com/foaf/0.1/Agent> "stable")
+
+# Class: <http://xmlns.com/foaf/0.1/Document> (Document)
+
+AnnotationAssertion(rdfs:comment <http://xmlns.com/foaf/0.1/Document> "A document.")
+AnnotationAssertion(rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/Document> <http://xmlns.com/foaf/0.1/>)
+AnnotationAssertion(rdfs:label <http://xmlns.com/foaf/0.1/Document> "Document")
+AnnotationAssertion(<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://xmlns.com/foaf/0.1/Document> "stable")
 
 
 )

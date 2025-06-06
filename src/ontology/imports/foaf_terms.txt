@@ -1,1 +1,1 @@
-http://xmlns.com/foaf/0.1/Interest
+http://xmlns.com/foaf/0.1/interest
