@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://w3id.org/cacao/cacao/imports/crm_import.owl>
-<http://w3id.org/cacao/cacao/releases/2025-05-11/imports/crm_import.owl>
+<http://w3id.org/cacao/cacao/releases/2025-06-06/imports/crm_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://www.cidoc-crm.org/cidoc-crm/owl/7.1.3/>)
-Annotation(owl:versionInfo "2025-05-11")
+Annotation(owl:versionInfo "2025-06-06")
 
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E16_Measurement>))
@@ -261,7 +261,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <htt
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <http://www.cidoc-crm.org/cidoc-crm/E35_Title>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> (P102i is title of)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> (P102i est le titre de)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> "Quantification of the inverse property: many to many (0,n:0,n)
 
@@ -475,7 +475,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of>
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> (P106i αποτελεί μέρος του/της)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> (P106i faz parte de)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> "Quantification of the inverse property: many to many (0,n:0,n)
 
@@ -1181,7 +1181,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P141i_was_assigned_by> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P141i_was_assigned_by> <http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> (P14 carried out by)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> (P14 wurde ausgeführt von)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> "Quantification: many to many, necessary (1,n:0,n)
 
@@ -2320,7 +2320,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P55_has_current_loca
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P55_has_current_location> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P55_has_current_location> <http://www.cidoc-crm.org/cidoc-crm/E53_Place>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P55i_currently_holds> (P55i είναι θέση του)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P55i_currently_holds> (P55i est actuellement la localisation de)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P55i_currently_holds> "Quantification of the inverse property: many to many (0,n:0,n)
 
@@ -2957,7 +2957,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_lif
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <http://www.cidoc-crm.org/cidoc-crm/E67_Birth>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> (P98i est né)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> (P98i veio à vida pelo)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> "Quantification of the inverse property: one to many, dependent (0,n:1,1)
 
@@ -4064,7 +4064,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit> "测量单位"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E5_Event> (E5 Ereignis)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E5_Event> (E5 Συμβάν)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "Scope note:
 This class comprises distinct, delimited and coherent processes and interactions of a material nature, in cultural, social or physical systems, involving and affecting instances of E77 Persistent Item in a way characteristic of the kind of process. Typical examples are meetings, births, deaths, actions of decision taking, making or inventing things, but also more complex and extended ones such as conferences, elections, building of a castle, or battles.
@@ -4103,7 +4103,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "事件"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E5_Event> <http://www.cidoc-crm.org/cidoc-crm/E4_Period>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence> (E63 Αρχή Ύπαρξης)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence> (E63 Начало Сущeствования)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence> "Scope note:
 This class comprises events that bring into existence any instance of E77 Persistent Item. 
@@ -4314,7 +4314,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing> "Рукотворный Прeдмeт"@ru)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing> <http://www.cidoc-crm.org/cidoc-crm/E70_Thing>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> (E72 Объeкт Права)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> (E72 Νομικό Αντικείμενο)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> "Scope note:
 This class comprises those material or immaterial items to which instances of E30 Right, such as the right of ownership or use, can be applied. 
@@ -4457,7 +4457,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> "持久项"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> (E78 Отвeтствeнноe Хранeниe)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> (E78 Curated Holding)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> "Scope note:
 This class comprises aggregations of instances of E18 Physical Thing that are assembled and maintained (“curated” and “preserved,” in museological terminology) by one or more instances of E39 Actor over time for a specific purpose and audience, and according to a particular collection development plan. Typical instances of curated holdings are museum collections, archives, library holdings and digital libraries. A digital library is regarded as an instance of E18 Physical Thing because it requires keeping physical carriers of the electronic content.

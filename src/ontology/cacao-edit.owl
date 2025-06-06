@@ -79,6 +79,10 @@ Declaration(Class(<http://w3id.org/cacao/CACAO_0000080>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000081>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000082>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000083>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000086>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000087>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000088>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000089>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E21_Person>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E30_Right>))
@@ -334,6 +338,17 @@ Examples:
 - An AI-driven recommendation engine suggesting artifacts to users.​
 - A software bot performing automated data curation tasks.​"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000002> "User"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000002> "rdfs:comment \"Scope note:
+This class comprises agents, whether human individuals, groups, or non-human entities such as software applications, algorithms, or automated processes, that interact with digital systems or services by initiating actions, consuming resources, or producing outputs. Users are characterized by their capacity to perform intentional actions within a digital environment, for which they can be held responsible.​
+
+Unlike E21 Person, which is limited to real or assumed human individuals, the class User encompasses a broader range of agents, including non-human actors that operate autonomously or semi-autonomously within digital contexts. This includes, but is not limited to, artificial intelligence models, automated scripts, and other algorithmic entities that engage with web services or digital platforms.​
+
+The classification of an entity as a User does not necessitate legal personhood or consciousness; rather, it is based on the entity's functional role in interacting with digital systems in a manner that can be documented and attributed.​
+
+Examples:
+- A registered individual accessing an online museum catalog.​
+- An AI-driven recommendation engine suggesting artifacts to users.​
+- A software bot performing automated data curation tasks.​\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000002> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000003> (Digital Artefact)
@@ -349,14 +364,22 @@ Examples:
 - The source code of a software application developed to catalog museum collections.​
 - A dataset containing measurements of physical artefacts."@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000003> "Digital Artefact"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000003> "rdfs:comment \"Scope note:
+This class comprises identifiable immaterial items, such as digital images, texts, multimedia objects, computer program code, algorithms, or mathematical formulae, that are created, modified, or stored in digital formats. Digital Artefacts have an objectively recognizable structure and are documented as single units. They exist independently of specific physical carriers and can reside on multiple digital mediums simultaneously. While E73 Information Objects encompass a broad range of immaterial items, including those stored in human memory or on physical media, Digital Artefacts are specifically associated with digital technologies. This subclassification aids in distinguishing between general information entities and those uniquely tied to digital environments.​
+
+Examples:
+- A digital photograph of an ancient manuscript.​
+- A 3D model of an archaeological excavation site.​
+- The source code of a software application developed to catalog museum collections.​
+- A dataset containing measurements of physical artefacts.\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000003> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000005> (Historical Event)
 
 AnnotationAssertion(dcterms:contributor <http://w3id.org/cacao/CACAO_0000005> <https://orcid.org/0000-0002-0905-7033>)
 AnnotationAssertion(dcterms:date <http://w3id.org/cacao/CACAO_0000005> "2024-11-19T12:02:07Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:description <http://w3id.org/cacao/CACAO_0000005> "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.")
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000005> "Historical Event"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000005> "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000005> <http://www.cidoc-crm.org/cidoc-crm/E5_Event>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000010> (Social movement)
@@ -377,6 +400,18 @@ Examples:
 - The Feminist Movement,
 - The LGBTQ+ Rights Movement"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000010> "Social movement"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000010> "rdfs:comment \"From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals
+
+Scope note:
+A Social Movement is a loosely organized effort by a large group of people to achieve a particular set of goals, typically aiming to promote or resist changes in society's structure or values. These movements are characterized by collective action, where individuals unite based on shared beliefs or objectives, often seeking social, political, economic, or cultural transformations. ​
+
+Social movements differ from formal organizations in that they may lack a defined organizational structure or formal membership, relying instead on informal networks and shared commitments. They can vary widely in size and scope, ranging from localized grassroots initiatives to large-scale national or international campaigns. The methods employed can include protests, demonstrations, advocacy, and other forms of collective action aimed at influencing public opinion and policy. ​
+
+Examples:
+- The Civil Rights Movement in the United States,
+- The Environmental Movement
+- The Feminist Movement,
+- The LGBTQ+ Rights Movement\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000010> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000011> (Religious movement)
@@ -394,6 +429,15 @@ Examples:
 - The Charismatic Movement, emphasizing direct personal experience of God through baptism with the Holy Spirit.​
 - The New Age Movement, a broad range of spiritual or religious beliefs and practices that developed in the Western world during the 1970s."@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000011> "Religious movement"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000011> "rdfs:comment \"Wikidata: Q1826286, social and ideological movement in the religious sphere
+
+Scope note:
+A Religious Movement is a collective effort by a group of people aiming to promote, reform, or resist changes within religious beliefs, practices, or institutions.
+
+Examples:
+- The Protestant Reformation in the 16th century, which led to significant changes in Christian practices and beliefs.​
+- The Charismatic Movement, emphasizing direct personal experience of God through baptism with the Holy Spirit.​
+- The New Age Movement, a broad range of spiritual or religious beliefs and practices that developed in the Western world during the 1970s.\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000011> <http://w3id.org/cacao/CACAO_0000010>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000012> (Cultural movement)
@@ -411,6 +455,15 @@ Examples:
 - The Romanticism movement
 - The Alté Movement in Nigeria"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000012> "Cultural movement"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000012> "rdfs:comment \"Wikidata: Q2198855, period and movement in cultural history
+
+Scope note:
+A Cultural Movement is a collective effort by loosely affiliated individuals aiming to transform societal perspectives through the dissemination of ideas via various art forms and intentional lifestyle choices. These movements often overlap with social and political movements, making them integral to broader cultural transformations. ​
+
+Examples:
+- The Renaissance
+- The Romanticism movement
+- The Alté Movement in Nigeria\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000012> <http://w3id.org/cacao/CACAO_0000010>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000013> (Political movement)
@@ -428,6 +481,15 @@ Examples:
 - The Tea Party Movement in the United States, advocating for reduced government spending and taxation.​
 - The Brexit Movement, which sought the United Kingdom's withdrawal from the European Union.")
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000013> "Political movement"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000013> "rdfs:comment \"Wikidata: Q2738074, movement to obtain a political goal
+
+Scope note:
+A Political Movement is a collective effort by a group of people aiming to influence government policy, social values, or achieve specific political objectives. These movements are typically organized around particular issues or ideologies and seek to bring about change within the political system. They differ from political parties, which aim to gain political office, by focusing on specific goals rather than seeking electoral power. ​
+
+Examples:
+- The Anti-Apartheid Movement, which campaigned against the system of racial segregation in South Africa.​
+- The Tea Party Movement in the United States, advocating for reduced government spending and taxation.​
+- The Brexit Movement, which sought the United Kingdom's withdrawal from the European Union.\"")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000013> <http://w3id.org/cacao/CACAO_0000010>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000014> (Domain)
@@ -445,6 +507,16 @@ Examples:
 - Ethnomusicology​
 - Conservation Science"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000014> "Domain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000014> "rdfs:comment \"Scope note:
+This class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​
+
+The Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of \\\"archaeology\\\" or \\\"art history\\\" helps in understanding its scholarly context and the methodologies applied to its study.​
+
+Examples:
+- Archaeology​
+- Art History​
+- Ethnomusicology​
+- Conservation Science\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000014> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000015> (Economic Relevance)
@@ -459,6 +531,16 @@ Examples:
 - The assessment of a museum's collection in terms of its monetary value and contribution to tourism revenue.​
 - Analysis of the financial significance of a historical event, such as the Industrial Revolution, on global markets."@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000015> "Economic Relevance"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000015> "rdfs:comment \"Scope note:
+This class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​
+
+The Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of \\\"archaeology\\\" or \\\"art history\\\" helps in understanding its scholarly context and the methodologies applied to its study.​
+
+Examples:
+- Archaeology​
+- Art History​
+- Ethnomusicology​
+- Conservation Science\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000015> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000016> (Symbolism)
@@ -492,6 +574,18 @@ Examples:
 - The Metropolitan Museum of Art​
 - The National Museum of Denmark"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000020> "Museum"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000020> "rdfs:comment \"Scope note:
+This class comprises organizations that are established to collect, preserve, research, interpret, and exhibit tangible and intangible cultural heritage for the purposes of education, study, and enjoyment. Museums operate as collective entities, often encompassing various departments and professionals, and may be public or private institutions.​
+
+As instances of E74 Group, museums are characterized by their organizational structure and collective actions aimed at the stewardship of cultural artifacts and information. They may also engage in activities such as publishing, educational programming, and community outreach.​
+
+Museums can vary widely in scope and specialization, including but not limited to art museums, history museums, science museums, and ethnographic museums. Their defining feature is the systematic curation and presentation of collections to the public or specific audiences.​
+
+Examples:
+- The British Museum​
+- The Louvre​
+- The Metropolitan Museum of Art​
+- The National Museum of Denmark\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000020> <http://www.cidoc-crm.org/cidoc-crm/E74_Group>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000021> (Religious Buildings)
@@ -518,6 +612,18 @@ Examples:
 - William Shakespeare
 - Maya Deren"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000022> "Artist"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000022> "Scope note:
+This class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).
+
+Artists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.
+
+In bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.
+
+Examples:
+- Leonardo da Vinci
+- Frida Kahlo
+- William Shakespeare
+- Maya Deren")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000022> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000023> (Physical Artefact)
@@ -593,6 +699,21 @@ Examples:
 - Renaissance Art (artistic genre)​
 - Science Fiction (literary genre)"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000027> "Genre"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000027> "rdfs:comment \"Scope note:
+The Genre class encompasses concepts that denote specific categories or styles of creative works, including but not limited to:​
+
+- Music Genres: Such as classical, jazz, rock, or electronic.​
+- Film Genres: Including drama, comedy, thriller, or documentary.​
+- Artistic Genres: Like impressionism, surrealism, or abstract expressionism.​
+- Literary Genres: Such as fiction, non-fiction, poetry, or drama.​
+
+Instances of the Genre class provide a means to classify and contextualize creative works within their respective domains, enhancing the discovery and analysis of cultural heritage materials based on their genre-specific characteristics.​
+
+Examples:
+- Jazz (music genre)​
+- Film Noir (film genre)​
+- Renaissance Art (artistic genre)​
+- Science Fiction (literary genre)\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000027> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000028> (Field Of Work)
@@ -610,6 +731,16 @@ Examples:
 - Engineering​
 - Performing Arts​"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000028> "Field Of Work"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000028> "rdfs:comment \"Scope note:
+This class comprises concepts that denote areas of professional, academic, or creative activity in which individuals, groups, or organizations engage. Instances of Field of Work represent specific domains of expertise or practice, such as \\\"architecture,\\\" \\\"literature,\\\" or \\\"engineering,\\\" and are used to classify and contextualize the roles, contributions, or affiliations of persons within the CIDOC CRM framework.​
+
+By associating persons with a Field of Work, one can provide semantic context regarding the nature of their activities or specializations. 
+
+Examples:
+- Architecture​
+- Literature​
+- Engineering​
+- Performing Arts​\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000028> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000029> (Churches)
@@ -632,6 +763,14 @@ Examples:
 - Modernism
 - Existentialism"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000036> "Movement"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000036> "rdfs:comment \"Scope note:
+This class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. 
+
+Examples:
+- Impressionism
+- Romanticism
+- Modernism
+- Existentialism\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000036> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000037> (Basilicas)
@@ -922,6 +1061,34 @@ AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000083> <https://o
 AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000083> "2025-06-06T16:23:05Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000083> "Cup"@en)
 SubClassOf(<http://w3id.org/cacao/CACAO_0000083> <http://w3id.org/cacao/CACAO_0000082>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000086> (Image)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000086> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000086> "2025-06-06T17:06:03Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000086> "Image"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000086> <http://w3id.org/cacao/CACAO_0000003>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000087> (3D Object)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000087> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000087> "2025-06-06T17:06:09Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000087> "3D Object"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000087> <http://w3id.org/cacao/CACAO_0000003>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000088> (Video)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000088> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000088> "2025-06-06T17:06:14Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000088> "Video"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000088> <http://w3id.org/cacao/CACAO_0000003>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000089> (Audio)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000089> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000089> "2025-06-06T17:06:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000089> "Audio"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000089> <http://w3id.org/cacao/CACAO_0000003>)
 
 # Class: <http://www.w3.org/ns/odrl/2/Asset> (Asset)
 
