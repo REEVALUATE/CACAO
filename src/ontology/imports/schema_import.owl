@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://w3id.org/cacao/cacao/imports/schema_import.owl>
-<http://w3id.org/cacao/cacao/releases/2025-05-11/imports/schema_import.owl>
-Annotation(owl:versionInfo "2025-05-11")
+<http://w3id.org/cacao/cacao/releases/2025-06-06/imports/schema_import.owl>
+Annotation(owl:versionInfo "2025-06-06")
 
 Declaration(Class(rdfs:Class))
 Declaration(Class(<https://schema.org/AdministrativeArea>))
@@ -28,8 +28,11 @@ Declaration(Class(<https://schema.org/Text>))
 Declaration(Class(<https://schema.org/TextObject>))
 Declaration(Class(<https://schema.org/Thing>))
 Declaration(Class(<https://schema.org/URL>))
+Declaration(Class(<https://schema.org/WebPage>))
 Declaration(ObjectProperty(<https://schema.org/description>))
 Declaration(ObjectProperty(<https://schema.org/nationality>))
+Declaration(ObjectProperty(<https://schema.org/roleName>))
+Declaration(ObjectProperty(<https://schema.org/specialty>))
 Declaration(ObjectProperty(<https://schema.org/supersededBy>))
 Declaration(NamedIndividual(<https://schema.org/actionApplication>))
 Declaration(NamedIndividual(<https://schema.org/actionOption>))
@@ -188,6 +191,22 @@ AnnotationAssertion(rdfs:label <https://schema.org/nationality> "nationality"@en
 ObjectPropertyDomain(<https://schema.org/nationality> <https://schema.org/Person>)
 ObjectPropertyRange(<https://schema.org/nationality> ObjectUnionOf(<https://schema.org/Country> <https://schema.org/Role> <https://schema.org/Text> <https://schema.org/URL>))
 
+# Object Property: <https://schema.org/roleName> (roleName)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/roleName> "A role played, performed or filled by a person or organization. For example, the team of creators for a comic book might fill the roles named 'inker', 'penciller', and 'letterer'; or an athlete in a SportsTeam might play in the position named 'Quarterback'."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/roleName> <https://schema.org/roleName>)
+AnnotationAssertion(rdfs:label <https://schema.org/roleName> "roleName"@en)
+ObjectPropertyDomain(<https://schema.org/roleName> <https://schema.org/Role>)
+ObjectPropertyRange(<https://schema.org/roleName> ObjectUnionOf(<https://schema.org/Role> <https://schema.org/Text> <https://schema.org/URL>))
+
+# Object Property: <https://schema.org/specialty> (specialty)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/specialty> "One of the domain specialities to which this web page's content applies."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/specialty> <https://schema.org/specialty>)
+AnnotationAssertion(rdfs:label <https://schema.org/specialty> "specialty"@en)
+ObjectPropertyDomain(<https://schema.org/specialty> <https://schema.org/WebPage>)
+ObjectPropertyRange(<https://schema.org/specialty> ObjectUnionOf(<https://schema.org/Role> <https://schema.org/Specialty> <https://schema.org/Text> <https://schema.org/URL>))
+
 # Object Property: <https://schema.org/supersededBy> (supersededBy)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/supersededBy> "Relates a term (i.e. a property, class or enumeration) to one that supersedes it."@en)
@@ -321,6 +340,13 @@ AnnotationAssertion(rdfs:comment <https://schema.org/URL> "Data type: URL."@en)
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/URL> <https://schema.org/URL>)
 AnnotationAssertion(rdfs:label <https://schema.org/URL> "URL"@en)
 SubClassOf(<https://schema.org/URL> <https://schema.org/Text>)
+
+# Class: <https://schema.org/WebPage> (WebPage)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/WebPage> "A web page. Every web page is implicitly assumed to be declared to be of type WebPage, so the various properties about that webpage, such as <code>breadcrumb</code> may be used. We recommend explicit declaration if these properties are specified, but if they are found outside of an itemscope, they will be assumed to be about the page."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/WebPage> <https://schema.org/WebPage>)
+AnnotationAssertion(rdfs:label <https://schema.org/WebPage> "WebPage"@en)
+SubClassOf(<https://schema.org/WebPage> <https://schema.org/CreativeWork>)
 
 
 ############################
@@ -1028,12 +1054,6 @@ AnnotationAssertion(rdfs:comment <https://schema.org/reviews> "Review of the ite
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/reviews> <https://schema.org/reviews>)
 AnnotationAssertion(rdfs:label <https://schema.org/reviews> "reviews"@en)
 ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/reviews> <https://schema.org/review>)
-
-# Individual: <https://schema.org/roleName> (roleName)
-
-AnnotationAssertion(rdfs:comment <https://schema.org/roleName> "A role played, performed or filled by a person or organization. For example, the team of creators for a comic book might fill the roles named 'inker', 'penciller', and 'letterer'; or an athlete in a SportsTeam might play in the position named 'Quarterback'."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/roleName> <https://schema.org/roleName>)
-AnnotationAssertion(rdfs:label <https://schema.org/roleName> "roleName"@en)
 
 # Individual: <https://schema.org/runtime> (runtime)
 

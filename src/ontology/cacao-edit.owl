@@ -300,6 +300,14 @@ ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_for
 
 ObjectPropertyDomain(<https://schema.org/nationality> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
 
+# Object Property: <https://schema.org/roleName> (roleName)
+
+ObjectPropertyDomain(<https://schema.org/roleName> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+
+# Object Property: <https://schema.org/specialty> (specialty)
+
+ObjectPropertyDomain(<https://schema.org/specialty> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+
 
 
 ############################
