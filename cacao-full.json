@@ -13,9 +13,9 @@
         "val" : "Cultural Artefact Contextual Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-05-08"
+        "val" : "2025-05-11"
       } ],
-      "version" : "http://w3id.org/cacao/cacao/releases/2025-05-08/cacao-full.json"
+      "version" : "http://w3id.org/cacao/cacao/releases/2025-05-11/cacao-full.json"
     },
     "nodes" : [ {
       "id" : "http://schema.org/Action",
@@ -2211,6 +2211,21 @@
           "val" : "https://schema.org/URL"
         } ]
       }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000000",
+      "lbl" : "hasDomain",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000001",
+      "lbl" : "hasEconomicRelevance",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000004",
+      "lbl" : "hasSymbolism",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
     }, {
       "id" : "http://w3id.org/cacao/CACAO_0000017",
       "lbl" : "genre",
@@ -13329,6 +13344,18 @@
       "pred" : "https://schema.org/supersededBy",
       "obj" : "https://schema.org/warranty"
     }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000000",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000001",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000004",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    }, {
       "sub" : "http://w3id.org/cacao/CACAO_0000026",
       "pred" : "subPropertyOf",
       "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
@@ -13767,6 +13794,18 @@
       "nodeIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object", "http://www.w3.org/ns/odrl/2/Asset" ]
     } ],
     "domainRangeAxioms" : [ {
+      "predicateId" : "http://w3id.org/cacao/CACAO_0000000",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" ],
+      "rangeClassIds" : [ "http://w3id.org/cacao/CACAO_0000014" ]
+    }, {
+      "predicateId" : "http://w3id.org/cacao/CACAO_0000001",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" ],
+      "rangeClassIds" : [ "http://w3id.org/cacao/CACAO_0000015" ]
+    }, {
+      "predicateId" : "http://w3id.org/cacao/CACAO_0000004",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E70_Thing" ],
+      "rangeClassIds" : [ "http://w3id.org/cacao/CACAO_0000016" ]
+    }, {
       "predicateId" : "http://w3id.org/cacao/CACAO_0000017",
       "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" ],
       "rangeClassIds" : [ "http://w3id.org/cacao/CACAO_0000027" ]

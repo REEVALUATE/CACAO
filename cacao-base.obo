@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: http://w3id.org/cacao/cacao/releases/2025-05-08/cacao-base.owl
+data-version: http://w3id.org/cacao/cacao/releases/2025-05-11/cacao-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 ontology: http://w3id.org/cacao/cacao/cacao-base.owl
@@ -7,7 +7,7 @@ property_value: dce:type IAO:8000001
 property_value: dcterms:description "None" xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/unspecified
 property_value: dcterms:title "Cultural Artefact Contextual Ontology" xsd:string
-property_value: owl:versionInfo "2025-05-08" xsd:string
+property_value: owl:versionInfo "2025-05-11" xsd:string
 
 [Term]
 id: CACAO:0000002
@@ -157,6 +157,24 @@ comment: Scope note:\nThis class comprises concepts that denote distinct movemen
 is_a: E55:Type
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2025-04-12T09:17:34Z" xsd:dateTime
+
+[Typedef]
+id: CACAO:0000000
+name: hasDomain
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity
+range: CACAO:0000014 ! Domain
+
+[Typedef]
+id: CACAO:0000001
+name: hasEconomicRelevance
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity
+range: CACAO:0000015 ! Economic Relevance
+
+[Typedef]
+id: CACAO:0000004
+name: hasSymbolism
+domain: E70:Thing
+range: CACAO:0000016 ! Symbolism
 
 [Typedef]
 id: CACAO:0000017

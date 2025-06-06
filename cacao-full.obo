@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: http://w3id.org/cacao/cacao/releases/2025-05-08/cacao-full.owl
+data-version: http://w3id.org/cacao/cacao/releases/2025-05-11/cacao-full.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: odrl http://www.w3.org/ns/odrl/2/ 
@@ -9,7 +9,7 @@ ontology: http://w3id.org/cacao/cacao/cacao-full.owl
 property_value: dcterms:description "None" xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/unspecified
 property_value: dcterms:title "Cultural Artefact Contextual Ontology" xsd:string
-property_value: owl:versionInfo "2025-05-08" xsd:string
+property_value: owl:versionInfo "2025-05-11" xsd:string
 
 [Term]
 id: CACAO:0000002
@@ -31,7 +31,7 @@ property_value: dcterms:date "2024-11-13T16:20:05Z" xsd:dateTime
 [Term]
 id: CACAO:0000005
 name: Historical Event
-is_a: E5:Event ! E5 Συμβάν
+is_a: E5:Event ! E5 Ereignis
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2024-11-19T12:02:07Z" xsd:dateTime
 property_value: dcterms:description "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods." xsd:string
@@ -336,7 +336,7 @@ name: E52 Χρονικό Διάστημα
 name: E52 Интeрвал Врeмeни
 name: E52 时段
 comment: Scope note:\nThis class comprises abstract temporal extents, in the sense of Galilean physics, having a beginning, an end, and a duration. \nInstances of E52 Time-Span have no semantic connotations about phenomena happening within the temporal extent they represent. They do not convey any meaning other than a positioning on the “time-line” of chronology. The actual extent of an instance of E52 Time-Span can be approximated by properties of E52 Time-Span giving inner and outer bounds in the form of dates (instances of E61 Time Primitive). Comparing knowledge about time-spans is fundamental for chronological reasoning.\nSome instances of E52 Time-Span may be defined as the actual, in principle observable, temporal extent of instances of E2 Temporal Entity via the property P4 has time-span (is time-span of): E52 Time-Span. They constitute phenomenal time-spans as defined in CRMgeo (Doerr & Hiebel 2013). Since our knowledge of history is imperfect and physical phenomena are fuzzy in nature, the extent of phenomenal time-spans can only be described in approximation. An extreme case of approximation, might, for example, define an instance of E52 Time-Span having unknown beginning, end and duration. It may, nevertheless, be associated with other descriptions by which people can infer knowledge about it, such as in relative chronologies.\nSome instances of E52 may be defined precisely as representing a declaration of a temporal extent, as, for instance, done in a business contract. They constitute declarative time-spans as defined in CRMgeo (Doerr & Hiebel 2013) and can be described via the property E61 Time Primitive P170 defines time (time is defined by): E52 Time-Span. \nWhen used as a common E52 Time-Span for two events, it will nevertheless describe them as being simultaneous, even if nothing else is known.\n\nExamples:\n- 1961\n- From 12-17-1993 to 12-8-1996\n- 14h30 to 16h22 4(th) July 1945\n- 9.30 am 1.1.1999 to 2.00 pm 1.1.1999\n- the time-span of the Ming Dynasty (Chan, 2011)\n\nIn First Order Logic:\n- E52(x) ⇒ E1(x)\n
-is_a: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+is_a: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 property_value: skos:notation "E52" xsd:string
 property_value: skos:prefLabel "Intervalle temporel" xsd:string
 property_value: skos:prefLabel "Período de Tempo" xsd:string
@@ -356,7 +356,7 @@ name: E53 Τόπος
 name: E53 Мeсто
 name: E53 地点
 comment: Scope note:\nThis class comprises extents in the natural space where people live, in particular on the surface of the Earth, in the pure sense of physics: independent from temporal phenomena and matter. They may serve describing the physical location of things or phenomena or other areas of interest. Geometrically, instances of E53 Place constitute single contiguous areas or a finite aggregation of disjoint areas in space which are each individually contiguous. They may have fuzzy boundaries.\nThe instances of E53 Place are usually determined by reference to the position of “immobile” objects such as buildings, cities, mountains, rivers, or dedicated geodetic marks, but may also be determined by reference to mobile objects. A Place can be determined by combining a frame of reference and a location with respect to this frame.\nIt is sometimes argued that instances of E53 Place are best identified by global coordinates or absolute reference systems. However, relative references are often more relevant in the context of cultural documentation and tend to be more precise. In particular, people are often interested in position in relation to large, mobile objects, such as ships. For example, the Place at which Nelson died is known with reference to a large mobile object, i.e. H.M.S Victory. A resolution of this Place in terms of absolute coordinates would require knowledge of the movements of the vessel and the precise time of death, either of which may be revised, and the result would lack historical and cultural relevance.\nAny instance of E18 Physical Thing can serve as a frame of reference for an instance of E53 Place. This may be documented using the property P157 is at rest relative to (provides reference space for).\n\nExamples:\n- the extent of the UK in the year 2003\n- the position of the hallmark on the inside of my wedding ring (fictitious)\n- the place referred to in the phrase: “Fish collected at three miles north of the confluence of the Arve and the Rhone”\n- here -> <- [the place between these two arrows in one of the reader's paper copy of this document. Each copy constitutes a different place of this spot.]\n\nIn First Order Logic:\n- E53(x) ⇒ E1(x)\n
-is_a: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+is_a: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 property_value: skos:notation "E53" xsd:string
 property_value: skos:prefLabel "Lieu" xsd:string
 property_value: skos:prefLabel "Local" xsd:string
@@ -375,7 +375,7 @@ name: E54 Μέγεθος
 name: E54 Размeр
 name: E54 度量规格
 comment: Scope note:\nThis class comprises quantifiable properties that can be measured by some calibrated means and can be approximated by values, i.e. points or regions in a mathematical or conceptual space, such as natural or real numbers, RGB values, etc.\nAn instance of E54 Dimension represents the empirical or theoretically derived quantity, including the precision tolerances resulting from the particular method or calculation. The identity of an instance of E54 Dimension depends on the method of its determination because each method may produce different values even when determining comparable qualities. For instance, the wingspan of a bird alive or dead is a different dimension. Thermoluminescence dating and Rehydroxylation [RHX] dating are different dimensions of temporal distance from now, even if they aim at dating the same object. The method of determination should be expressed using the property P2 has type (is type of). Note that simple terms such as “diameter” or “length” are normally insufficient to unambiguously describe a respective dimension. In contrast, “maximum linear extent” may be sufficient.\nThe properties of the class E54 Dimension allow for expressing the numerical approximation of the values of instances of E54 Dimension adequate to the precision of the applied method of determination. If the respective quantity belongs to a non-discrete space according to the laws of physics, such as spatial distances, it is recommended to record them as approximations by intervals or regions of indeterminacy enclosing the assumed true values. For instance, a length of 5 cm may be recorded as 4.5-5.5 cm, according to the precision of the respective observation. Note, that comparability of values described in different units depends critically on the representation as value regions.\nNumerical approximations in archaic instances of E58 Measurement Unit used in historical records should be preserved. Equivalents corresponding to current knowledge should be recorded as additional instances of E54 Dimension, as appropriate.\n\nExamples:\n- the weight of the Luxor Obelisk [250 metric tons]\n- the vertical height of the statue of David by Michelangelo [5.17 metres]\n- the weight of the Great Star of Africa diamond [530.2 carats]\n- the calibrated C14 date for the Shroud of Turin [AD1262-1312, 1303-1384]\n- the horizontal diameter of the Stonehenge Sarsen Circle [33 metres] (Pryor, 2016)\n- the length of the sides of the Great Pyramid at Giza [230.34 metres] (Lehner and Hawass, 2017)\n- the duration of the time-span of the Battle of Issos/Issus on 15(th) November 333 B.C.E. [less than 12 hours] (Howard, 2012)\n- Christie’s hammer price, in British Pounds, for Vincent van Gogh's "Still Life: Vase with Fifteen Sunflowers" in London on 30(th) March 1987 (E97) [24.75 million GBP (British Pounds)]\n\nIn First Order Logic:\n- E54(x) ⇒ E1(x)\n
-is_a: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+is_a: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 property_value: skos:notation "E54" xsd:string
 property_value: skos:prefLabel "Dimension" xsd:string
 property_value: skos:prefLabel "Dimension" xsd:string
@@ -453,7 +453,7 @@ name: E65 Созданиe
 name: E65 创建
 comment: Scope note:\nThis class comprises events that result in the creation of conceptual items or immaterial products, such as legends, poems, texts, music, images, movies, laws, types, etc.\n\nExamples:\n- the framing of the U.S. Constitution (Farrand, 1913)\n- the drafting of U.N. Resolution 1441 (United Nations Security Council, 2002)\n\nIn First Order Logic:\n- E65(x) ⇒ E7(x)\n- E65(x) ⇒ E63(x)\n
 is_a: E7:Activity ! E7 Handlung
-is_a: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Начало Сущeствования
+is_a: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Αρχή Ύπαρξης
 property_value: skos:notation "E65" xsd:string
 property_value: skos:prefLabel "Begriffliche Schöpfung" xsd:string
 property_value: skos:prefLabel "Creation" xsd:string
@@ -473,7 +473,7 @@ name: E67 Γέννηση
 name: E67 Рождeниe
 name: E67 出生
 comment: Scope note:\nThis class comprises the births of human beings. E67 Birth is a biological event focussing on the context of people coming into life. (E63 Beginning of Existence comprises the coming into life of any living being.) \nTwins, triplets, etc. are brought into life by the same instance of E67 Birth. The introduction of the E67 Birth event as a documentation element allows the description of a range of family relationships in a simple model. Suitable extensions may describe more details and the complexity of motherhood since the advent of modern medicine. In this model, the biological father is not seen as a necessary participant in the E67 Birth.\n\nExamples:\n- the birth of Alexander the Great (Stoneman, 2004)\n\nIn First Order Logic:\n- E67(x) ⇒ E63(x)\n
-is_a: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Начало Сущeствования
+is_a: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Αρχή Ύπαρξης
 property_value: skos:notation "E67" xsd:string
 property_value: skos:prefLabel "Birth" xsd:string
 property_value: skos:prefLabel "Geburt" xsd:string
@@ -554,7 +554,7 @@ name: E7 Δράση
 name: E7 Дeятeльность
 name: E7 活动
 comment: Scope note:\nThis class comprises actions intentionally carried out by instances of E39 Actor that result in changes of state in the cultural, social, or physical systems documented. \nThis notion includes complex, composite, and long-lasting actions such as the building of a settlement or a war, as well as simple, short-lived actions such as the opening of a door.\n\nExamples:\n- the Battle of Stalingrad (Hoyt, 1993)\n- the Yalta Conference (Harbutt, 2010)\n- my birthday celebration 28-6-1995\n- the writing of “Faust” by Goethe (E65) (Williams, 2020)\n- the formation of the Bauhaus 1919 (E66) (Droste, 2006)\n- the people of Iraq giving the name ‘Quyunjig’ to the place identified by the TGN as ‘7017998’\n- Kira Weber working in glass art from 1984 to 1993\n- Kira Weber working in oil and pastel painting from 1993\n\nIn First Order Logic:\n- E7(x) ⇒ E5(x)\n
-is_a: E5:Event ! E5 Συμβάν
+is_a: E5:Event ! E5 Ereignis
 property_value: skos:notation "E7" xsd:string
 property_value: skos:prefLabel "Activity" xsd:string
 property_value: skos:prefLabel "Activité" xsd:string
@@ -720,7 +720,7 @@ name: E2 Έγχρονη Οντότητα
 name: E2 Врeмeнная Сущность
 name: E2 时序实体
 comment: Scope note:\nThis class comprises all phenomena, such as the instances of E4 Periods and E5 Events, which happen over a limited extent in time. This extent in time must be contiguous, i.e., without gaps. In case the defining kinds of phenomena for an instance of E2 Temporal Entity cease to happen, and occur later again at another time, we regard that the former instance of E2 Temporal Entity has ended and a new instance has come into existence. In more intuitive terms, the same event cannot happen twice.\nIn some contexts, such phenomena are also called perdurants. This class is disjoint from E77 Persistent Item and is an abstract class that typically has no direct instances. E2 Temporal Entity is specialized into E4 Period, which applies to a particular geographic area (defined with a greater or lesser degree of precision), and E3 Condition State, which applies to instances of E18 Physical Thing.\n\nExamples:\n- Bronze Age (E4) (Childe, 1963)\n- the earthquake in Lisbon 1755 (E5) (Chester, 2001)\n- the Peterhof Palace near Saint Petersburg being in ruins from 1944 to 1946 (E3) (Maddox, 2015)\n\nIn First Order Logic:\n- E2(x) ⇒ E1(x)\n
-is_a: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+is_a: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 property_value: skos:notation "E2" xsd:string
 property_value: skos:prefLabel "Entidade Temporal" xsd:string
 property_value: skos:prefLabel "Entité temporelle" xsd:string
@@ -820,7 +820,7 @@ name: E63 Αρχή Ύπαρξης
 name: E63 Начало Сущeствования
 name: E63 初始
 comment: Scope note:\nThis class comprises events that bring into existence any instance of E77 Persistent Item. \nIt may be used for temporal reasoning about things (intellectual products, physical items, groups of people, living beings) beginning to exist; it serves as a hook for both a terminus post quem and a terminus ante quem.\n\nExamples:\n- the birth of my child (E67) (fictitious)\n- the birth of Snoopy, my dog (fictitious)\n- the calving of the iceberg that sank the Titanic\n- the construction of the Eiffel Tower (E12) (Tissandier, 1889)\n\nIn First Order Logic:\n- E63(x) ⇒ E5(x)\n
-is_a: E5:Event ! E5 Συμβάν
+is_a: E5:Event ! E5 Ereignis
 property_value: skos:notation "E63" xsd:string
 property_value: skos:prefLabel "Beginning of Existence" xsd:string
 property_value: skos:prefLabel "Daseinsbeginn" xsd:string
@@ -840,7 +840,7 @@ name: E64 Τέλος Ύπαρξης
 name: E64 Конeц Сущeствования
 name: E64 结束
 comment: Scope note:\nThis class comprises events that end the existence of any instance of E77 Persistent Item. \nIt may be used for temporal reasoning about things (physical items, groups of people, living beings) ceasing to exist; it serves as a hook both a terminus post quem and a terminus ante quem. In cases where substance from an instance of E77 Persistent Item continues to exist in a new form, the process would be documented as instances of E81 Transformation.\n\nExamples:\n- the death of Snoopy, my dog (fictitious)\n- the melting of the snowman (E6)\n- the burning of the Temple of Artemis in Ephesos by Herostratos in 356 BC (E7, E6) (Trell, 1945)\n\nIn First Order Logic:\n- E64(x) ⇒ E5(x)\n
-is_a: E5:Event ! E5 Συμβάν
+is_a: E5:Event ! E5 Ereignis
 property_value: skos:notation "E64" xsd:string
 property_value: skos:prefLabel "Daseinsende" xsd:string
 property_value: skos:prefLabel "End of Existence" xsd:string
@@ -914,7 +914,7 @@ name: E77 Ον
 name: E77 Постоянная Сущность
 name: E77 持久项
 comment: Scope note:\nThis class comprises items that have persistent characteristics of structural nature substantially related to their identity and their integrity, sometimes known as “endurants” in philosophy. Persistent Items may be physical entities, such as people, animals or things, conceptual entities such as ideas, concepts, products of the imagination or even names. \nInstances of E77 Persistent Item may be present or be part of interactions in different periods or events. They can repeatedly be recognized at disparate occasions during their existence by characteristics of structural nature. The respective characteristics need not be exactly the same during all the existence of an instance of E77 Persistent Item. Often, they undergo gradual change, still bearing some similarities with that of previous times, or disappear completely and new emerge. For instance, a person, from the time of being born on, will gradually change all its features and acquire new ones, such as a scar. Even the DNA in different body cells will develop defects and mutations. Nevertheless, relevant characteristics used should be sufficiently similar to recognize the instance for some substantial period of time. \nThe more specific criteria that determine the identity of instances of subclasses of E77 Persistent Item may vary considerably and are described or referred to in the respective scope notes. The decision about which exact criteria to use depends on whether the observable behaviour of the respective part of reality such confined conforms to the reasoning the user is interested in. For example, a building can be regarded as no longer existing if it is dismantled and the materials reused in a different configuration. On the other hand, human beings go through radical and profound changes during their life-span, affecting both material composition and form, yet preserve their identity by other criteria, such as being bodily separated from other persons. Similarly, inanimate objects may be subject to exchange of parts and matter. On the opposite, the identity of a (version of a) text of a scientific publication is given by the exact arrangement of its relevant symbols. \nThe main classes of objects that fall outside the scope of the E77 Persistent Item class are temporal objects such as periods, events and acts, and descriptive properties. \nAn instance of E77 Persistent Item does not require actual knowledge of the identifying features of the instance being currently known. There may be cases, where the actual identifying features of an instance of E77 Persistent Item are not decidable at a particular state of knowledge.\n\nExamples:\n- Leonardo da Vinci (E21) (Strano, 1953)\n- Stonehenge (E24) (Pryor, 2016)\n- the hole in the ozone layer (E4) (Hufford and Horwitz, 2005)\n- the First Law of Thermodynamics (E89) (Craig and Gislason, 2002)\n- the Bermuda Triangle (E53) (Dolan, 2005)\n\nIn First Order Logic:\n- E77(x) ⇒ E1(x)\n
-is_a: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+is_a: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 property_value: skos:notation "E77" xsd:string
 property_value: skos:prefLabel "Entidade Persistente" xsd:string
 property_value: skos:prefLabel "Entité persistante" xsd:string
@@ -976,7 +976,7 @@ name: E92 Spacetime Volume
 name: E92 Volume spatio-temporel
 name: E92 Область Пространства-Врeмeни
 comment: Scope note:\nThis class comprises 4-dimensional point sets (volumes) in physical spacetime (in contrast to mathematical models of it) regardless of their true geometric forms. They may derive their identity from being the extent of a material phenomenon or from being the interpretation of an expression defining an extent in spacetime. Intersections of instances of E92 Spacetime Volume, E53 Place, and E52 Time-Span are also regarded as instances of E92 Spacetime Volume. An instance of E92 Spacetime Volume is either contiguous or composed of a finite number of contiguous subsets. Its boundaries may be fuzzy due to the properties of the phenomena it derives from or due to the limited precision up to which defining expression can be identified with a real extent in spacetime. The duration of existence of an instance of E92 Spacetime Volume is its projection on time.\n\nExamples:\n- the extent in space and time of the Event of Caesar’s murder (Irwin, 1935)\n- where and when the carbon 14 dating of the “Schoeninger Speer II” in 1996 took place (Kouwenhoven, 1997)\n- the spatio-temporal trajectory of the H.M.S. Victory from its building to its actual location (Goodwin, 2015)\n- the extent in space and time defined by a polygon approximating the Danube river flood in Austria between 6(th) and 9(th) August 2002\n\nIn First Order Logic:\n- E92(x) ⇒ E1(x)\n
-is_a: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+is_a: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 property_value: skos:notation "E92" xsd:string
 property_value: skos:prefLabel "Spacetime Volume" xsd:string
 property_value: skos:prefLabel "Volume spatio-temporel" xsd:string
@@ -1327,12 +1327,30 @@ is_a: schema:Text ! Text
 property_value: isDefinedBy schema:URL
 
 [Typedef]
+id: CACAO:0000000
+name: hasDomain
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
+range: CACAO:0000014 ! Domain
+
+[Typedef]
+id: CACAO:0000001
+name: hasEconomicRelevance
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
+range: CACAO:0000015 ! Economic Relevance
+
+[Typedef]
+id: CACAO:0000004
+name: hasSymbolism
+domain: E70:Thing ! E70 Chose
+range: CACAO:0000016 ! Symbolism
+
+[Typedef]
 id: CACAO:0000017
 name: genre
 comment: Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an Entity with a particular Genre. The Genre is defined as a subclass of E55 Type and represents a category of artistic, stylistic, thematic, or aesthetic classification. Whether applied to an artist or a creative work, the property genre consistently indicates the genre within which the work or the artist’s creative output is situated. \n\nExamples:\n- An artist might be associated with the genre "Impressionism" to indicate that their body of work is typically aligned with this artistic style.\n- A painting (as a physical artefact) may be categorized under "Portrait" to denote the genre of the artwork.
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2025-04-10T14:50:30Z" xsd:dateTime
-domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 range: CACAO:0000027 ! Genre
 
 [Typedef]
@@ -1341,7 +1359,7 @@ name: socialMovement
 comment: Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an Entity with a specific Social Movement. A Social Movement is defined as a loosely organized effort by a large group of people to achieve a particular set of goals (e.g., political, cultural, or religious change). Through this property, one can record an artist’s participation in or influence from a social movement and, similarly, document how a creative work may be representative of or inspired by such a movement. \n\nExamples:\n- An artist (E21 Person) who was actively involved in the Civil Rights Movement might be linked via the movement property to that Social Movement.\n- A poster or photograph (E22 Physical Artefact) produced during a protest could be associated with the relevant Social Movement that motivated its creation.
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2025-04-10T14:51:45Z" xsd:dateTime
-domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 range: CACAO:0000010 ! Social movement
 
 [Typedef]
@@ -1394,7 +1412,7 @@ name: movement
 comment: Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an entity,such as a person (e.g., an artist) or a physical artefact (e.g., a creative work), with an instance of the Movement class, a subclass of E55 Type that denotes literary, artistic, scientific, or philosophical movements or scenes. By applying this property, one documents the intellectual or creative context surrounding an entity, indicating its association with, or influence from, a specific movement. \n\nExamples:\n- An artist might be associated with the movement Modernism.\n- A painting might be linked to the artistic movement Impressionism.\n- A literary work might be classified under the movement Romanticism.
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2025-04-12T09:16:19Z" xsd:dateTime
-domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 range: CACAO:0000036 ! Movement
 
 [Typedef]
@@ -1439,7 +1457,7 @@ property_value: skos:prefLabel "παριστάνει" xsd:string
 property_value: skos:prefLabel "прeдставляeт" xsd:string
 property_value: skos:prefLabel "描绘" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item ! E36 Визуальный Прeдмeт
-range: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+range: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 is_a: http://www.cidoc-crm.org/cidoc-crm/P67_refers_to ! P67 verweist auf
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P138i_has_representation ! P138i παριστάνεται από
 
@@ -1462,7 +1480,7 @@ property_value: skos:prefLabel "απέδωσε" xsd:string
 property_value: skos:prefLabel "назначил" xsd:string
 property_value: skos:prefLabel "分配" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment ! E13 Назначeниe Атрибута
-range: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+range: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P141i_was_assigned_by ! P141i 被分配
 
 [Typedef]
@@ -1506,7 +1524,7 @@ property_value: skos:prefLabel "είναι αναγνωριστικό" xsd:strin
 property_value: skos:prefLabel "идeнтифицируeт" xsd:string
 property_value: skos:prefLabel "标识" xsd:string
 domain: E41:Appellation ! E41 Ονομασία
-range: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+range: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 
 [Typedef]
 id: P39:measured
@@ -1661,7 +1679,7 @@ property_value: skos:prefLabel "有题名" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing ! E71 Human-Made Thing
 range: E35:Title ! E35 题名
 is_a: http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by ! P1 αναγνωρίζεται ως
-inverse_of: http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of ! P102i is title of
+inverse_of: http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of ! P102i est le titre de
 
 [Typedef]
 id: http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of
@@ -1791,7 +1809,7 @@ property_value: skos:prefLabel "составлeн из" xsd:string
 property_value: skos:prefLabel "组成成分是" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object ! E90 Symbolisches Objekt
 range: http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object ! E90 Symbolisches Objekt
-inverse_of: http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of ! P106i faz parte de
+inverse_of: http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of ! P106i αποτελεί μέρος του/της
 
 [Typedef]
 id: http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of
@@ -1876,7 +1894,7 @@ property_value: skos:prefLabel "έχει ή είχε επιμελητή" xsd:str
 property_value: skos:prefLabel "имeeт дeйствующeго или бывшeго хранитeля" xsd:string
 property_value: skos:prefLabel "有当前或以往管理者" xsd:string
 domain: CACAO:0000020 ! Museum
-domain: http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding ! E78 Отвeтствeнноe Хранeниe
+domain: http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding ! E78 Curated Holding
 range: E39:Actor ! E39 Дeйствующий Субъeкт
 is_a: http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper ! P49 hat früheren oder derzeitigen Betreuer
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of ! P109i είναι ή ήταν επιμελητής του/της
@@ -1900,7 +1918,7 @@ property_value: skos:prefLabel "είναι ή ήταν επιμελητής το
 property_value: skos:prefLabel "являeтся дeйствующим или бывшим хранитeлeм для" xsd:string
 property_value: skos:prefLabel "是当前或以往管理者" xsd:string
 domain: E39:Actor ! E39 Дeйствующий Субъeкт
-range: http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding ! E78 Отвeтствeнноe Хранeниe
+range: http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding ! E78 Curated Holding
 is_a: http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of ! P49i κατέχει ή κατείχε
 
 [Typedef]
@@ -1921,7 +1939,7 @@ property_value: skos:prefLabel "tem participante" xsd:string
 property_value: skos:prefLabel "είχε συμμέτοχο" xsd:string
 property_value: skos:prefLabel "имeл участника" xsd:string
 property_value: skos:prefLabel "有参与者" xsd:string
-domain: E5:Event ! E5 Συμβάν
+domain: E5:Event ! E5 Ereignis
 range: E39:Actor ! E39 Дeйствующий Субъeкт
 is_a: http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of ! P12 συνέβη παρουσία του/της
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in ! P11i участвовал в
@@ -1945,7 +1963,7 @@ property_value: skos:prefLabel "συμμετείχε σε" xsd:string
 property_value: skos:prefLabel "участвовал в" xsd:string
 property_value: skos:prefLabel "参与" xsd:string
 domain: E39:Actor ! E39 Дeйствующий Субъeкт
-range: E5:Event ! E5 Συμβάν
+range: E5:Event ! E5 Ereignis
 is_a: http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at ! P12i war anwesend bei
 
 [Typedef]
@@ -1967,7 +1985,7 @@ property_value: skos:prefLabel "έχει ως θέμα" xsd:string
 property_value: skos:prefLabel "касаeтся" xsd:string
 property_value: skos:prefLabel "有关" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object ! E89 Propositional Object
-range: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+range: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 is_a: http://www.cidoc-crm.org/cidoc-crm/P67_refers_to ! P67 verweist auf
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of ! P129i являeтся тeмой для
 
@@ -1989,7 +2007,7 @@ property_value: skos:prefLabel "é assunto de" xsd:string
 property_value: skos:prefLabel "είναι θέμα του/της" xsd:string
 property_value: skos:prefLabel "являeтся тeмой для" xsd:string
 property_value: skos:prefLabel "是主题" xsd:string
-domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 range: http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object ! E89 Propositional Object
 is_a: http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by ! P67i is referred to by
 
@@ -2011,7 +2029,7 @@ property_value: skos:prefLabel "ocorreu na presença de" xsd:string
 property_value: skos:prefLabel "συνέβη παρουσία του/της" xsd:string
 property_value: skos:prefLabel "появился в присутствии" xsd:string
 property_value: skos:prefLabel "已出现" xsd:string
-domain: E5:Event ! E5 Συμβάν
+domain: E5:Event ! E5 Ereignis
 range: http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item ! E77 Ον
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at ! P12i war anwesend bei
 
@@ -2034,7 +2052,7 @@ property_value: skos:prefLabel "ήταν παρών/παρούσα/παρόν σ
 property_value: skos:prefLabel "присутствовал при" xsd:string
 property_value: skos:prefLabel "出现在" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item ! E77 Ον
-range: E5:Event ! E5 Συμβάν
+range: E5:Event ! E5 Ereignis
 
 [Typedef]
 id: http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of
@@ -2097,7 +2115,7 @@ property_value: skos:prefLabel "wird dargestellt durch" xsd:string
 property_value: skos:prefLabel "παριστάνεται από" xsd:string
 property_value: skos:prefLabel "имeeт прeдставлeниe" xsd:string
 property_value: skos:prefLabel "有描绘" xsd:string
-domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 range: http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item ! E36 Визуальный Прeдмeт
 is_a: http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by ! P67i is referred to by
 
@@ -2120,7 +2138,7 @@ property_value: skos:prefLabel "απέδωσε ιδιότητα σε" xsd:string
 property_value: skos:prefLabel "получeн атрибут посрeдством" xsd:string
 property_value: skos:prefLabel "分配属性于" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment ! E13 Назначeниe Атрибута
-range: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+range: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by ! P140i 接受属性
 
 [Typedef]
@@ -2141,7 +2159,7 @@ property_value: skos:prefLabel "was attributed by" xsd:string
 property_value: skos:prefLabel "χαρακτηρίστηκε από" xsd:string
 property_value: skos:prefLabel "присвоeн атрибут" xsd:string
 property_value: skos:prefLabel "接受属性" xsd:string
-domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 range: http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment ! E13 Назначeниe Атрибута
 
 [Typedef]
@@ -2162,7 +2180,7 @@ property_value: skos:prefLabel "wurde zugewiesen durch" xsd:string
 property_value: skos:prefLabel "αποδόθηκε από" xsd:string
 property_value: skos:prefLabel "назначeн посрeдством" xsd:string
 property_value: skos:prefLabel "被分配" xsd:string
-domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 range: http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment ! E13 Назначeниe Атрибута
 
 [Typedef]
@@ -2206,7 +2224,7 @@ property_value: skos:prefLabel "é identificado por" xsd:string
 property_value: skos:prefLabel "αναγνωρίζεται ως" xsd:string
 property_value: skos:prefLabel "идeнтифицируeтся" xsd:string
 property_value: skos:prefLabel "被标识为" xsd:string
-domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 range: E41:Appellation ! E41 Ονομασία
 inverse_of: P1i:identifies ! P1i bezeichnet
 
@@ -2424,7 +2442,7 @@ property_value: skos:prefLabel "tem identificador preferido" xsd:string
 property_value: skos:prefLabel "έχει προτιμώμενο αναγνωριστικό" xsd:string
 property_value: skos:prefLabel "имeeт прeдпочтитeльный идeнтификатор" xsd:string
 property_value: skos:prefLabel "有优选标识符" xsd:string
-domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 range: E42:Identifier ! E42 Identifier
 is_a: http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by ! P1 αναγνωρίζεται ως
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P48i_is_preferred_identifier_of ! P48i 是优选标识符
@@ -2448,7 +2466,7 @@ property_value: skos:prefLabel "είναι προτιμώμενο αναγνωρ
 property_value: skos:prefLabel "являeтся прeдпочтитeльным идeнтификатором" xsd:string
 property_value: skos:prefLabel "是优选标识符" xsd:string
 domain: E42:Identifier ! E42 Identifier
-range: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+range: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 is_a: P1i:identifies ! P1i bezeichnet
 
 [Typedef]
@@ -2822,7 +2840,7 @@ property_value: skos:prefLabel "αναφέρεται σε" xsd:string
 property_value: skos:prefLabel "ссылаeтся на" xsd:string
 property_value: skos:prefLabel "涉及" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object ! E89 Propositional Object
-range: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+range: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by ! P67i is referred to by
 
 [Typedef]
@@ -2843,7 +2861,7 @@ property_value: skos:prefLabel "é referenciado por" xsd:string
 property_value: skos:prefLabel "αναφέρεται από" xsd:string
 property_value: skos:prefLabel "на который ссылаeтся" xsd:string
 property_value: skos:prefLabel "被涉及" xsd:string
-domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Οντότητα CIDOC CRM
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity ! E1 Entité CRM
 range: http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object ! E89 Propositional Object
 
 [Typedef]
@@ -2972,7 +2990,7 @@ property_value: skos:prefLabel "trouxe à existência" xsd:string
 property_value: skos:prefLabel "γέννησε" xsd:string
 property_value: skos:prefLabel "запустил в дeйствиe" xsd:string
 property_value: skos:prefLabel "导致存在的是" xsd:string
-domain: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Начало Сущeствования
+domain: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Αρχή Ύπαρξης
 range: http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item ! E77 Ον
 is_a: http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of ! P12 συνέβη παρουσία του/της
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by ! P92i a commencé à exister par
@@ -2996,7 +3014,7 @@ property_value: skos:prefLabel "γεννήθηκε από" xsd:string
 property_value: skos:prefLabel "был пущeн в дeйствиe" xsd:string
 property_value: skos:prefLabel "使导致存在" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item ! E77 Ον
-range: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Начало Сущeствования
+range: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Αρχή Ύπαρξης
 is_a: http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at ! P12i war anwesend bei
 
 [Typedef]
@@ -3110,7 +3128,7 @@ property_value: skos:prefLabel "诞生了" xsd:string
 domain: E67:Birth ! E67 Birth
 range: E21:Person ! E21 Person
 is_a: http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence ! P92 brought into existence
-inverse_of: http://www.cidoc-crm.org/cidoc-crm/P98i_was_born ! P98i veio à vida pelo
+inverse_of: http://www.cidoc-crm.org/cidoc-crm/P98i_was_born ! P98i est né
 
 [Typedef]
 id: http://www.cidoc-crm.org/cidoc-crm/P98i_was_born

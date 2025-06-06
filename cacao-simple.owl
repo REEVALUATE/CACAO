@@ -9,11 +9,11 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://w3id.org/cacao/cacao/cacao-simple.owl">
-        <owl:versionIRI rdf:resource="http://w3id.org/cacao/cacao/releases/2025-05-08/cacao-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://w3id.org/cacao/cacao/releases/2025-05-11/cacao-simple.owl"/>
         <terms:description>None</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>Cultural Artefact Contextual Ontology</terms:title>
-        <owl:versionInfo>2025-05-08</owl:versionInfo>
+        <owl:versionInfo>2025-05-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -85,6 +85,33 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000000 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/cacao/CACAO_0000000">
+        <rdfs:range rdf:resource="http://w3id.org/cacao/CACAO_0000014"/>
+        <rdfs:label xml:lang="en">hasDomain</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000001 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/cacao/CACAO_0000001">
+        <rdfs:range rdf:resource="http://w3id.org/cacao/CACAO_0000015"/>
+        <rdfs:label xml:lang="en">hasEconomicRelevance</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000004 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/cacao/CACAO_0000004">
+        <rdfs:range rdf:resource="http://w3id.org/cacao/CACAO_0000016"/>
+        <rdfs:label xml:lang="en">hasSymbolism</rdfs:label>
+    </owl:ObjectProperty>
     
 
 

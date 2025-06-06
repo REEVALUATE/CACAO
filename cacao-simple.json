@@ -13,9 +13,9 @@
         "val" : "Cultural Artefact Contextual Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-05-08"
+        "val" : "2025-05-11"
       } ],
-      "version" : "http://w3id.org/cacao/cacao/releases/2025-05-08/cacao-simple.json"
+      "version" : "http://w3id.org/cacao/cacao/releases/2025-05-11/cacao-simple.json"
     },
     "nodes" : [ {
       "id" : "http://w3id.org/cacao/CACAO_0000002",
@@ -282,6 +282,21 @@
           "val" : "2025-04-12T09:17:34Z"
         } ]
       }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000000",
+      "lbl" : "hasDomain",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000001",
+      "lbl" : "hasEconomicRelevance",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000004",
+      "lbl" : "hasSymbolism",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
     }, {
       "id" : "http://w3id.org/cacao/CACAO_0000017",
       "lbl" : "genre",
@@ -638,6 +653,15 @@
     "domainRangeAxioms" : [ {
       "predicateId" : "http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator",
       "domainClassIds" : [ "http://w3id.org/cacao/CACAO_0000020" ]
+    }, {
+      "predicateId" : "http://w3id.org/cacao/CACAO_0000000",
+      "rangeClassIds" : [ "http://w3id.org/cacao/CACAO_0000014" ]
+    }, {
+      "predicateId" : "http://w3id.org/cacao/CACAO_0000001",
+      "rangeClassIds" : [ "http://w3id.org/cacao/CACAO_0000015" ]
+    }, {
+      "predicateId" : "http://w3id.org/cacao/CACAO_0000004",
+      "rangeClassIds" : [ "http://w3id.org/cacao/CACAO_0000016" ]
     }, {
       "predicateId" : "http://w3id.org/cacao/CACAO_0000017",
       "rangeClassIds" : [ "http://w3id.org/cacao/CACAO_0000027" ]

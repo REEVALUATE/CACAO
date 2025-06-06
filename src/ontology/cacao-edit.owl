@@ -50,6 +50,7 @@ Declaration(Class(<https://schema.org/Person>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000000>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000001>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000004>))
+Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000006>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000017>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000018>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000026>))
@@ -108,6 +109,13 @@ AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000004> "hasSymboli
 SubObjectPropertyOf(<http://w3id.org/cacao/CACAO_0000004> owl:topObjectProperty)
 ObjectPropertyDomain(<http://w3id.org/cacao/CACAO_0000004> <http://www.cidoc-crm.org/cidoc-crm/E70_Thing>)
 ObjectPropertyRange(<http://w3id.org/cacao/CACAO_0000004> <http://w3id.org/cacao/CACAO_0000016>)
+
+# Object Property: <http://w3id.org/cacao/CACAO_0000006> (expressedBy)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000006> "expressedBy"@en)
+SubObjectPropertyOf(<http://w3id.org/cacao/CACAO_0000006> owl:topObjectProperty)
+ObjectPropertyDomain(<http://w3id.org/cacao/CACAO_0000006> <http://www.cidoc-crm.org/cidoc-crm/E30_Right>)
+ObjectPropertyRange(<http://w3id.org/cacao/CACAO_0000006> <http://www.w3.org/ns/odrl/2/Policy>)
 
 # Object Property: <http://w3id.org/cacao/CACAO_0000017> (genre)
 
@@ -547,17 +555,13 @@ SubClassOf(<http://w3id.org/cacao/CACAO_0000036> <http://www.cidoc-crm.org/cidoc
 
 EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <https://schema.org/Person>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E30_Right> (E30 权限)
+# Class: <http://www.w3.org/ns/odrl/2/Asset> (Asset)
 
-EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E30_Right> <http://www.w3.org/ns/odrl/2/Policy>)
+SubClassOf(<http://www.w3.org/ns/odrl/2/Asset> <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> (E39 Дeйствующий Субъeкт)
+# Class: <http://www.w3.org/ns/odrl/2/Party> (Party)
 
-EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E39_Actor> <http://www.w3.org/ns/odrl/2/Party>)
-
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> (E72 Νομικό Αντικείμενο)
-
-EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> <http://www.w3.org/ns/odrl/2/Asset>)
+SubClassOf(<http://www.w3.org/ns/odrl/2/Party> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
 
 
 )
