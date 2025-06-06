@@ -261,7 +261,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <htt
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <http://www.cidoc-crm.org/cidoc-crm/E35_Title>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> (P102i est le titre de)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> (P102i is title of)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> "Quantification of the inverse property: many to many (0,n:0,n)
 
@@ -1181,7 +1181,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P141i_was_assigned_by> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P141i_was_assigned_by> <http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> (P14 wurde ausgeführt von)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> (P14 carried out by)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> "Quantification: many to many, necessary (1,n:0,n)
 
@@ -2957,7 +2957,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_lif
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <http://www.cidoc-crm.org/cidoc-crm/E67_Birth>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> (P98i veio à vida pelo)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> (P98i est né)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> "Quantification of the inverse property: one to many, dependent (0,n:1,1)
 
@@ -3297,7 +3297,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "物质对象"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> (E1 CRM实体)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> (E1 Οντότητα CIDOC CRM)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> "Scope note:
 This class comprises all things in the universe of discourse of the CIDOC Conceptual Reference Model. 
@@ -4314,7 +4314,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing> "Рукотворный Прeдмeт"@ru)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing> <http://www.cidoc-crm.org/cidoc-crm/E70_Thing>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> (E72 Νομικό Αντικείμενο)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> (E72 Объeкт Права)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> "Scope note:
 This class comprises those material or immaterial items to which instances of E30 Right, such as the right of ownership or use, can be applied. 
