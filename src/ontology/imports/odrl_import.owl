@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://w3id.org/cacao/cacao/imports/odrl_import.owl>
-<http://w3id.org/cacao/cacao/releases/2025-05-11/imports/odrl_import.owl>
-Annotation(owl:versionInfo "2025-05-11")
+<http://w3id.org/cacao/cacao/releases/2025-06-06/imports/odrl_import.owl>
+Annotation(owl:versionInfo "2025-06-06")
 
 Declaration(Class(<http://schema.org/Action>))
 Declaration(Class(<http://schema.org/Organization>))

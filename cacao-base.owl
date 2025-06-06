@@ -7,14 +7,15 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://w3id.org/cacao/cacao/cacao-base.owl">
-        <owl:versionIRI rdf:resource="http://w3id.org/cacao/cacao/releases/2025-05-08/cacao-base.owl"/>
+        <owl:versionIRI rdf:resource="http://w3id.org/cacao/cacao/releases/2025-06-06/cacao-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Cultural Artefact Contextual Ontology</dcterms:title>
-        <owl:versionInfo>2025-05-08</owl:versionInfo>
+        <owl:versionInfo>2025-06-06</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -27,6 +28,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
     
 
 
@@ -66,6 +79,12 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -74,6 +93,50 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000000 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/cacao/CACAO_0000000">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:range rdf:resource="http://w3id.org/cacao/CACAO_0000014"/>
+        <rdfs:label xml:lang="en">hasDomain</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000001 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/cacao/CACAO_0000001">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:range rdf:resource="http://w3id.org/cacao/CACAO_0000015"/>
+        <rdfs:label xml:lang="en">hasEconomicRelevance</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000004 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/cacao/CACAO_0000004">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:range rdf:resource="http://w3id.org/cacao/CACAO_0000016"/>
+        <rdfs:label xml:lang="en">hasSymbolism</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000006 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/cacao/CACAO_0000006">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E30_Right"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+        <rdfs:label xml:lang="en">expressedBy</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -281,7 +344,6 @@ The property partner denotes that an Actor has committed to a partnership with a
 
     <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000002">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Party"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-13T16:18:33Z</dcterms:date>
         <rdfs:comment xml:lang="en">Scope note:
@@ -296,6 +358,17 @@ Examples:
 - An AI-driven recommendation engine suggesting artifacts to users.​
 - A software bot performing automated data curation tasks.​</rdfs:comment>
         <rdfs:label xml:lang="en">User</rdfs:label>
+        <skos:definition>rdfs:comment &quot;Scope note:
+This class comprises agents, whether human individuals, groups, or non-human entities such as software applications, algorithms, or automated processes, that interact with digital systems or services by initiating actions, consuming resources, or producing outputs. Users are characterized by their capacity to perform intentional actions within a digital environment, for which they can be held responsible.​
+
+Unlike E21 Person, which is limited to real or assumed human individuals, the class User encompasses a broader range of agents, including non-human actors that operate autonomously or semi-autonomously within digital contexts. This includes, but is not limited to, artificial intelligence models, automated scripts, and other algorithmic entities that engage with web services or digital platforms.​
+
+The classification of an entity as a User does not necessitate legal personhood or consciousness; rather, it is based on the entity&apos;s functional role in interacting with digital systems in a manner that can be documented and attributed.​
+
+Examples:
+- A registered individual accessing an online museum catalog.​
+- An AI-driven recommendation engine suggesting artifacts to users.​
+- A software bot performing automated data curation tasks.​&quot;@en</skos:definition>
     </owl:Class>
     
 
@@ -315,6 +388,14 @@ Examples:
 - The source code of a software application developed to catalog museum collections.​
 - A dataset containing measurements of physical artefacts.</rdfs:comment>
         <rdfs:label xml:lang="en">Digital Artefact</rdfs:label>
+        <skos:definition>rdfs:comment &quot;Scope note:
+This class comprises identifiable immaterial items, such as digital images, texts, multimedia objects, computer program code, algorithms, or mathematical formulae, that are created, modified, or stored in digital formats. Digital Artefacts have an objectively recognizable structure and are documented as single units. They exist independently of specific physical carriers and can reside on multiple digital mediums simultaneously. While E73 Information Objects encompass a broad range of immaterial items, including those stored in human memory or on physical media, Digital Artefacts are specifically associated with digital technologies. This subclassification aids in distinguishing between general information entities and those uniquely tied to digital environments.​
+
+Examples:
+- A digital photograph of an ancient manuscript.​
+- A 3D model of an archaeological excavation site.​
+- The source code of a software application developed to catalog museum collections.​
+- A dataset containing measurements of physical artefacts.&quot;@en</skos:definition>
     </owl:Class>
     
 
@@ -325,8 +406,8 @@ Examples:
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:02:07Z</dcterms:date>
-        <dcterms:description>A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.</dcterms:description>
         <rdfs:label xml:lang="en">Historical Event</rdfs:label>
+        <skos:definition>A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.</skos:definition>
     </owl:Class>
     
 
@@ -351,6 +432,18 @@ Examples:
 - The Feminist Movement,
 - The LGBTQ+ Rights Movement</rdfs:comment>
         <rdfs:label xml:lang="en">Social movement</rdfs:label>
+        <skos:definition>rdfs:comment &quot;From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals
+
+Scope note:
+A Social Movement is a loosely organized effort by a large group of people to achieve a particular set of goals, typically aiming to promote or resist changes in society&apos;s structure or values. These movements are characterized by collective action, where individuals unite based on shared beliefs or objectives, often seeking social, political, economic, or cultural transformations. ​
+
+Social movements differ from formal organizations in that they may lack a defined organizational structure or formal membership, relying instead on informal networks and shared commitments. They can vary widely in size and scope, ranging from localized grassroots initiatives to large-scale national or international campaigns. The methods employed can include protests, demonstrations, advocacy, and other forms of collective action aimed at influencing public opinion and policy. ​
+
+Examples:
+- The Civil Rights Movement in the United States,
+- The Environmental Movement
+- The Feminist Movement,
+- The LGBTQ+ Rights Movement&quot;@en</skos:definition>
     </owl:Class>
     
 
@@ -372,6 +465,15 @@ Examples:
 - The Charismatic Movement, emphasizing direct personal experience of God through baptism with the Holy Spirit.​
 - The New Age Movement, a broad range of spiritual or religious beliefs and practices that developed in the Western world during the 1970s.</rdfs:comment>
         <rdfs:label xml:lang="en">Religious movement</rdfs:label>
+        <skos:definition>rdfs:comment &quot;Wikidata: Q1826286, social and ideological movement in the religious sphere
+
+Scope note:
+A Religious Movement is a collective effort by a group of people aiming to promote, reform, or resist changes within religious beliefs, practices, or institutions.
+
+Examples:
+- The Protestant Reformation in the 16th century, which led to significant changes in Christian practices and beliefs.​
+- The Charismatic Movement, emphasizing direct personal experience of God through baptism with the Holy Spirit.​
+- The New Age Movement, a broad range of spiritual or religious beliefs and practices that developed in the Western world during the 1970s.&quot;@en</skos:definition>
     </owl:Class>
     
 
@@ -393,6 +495,15 @@ Examples:
 - The Romanticism movement
 - The Alté Movement in Nigeria</rdfs:comment>
         <rdfs:label xml:lang="en">Cultural movement</rdfs:label>
+        <skos:definition>rdfs:comment &quot;Wikidata: Q2198855, period and movement in cultural history
+
+Scope note:
+A Cultural Movement is a collective effort by loosely affiliated individuals aiming to transform societal perspectives through the dissemination of ideas via various art forms and intentional lifestyle choices. These movements often overlap with social and political movements, making them integral to broader cultural transformations. ​
+
+Examples:
+- The Renaissance
+- The Romanticism movement
+- The Alté Movement in Nigeria&quot;@en</skos:definition>
     </owl:Class>
     
 
@@ -414,6 +525,15 @@ Examples:
 - The Tea Party Movement in the United States, advocating for reduced government spending and taxation.​
 - The Brexit Movement, which sought the United Kingdom&apos;s withdrawal from the European Union.</rdfs:comment>
         <rdfs:label xml:lang="en">Political movement</rdfs:label>
+        <skos:definition>rdfs:comment &quot;Wikidata: Q2738074, movement to obtain a political goal
+
+Scope note:
+A Political Movement is a collective effort by a group of people aiming to influence government policy, social values, or achieve specific political objectives. These movements are typically organized around particular issues or ideologies and seek to bring about change within the political system. They differ from political parties, which aim to gain political office, by focusing on specific goals rather than seeking electoral power. ​
+
+Examples:
+- The Anti-Apartheid Movement, which campaigned against the system of racial segregation in South Africa.​
+- The Tea Party Movement in the United States, advocating for reduced government spending and taxation.​
+- The Brexit Movement, which sought the United Kingdom&apos;s withdrawal from the European Union.&quot;</skos:definition>
     </owl:Class>
     
 
@@ -435,6 +555,16 @@ Examples:
 - Ethnomusicology​
 - Conservation Science</rdfs:comment>
         <rdfs:label xml:lang="en">Domain</rdfs:label>
+        <skos:definition>rdfs:comment &quot;Scope note:
+This class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​
+
+The Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of \&quot;archaeology\&quot; or \&quot;art history\&quot; helps in understanding its scholarly context and the methodologies applied to its study.​
+
+Examples:
+- Archaeology​
+- Art History​
+- Ethnomusicology​
+- Conservation Science&quot;@en</skos:definition>
     </owl:Class>
     
 
@@ -453,6 +583,16 @@ Examples:
 - The assessment of a museum&apos;s collection in terms of its monetary value and contribution to tourism revenue.​
 - Analysis of the financial significance of a historical event, such as the Industrial Revolution, on global markets.</rdfs:comment>
         <rdfs:label xml:lang="en">Economic Relevance</rdfs:label>
+        <skos:definition>rdfs:comment &quot;Scope note:
+This class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​
+
+The Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of \&quot;archaeology\&quot; or \&quot;art history\&quot; helps in understanding its scholarly context and the methodologies applied to its study.​
+
+Examples:
+- Archaeology​
+- Art History​
+- Ethnomusicology​
+- Conservation Science&quot;@en</skos:definition>
     </owl:Class>
     
 
@@ -464,6 +604,27 @@ Examples:
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-06T13:43:53Z</dcterms:date>
         <rdfs:label xml:lang="en">Symbolism</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises the concepts, ideas, or qualities that an object, character, or event represents. Symbolism provides a deeper, often abstract, meaning that transcends the literal interpretation of an entity, reflecting cultural, religious, or historical contexts. It serves to connect a physical or conceptual entity to a broader narrative or ideology.
+
+Examples:
+
+- A dove representing peace.
+- The lion as a symbol of courage and royalty.
+- A skull symbolizing death and mortality (memento mori).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000019 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000019">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000046"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:38:37Z</dce:date>
+        <rdfs:label xml:lang="en">Building</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises man-made structures with a roof and walls, created to stand more or less permanently in one place. It serves as a superclass for more specific types of structures defined by their function or form, such as religious, residential, or ceremonial buildings.</skos:definition>
     </owl:Class>
     
 
@@ -487,6 +648,31 @@ Examples:
 - The Metropolitan Museum of Art​
 - The National Museum of Denmark</rdfs:comment>
         <rdfs:label xml:lang="en">Museum</rdfs:label>
+        <skos:definition>rdfs:comment &quot;Scope note:
+This class comprises organizations that are established to collect, preserve, research, interpret, and exhibit tangible and intangible cultural heritage for the purposes of education, study, and enjoyment. Museums operate as collective entities, often encompassing various departments and professionals, and may be public or private institutions.​
+
+As instances of E74 Group, museums are characterized by their organizational structure and collective actions aimed at the stewardship of cultural artifacts and information. They may also engage in activities such as publishing, educational programming, and community outreach.​
+
+Museums can vary widely in scope and specialization, including but not limited to art museums, history museums, science museums, and ethnographic museums. Their defining feature is the systematic curation and presentation of collections to the public or specific audiences.​
+
+Examples:
+- The British Museum​
+- The Louvre​
+- The Metropolitan Museum of Art​
+- The National Museum of Denmark&quot;@en</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000021 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000021">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000019"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:45:29Z</dce:date>
+        <rdfs:label xml:lang="en">Religious Buildings</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises structures designed and utilized for religious or spiritual activities, including worship, ceremony, and contemplation. These buildings are often characterized by specific architectural forms and iconographic elements that reflect the beliefs and practices of a particular faith or denomination.</skos:definition>
     </owl:Class>
     
 
@@ -495,7 +681,6 @@ Examples:
 
     <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000022">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
-        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:32:18Z</dcterms:date>
         <rdfs:comment xml:lang="en">Scope note:
@@ -511,6 +696,18 @@ Examples:
 - William Shakespeare
 - Maya Deren</rdfs:comment>
         <rdfs:label xml:lang="en">Artist</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).
+
+Artists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.
+
+In bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.
+
+Examples:
+- Leonardo da Vinci
+- Frida Kahlo
+- William Shakespeare
+- Maya Deren</skos:definition>
     </owl:Class>
     
 
@@ -602,6 +799,21 @@ Examples:
 - Renaissance Art (artistic genre)​
 - Science Fiction (literary genre)</rdfs:comment>
         <rdfs:label xml:lang="en">Genre</rdfs:label>
+        <skos:definition>rdfs:comment &quot;Scope note:
+The Genre class encompasses concepts that denote specific categories or styles of creative works, including but not limited to:​
+
+- Music Genres: Such as classical, jazz, rock, or electronic.​
+- Film Genres: Including drama, comedy, thriller, or documentary.​
+- Artistic Genres: Like impressionism, surrealism, or abstract expressionism.​
+- Literary Genres: Such as fiction, non-fiction, poetry, or drama.​
+
+Instances of the Genre class provide a means to classify and contextualize creative works within their respective domains, enhancing the discovery and analysis of cultural heritage materials based on their genre-specific characteristics.​
+
+Examples:
+- Jazz (music genre)​
+- Film Noir (film genre)​
+- Renaissance Art (artistic genre)​
+- Science Fiction (literary genre)&quot;@en</skos:definition>
     </owl:Class>
     
 
@@ -623,6 +835,29 @@ Examples:
 - Engineering​
 - Performing Arts​</rdfs:comment>
         <rdfs:label xml:lang="en">Field Of Work</rdfs:label>
+        <skos:definition>rdfs:comment &quot;Scope note:
+This class comprises concepts that denote areas of professional, academic, or creative activity in which individuals, groups, or organizations engage. Instances of Field of Work represent specific domains of expertise or practice, such as \&quot;architecture,\&quot; \&quot;literature,\&quot; or \&quot;engineering,\&quot; and are used to classify and contextualize the roles, contributions, or affiliations of persons within the CIDOC CRM framework.​
+
+By associating persons with a Field of Work, one can provide semantic context regarding the nature of their activities or specializations. 
+
+Examples:
+- Architecture​
+- Literature​
+- Engineering​
+- Performing Arts​&quot;@en</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000029 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000029">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000021"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:45:45Z</dce:date>
+        <rdfs:label xml:lang="en">Churches</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises buildings specifically designed and used for public Christian worship, prayer, and ceremony. The architectural form and features of a church are often symbolic of Christian beliefs and liturgical practices.</skos:definition>
     </owl:Class>
     
 
@@ -642,6 +877,600 @@ Examples:
 - Modernism
 - Existentialism</rdfs:comment>
         <rdfs:label xml:lang="en">Movement</rdfs:label>
+        <skos:definition>rdfs:comment &quot;Scope note:
+This class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. 
+
+Examples:
+- Impressionism
+- Romanticism
+- Modernism
+- Existentialism&quot;@en</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000037 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000037">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000029"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:46:10Z</dce:date>
+        <rdfs:label xml:lang="en">Basilicas</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises churches that have been granted special privileges by the Pope due to their historical, spiritual, or architectural significance. In architectural terms, it can also refer to a building style characterized by a rectangular plan with a central nave and aisles, and an apse at one or both ends.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000041 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000041">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000029"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:46:32Z</dce:date>
+        <rdfs:label xml:lang="en">Cathedrals</rdfs:label>
+        <skos:definition>This class comprises the principal church of a diocese, containing the bishop&apos;s official throne (cathedra). Cathedrals serve as the central church of a region and are often among the most architecturally significant and historically important buildings in their area.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000042 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000042">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000021"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:47:51Z</dce:date>
+        <rdfs:label xml:lang="en">Chapels</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises small places of Christian worship, which may be part of a larger institution (like a cathedral, palace, or hospital), or can be a standalone building. They are often intended for private prayer or smaller services.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000043 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000043">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000021"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:48:27Z</dce:date>
+        <rdfs:label xml:lang="en">Temples</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises buildings reserved for religious or spiritual rituals and activities such as prayer and sacrifice. It is a term used for houses of worship in many different religions.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000044 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000044">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000021"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:48:42Z</dce:date>
+        <rdfs:label xml:lang="en">Domus Ecclesiae</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises private buildings adapted for Christian worship. These &quot;house churches&quot; were the earliest places of public worship for the Christian community, often established within existing residential structures.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000045 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000045">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000021"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:49:10Z</dce:date>
+        <rdfs:label xml:lang="en">Mosques</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises buildings that serve as places of worship for Muslims. Mosques are characterized by specific features such as a mihrab (prayer niche indicating the direction of Mecca) and a minbar (pulpit).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000046 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000046">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000023"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:50:08Z</dce:date>
+        <rdfs:label xml:lang="en">Structures</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises man-made objects that are constructed or organized in a particular way, often on a large scale. This class is a superclass for buildings and other constructed entities that may not be fully enclosed.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000049 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000049">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000024"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:52:27Z</dce:date>
+        <rdfs:label xml:lang="en">Mosaics</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises artworks created by assembling small pieces of material, such as stone, glass, or ceramic, known as tesserae. These pieces are set into an adhesive surface, such as plaster or mortar, to form an image or pattern. Mosaics are typically used to decorate floors, walls, or ceilings.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000050 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000050">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000023"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:54:47Z</dce:date>
+        <rdfs:label xml:lang="en">Open Spaces</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises unenclosed areas within a built environment that are designed for public use, gathering, or passage. These spaces are defined by the architectural and landscape elements that surround them.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000051 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000051">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000050"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:54:51Z</dce:date>
+        <rdfs:label xml:lang="en">Forums</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises public squares or marketplaces in ancient Roman cities, which served as the center for judicial, civic, and commercial activities. They were typically surrounded by public buildings and colonnades.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000052 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000052">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000019"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:55:50Z</dce:date>
+        <rdfs:label xml:lang="en">Residential Buildings</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises buildings designed and used for human habitation. It encompasses various forms of domestic architecture, from single-family homes to larger, more complex dwellings.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000053 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000053">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000052"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:56:01Z</dce:date>
+        <rdfs:label xml:lang="en">Houses</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises buildings designed as a dwelling for a single family or a small group of individuals. It is a fundamental unit of residential architecture.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000054 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000054">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000053"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:56:22Z</dce:date>
+        <rdfs:label xml:lang="en">Villas</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises large, luxurious country houses with substantial grounds. Originally referring to large Roman country estates, the term is now used for significant rural or suburban residences.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000055 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000055">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000053"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:56:56Z</dce:date>
+        <rdfs:label xml:lang="en">Domus</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises a type of house occupied by the upper classes and some wealthy freedmen during the Roman Republic and Empire.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000056 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000056">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000023"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:58:09Z</dce:date>
+        <rdfs:label xml:lang="en">Complexes</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises groups of interrelated buildings and structures that are designed to function as a single, integrated unit. These can be defined by a common purpose, architectural style, or historical period.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000057 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000057">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000056"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:58:22Z</dce:date>
+        <rdfs:label xml:lang="en">Cemeteries</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises designated areas where the remains of deceased people are buried or otherwise interred. They are characterized by the presence of graves, tombs, or other forms of funerary monuments.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000058 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000058">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000057"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:58:31Z</dce:date>
+        <rdfs:label xml:lang="en">Necropolis</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises large, designed cemeteries or burial sites from ancient civilizations. The term literally means &quot;city of the dead,&quot; and these sites often feature elaborate tomb structures.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000059 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000059">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000019"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:02:06Z</dce:date>
+        <rdfs:label xml:lang="en">Ceremonial Buildings</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises buildings designed primarily for holding rites, ceremonies, or formal public events. Their function may be religious, civic, or commemorative in nature.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000060 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000060">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000059"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:02:13Z</dce:date>
+        <rdfs:label xml:lang="en">Tombs</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises structures or chambers used for the burial or interment of the dead. Tombs can range from simple graves to elaborate mausoleums and pyramids.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000061 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000061">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000024"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:10:26Z</dce:date>
+        <rdfs:label xml:lang="en">Painting</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises artworks created by applying paint, pigment, color or other medium to a solid surface (called the &quot;matrix&quot; or &quot;support&quot;) such as a canvas, wall, or panel. The medium is commonly applied to the base with a brush, but other implements, such as knives, sponges, and airbrushes, can be used.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000062 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000062">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000023"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:01:48Z</dce:date>
+        <rdfs:label xml:lang="en">Clothing</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises items worn on the body. Typically, clothing is made of fabrics or textiles, but over time it has included garments made from animal skin and other thin sheets of materials and natural products found in the environment, put together.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000063 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000063">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000062"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:03:15Z</dce:date>
+        <rdfs:label xml:lang="en">Main Garments</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises the primary items of clothing that form the basis of an outfit, covering the torso and/or lower body.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000064 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000064">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000062"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:03:22Z</dce:date>
+        <rdfs:label xml:lang="en">Outerwear</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises garments worn over other clothes, especially for warmth or protection when outdoors.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000065 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000065">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000062"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:03:30Z</dce:date>
+        <rdfs:label xml:lang="en">Underwear</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises garments worn next to the skin, underneath other clothing.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000066 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000066">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000063"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:03:44Z</dce:date>
+        <rdfs:label xml:lang="en">Dresses</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises one-piece garments for a woman or girl that consist of a bodice and a skirt.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000067 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000067">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000063"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000064"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:04:01Z</dce:date>
+        <rdfs:label xml:lang="en">Coats</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises outer garments with sleeves, worn outdoors over other clothes for warmth or protection.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000068 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000068">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000063"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:04:29Z</dce:date>
+        <rdfs:label xml:lang="en">Plaids</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises a piece of cloth, typically with a tartan pattern, worn as part of Scottish Highland dress. It is draped over the shoulder as an accessory or used as a blanket.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000069 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000069">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000063"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:04:34Z</dce:date>
+        <rdfs:label xml:lang="en">Robes</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises long, loose outer garments, often worn as a sign of office or for ceremonial occasions, or informally at home.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000070 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000070">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000063"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:04:39Z</dce:date>
+        <rdfs:label xml:lang="en">Suits</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises a set of outer clothes made of the same fabric and designed to be worn together, typically consisting of at least a jacket and trousers or a skirt.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000071 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000071">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000063"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:04:46Z</dce:date>
+        <rdfs:label xml:lang="en">Tunics</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises a simple garment, typically sleeveless or with short sleeves, that hangs from the shoulders to a length between the hips and the knees. It was a common garment in ancient Greece and Rome and remains a feature of some modern clothing styles.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000072 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000072">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000064"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:06:41Z</dce:date>
+        <rdfs:label xml:lang="en">Cloaks</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises sleeveless outdoor overgarments which drape from the shoulders. They are worn for warmth, protection, or as part of ceremonial or formal dress.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000074 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000074">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000065"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:08:29Z</dce:date>
+        <rdfs:label xml:lang="en">Chemises</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises a simple, loose-fitting garment worn next to the skin, serving as a shirt or undergarment for both men and women in various historical periods. It protected outer garments from sweat and body oils.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000075 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000075">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000065"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:08:38Z</dce:date>
+        <rdfs:label xml:lang="en">Underpants</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises undergarments worn on the lower part of the body.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000076 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000076">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000065"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:08:46Z</dce:date>
+        <rdfs:label xml:lang="en">Underdresses</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises a simple dress-like garment worn underneath a more elaborate outer dress, either for warmth, to provide structure, or to protect the outer layer.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000077 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000077">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000065"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:09:03Z</dce:date>
+        <rdfs:label xml:lang="en">Lingerie</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises women&apos;s underwear and nightclothes, often characterized by being lightweight, decorative, and made from fine materials.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000078 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000078">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000065"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:09:13Z</dce:date>
+        <rdfs:label xml:lang="en">Underskirts</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises skirts worn underneath an outer skirt for warmth, modesty, or to give the outer skirt a desired shape and volume.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000079 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000079">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000023"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:16:03Z</dce:date>
+        <rdfs:label xml:lang="en">Documents</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises physical artefacts consisting of a piece of written, printed, or electronic matter that provides information or evidence or that serves as an official record.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000080 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000080">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000079"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:16:12Z</dce:date>
+        <rdfs:label xml:lang="en">Letters</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises written messages from one person or group to another, conveyed by a postal service or by hand. They are a form of personal or official communication recorded on a physical medium.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000081 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000081">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000024"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000082"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:18:13Z</dce:date>
+        <rdfs:label xml:lang="en">Medals</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises small, portable artistic objects, typically made of metal and circular in shape, issued to commemorate a person or event, or as an award for distinction.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000082 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000082">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000023"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:23:00Z</dce:date>
+        <rdfs:label xml:lang="en">Awards</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises tangible items given to a person or group in recognition of excellence in a certain field. They serve as a physical token of an honor or prize.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000083 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000083">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000082"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T16:23:05Z</dce:date>
+        <rdfs:label xml:lang="en">Cup</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises trophy cups, which are awards in the form of a drinking vessel, often made of precious metal and mounted on a base, given as a prize in a competition.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000086 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000086">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000003"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T17:06:03Z</dce:date>
+        <rdfs:label xml:lang="en">Image</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises digital artefacts that represent visual information, such as a photograph, drawing, or graphic. They are stored as a raster or vector file format.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000087 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000087">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000003"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T17:06:09Z</dce:date>
+        <rdfs:label xml:lang="en">3D Object</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises digital artefacts that represent a three-dimensional object using a collection of points in 3D space, connected by various geometric entities such as triangles, lines, and curved surfaces.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000088 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000088">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000003"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T17:06:14Z</dce:date>
+        <rdfs:label xml:lang="en">Video</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises digital artefacts consisting of a recording of moving visual images. It can include synchronized audio.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000089 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000089">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000003"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T17:06:18Z</dce:date>
+        <rdfs:label xml:lang="en">Audio</rdfs:label>
+        <skos:definition>Scope note:
+This class comprises digital artefacts consisting of sound recordings. This includes music, spoken word, and other forms of auditory information stored in a digital format.</skos:definition>
     </owl:Class>
     
 
@@ -664,6 +1493,12 @@ Examples:
     
 
 
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E30_Right -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E30_Right"/>
+    
+
+
     <!-- http://www.cidoc-crm.org/cidoc-crm/E39_Actor -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
@@ -682,6 +1517,12 @@ Examples:
     
 
 
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E70_Thing -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+    
+
+
     <!-- http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
@@ -694,15 +1535,9 @@ Examples:
     
 
 
-    <!-- http://www.w3.org/ns/odrl/2/Party -->
+    <!-- http://www.w3.org/ns/odrl/2/Policy -->
 
-    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Party"/>
-    
-
-
-    <!-- https://schema.org/Person -->
-
-    <owl:Class rdf:about="https://schema.org/Person"/>
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Policy"/>
 </rdf:RDF>
 
 

@@ -27,14 +27,62 @@ Declaration(Class(<http://w3id.org/cacao/CACAO_0000013>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000014>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000015>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000016>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000019>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000020>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000021>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000022>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000023>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000024>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000025>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000027>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000028>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000029>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000036>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000037>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000041>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000042>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000043>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000044>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000045>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000046>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000049>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000050>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000051>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000052>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000053>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000054>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000055>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000056>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000057>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000058>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000059>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000060>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000061>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000062>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000063>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000064>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000065>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000066>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000067>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000068>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000069>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000070>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000071>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000072>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000074>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000075>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000076>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000077>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000078>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000079>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000080>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000081>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000082>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000083>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000086>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000087>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000088>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000089>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E21_Person>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E30_Right>))
@@ -50,6 +98,7 @@ Declaration(Class(<https://schema.org/Person>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000000>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000001>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000004>))
+Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000006>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000017>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000018>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000026>))
@@ -62,6 +111,8 @@ Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000035>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000038>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000039>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000040>))
+Declaration(AnnotationProperty(dce:creator))
+Declaration(AnnotationProperty(dce:date))
 Declaration(AnnotationProperty(dcterms:contributor))
 Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
@@ -108,6 +159,13 @@ AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000004> "hasSymboli
 SubObjectPropertyOf(<http://w3id.org/cacao/CACAO_0000004> owl:topObjectProperty)
 ObjectPropertyDomain(<http://w3id.org/cacao/CACAO_0000004> <http://www.cidoc-crm.org/cidoc-crm/E70_Thing>)
 ObjectPropertyRange(<http://w3id.org/cacao/CACAO_0000004> <http://w3id.org/cacao/CACAO_0000016>)
+
+# Object Property: <http://w3id.org/cacao/CACAO_0000006> (expressedBy)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000006> "expressedBy"@en)
+SubObjectPropertyOf(<http://w3id.org/cacao/CACAO_0000006> owl:topObjectProperty)
+ObjectPropertyDomain(<http://w3id.org/cacao/CACAO_0000006> <http://www.cidoc-crm.org/cidoc-crm/E30_Right>)
+ObjectPropertyRange(<http://w3id.org/cacao/CACAO_0000006> <http://www.w3.org/ns/odrl/2/Policy>)
 
 # Object Property: <http://w3id.org/cacao/CACAO_0000017> (genre)
 
@@ -242,6 +300,22 @@ ObjectPropertyRange(<http://w3id.org/cacao/CACAO_0000040> <http://www.cidoc-crm.
 
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> <http://w3id.org/cacao/CACAO_0000020>)
 
+# Object Property: <http://xmlns.com/foaf/0.1/interest> (interest)
+
+ObjectPropertyDomain(<http://xmlns.com/foaf/0.1/interest> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+
+# Object Property: <https://schema.org/nationality> (nationality)
+
+ObjectPropertyDomain(<https://schema.org/nationality> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+
+# Object Property: <https://schema.org/roleName> (roleName)
+
+ObjectPropertyDomain(<https://schema.org/roleName> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+
+# Object Property: <https://schema.org/specialty> (specialty)
+
+ObjectPropertyDomain(<https://schema.org/specialty> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+
 
 
 ############################
@@ -264,6 +338,17 @@ Examples:
 - An AI-driven recommendation engine suggesting artifacts to users.​
 - A software bot performing automated data curation tasks.​"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000002> "User"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000002> "rdfs:comment \"Scope note:
+This class comprises agents, whether human individuals, groups, or non-human entities such as software applications, algorithms, or automated processes, that interact with digital systems or services by initiating actions, consuming resources, or producing outputs. Users are characterized by their capacity to perform intentional actions within a digital environment, for which they can be held responsible.​
+
+Unlike E21 Person, which is limited to real or assumed human individuals, the class User encompasses a broader range of agents, including non-human actors that operate autonomously or semi-autonomously within digital contexts. This includes, but is not limited to, artificial intelligence models, automated scripts, and other algorithmic entities that engage with web services or digital platforms.​
+
+The classification of an entity as a User does not necessitate legal personhood or consciousness; rather, it is based on the entity's functional role in interacting with digital systems in a manner that can be documented and attributed.​
+
+Examples:
+- A registered individual accessing an online museum catalog.​
+- An AI-driven recommendation engine suggesting artifacts to users.​
+- A software bot performing automated data curation tasks.​\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000002> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000003> (Digital Artefact)
@@ -279,14 +364,22 @@ Examples:
 - The source code of a software application developed to catalog museum collections.​
 - A dataset containing measurements of physical artefacts."@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000003> "Digital Artefact"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000003> "rdfs:comment \"Scope note:
+This class comprises identifiable immaterial items, such as digital images, texts, multimedia objects, computer program code, algorithms, or mathematical formulae, that are created, modified, or stored in digital formats. Digital Artefacts have an objectively recognizable structure and are documented as single units. They exist independently of specific physical carriers and can reside on multiple digital mediums simultaneously. While E73 Information Objects encompass a broad range of immaterial items, including those stored in human memory or on physical media, Digital Artefacts are specifically associated with digital technologies. This subclassification aids in distinguishing between general information entities and those uniquely tied to digital environments.​
+
+Examples:
+- A digital photograph of an ancient manuscript.​
+- A 3D model of an archaeological excavation site.​
+- The source code of a software application developed to catalog museum collections.​
+- A dataset containing measurements of physical artefacts.\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000003> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000005> (Historical Event)
 
 AnnotationAssertion(dcterms:contributor <http://w3id.org/cacao/CACAO_0000005> <https://orcid.org/0000-0002-0905-7033>)
 AnnotationAssertion(dcterms:date <http://w3id.org/cacao/CACAO_0000005> "2024-11-19T12:02:07Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:description <http://w3id.org/cacao/CACAO_0000005> "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.")
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000005> "Historical Event"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000005> "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000005> <http://www.cidoc-crm.org/cidoc-crm/E5_Event>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000010> (Social movement)
@@ -307,6 +400,18 @@ Examples:
 - The Feminist Movement,
 - The LGBTQ+ Rights Movement"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000010> "Social movement"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000010> "rdfs:comment \"From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals
+
+Scope note:
+A Social Movement is a loosely organized effort by a large group of people to achieve a particular set of goals, typically aiming to promote or resist changes in society's structure or values. These movements are characterized by collective action, where individuals unite based on shared beliefs or objectives, often seeking social, political, economic, or cultural transformations. ​
+
+Social movements differ from formal organizations in that they may lack a defined organizational structure or formal membership, relying instead on informal networks and shared commitments. They can vary widely in size and scope, ranging from localized grassroots initiatives to large-scale national or international campaigns. The methods employed can include protests, demonstrations, advocacy, and other forms of collective action aimed at influencing public opinion and policy. ​
+
+Examples:
+- The Civil Rights Movement in the United States,
+- The Environmental Movement
+- The Feminist Movement,
+- The LGBTQ+ Rights Movement\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000010> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000011> (Religious movement)
@@ -324,6 +429,15 @@ Examples:
 - The Charismatic Movement, emphasizing direct personal experience of God through baptism with the Holy Spirit.​
 - The New Age Movement, a broad range of spiritual or religious beliefs and practices that developed in the Western world during the 1970s."@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000011> "Religious movement"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000011> "rdfs:comment \"Wikidata: Q1826286, social and ideological movement in the religious sphere
+
+Scope note:
+A Religious Movement is a collective effort by a group of people aiming to promote, reform, or resist changes within religious beliefs, practices, or institutions.
+
+Examples:
+- The Protestant Reformation in the 16th century, which led to significant changes in Christian practices and beliefs.​
+- The Charismatic Movement, emphasizing direct personal experience of God through baptism with the Holy Spirit.​
+- The New Age Movement, a broad range of spiritual or religious beliefs and practices that developed in the Western world during the 1970s.\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000011> <http://w3id.org/cacao/CACAO_0000010>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000012> (Cultural movement)
@@ -341,6 +455,15 @@ Examples:
 - The Romanticism movement
 - The Alté Movement in Nigeria"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000012> "Cultural movement"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000012> "rdfs:comment \"Wikidata: Q2198855, period and movement in cultural history
+
+Scope note:
+A Cultural Movement is a collective effort by loosely affiliated individuals aiming to transform societal perspectives through the dissemination of ideas via various art forms and intentional lifestyle choices. These movements often overlap with social and political movements, making them integral to broader cultural transformations. ​
+
+Examples:
+- The Renaissance
+- The Romanticism movement
+- The Alté Movement in Nigeria\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000012> <http://w3id.org/cacao/CACAO_0000010>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000013> (Political movement)
@@ -358,6 +481,15 @@ Examples:
 - The Tea Party Movement in the United States, advocating for reduced government spending and taxation.​
 - The Brexit Movement, which sought the United Kingdom's withdrawal from the European Union.")
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000013> "Political movement"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000013> "rdfs:comment \"Wikidata: Q2738074, movement to obtain a political goal
+
+Scope note:
+A Political Movement is a collective effort by a group of people aiming to influence government policy, social values, or achieve specific political objectives. These movements are typically organized around particular issues or ideologies and seek to bring about change within the political system. They differ from political parties, which aim to gain political office, by focusing on specific goals rather than seeking electoral power. ​
+
+Examples:
+- The Anti-Apartheid Movement, which campaigned against the system of racial segregation in South Africa.​
+- The Tea Party Movement in the United States, advocating for reduced government spending and taxation.​
+- The Brexit Movement, which sought the United Kingdom's withdrawal from the European Union.\"")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000013> <http://w3id.org/cacao/CACAO_0000010>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000014> (Domain)
@@ -375,6 +507,16 @@ Examples:
 - Ethnomusicology​
 - Conservation Science"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000014> "Domain"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000014> "rdfs:comment \"Scope note:
+This class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​
+
+The Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of \\\"archaeology\\\" or \\\"art history\\\" helps in understanding its scholarly context and the methodologies applied to its study.​
+
+Examples:
+- Archaeology​
+- Art History​
+- Ethnomusicology​
+- Conservation Science\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000014> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000015> (Economic Relevance)
@@ -389,6 +531,16 @@ Examples:
 - The assessment of a museum's collection in terms of its monetary value and contribution to tourism revenue.​
 - Analysis of the financial significance of a historical event, such as the Industrial Revolution, on global markets."@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000015> "Economic Relevance"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000015> "rdfs:comment \"Scope note:
+This class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​
+
+The Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of \\\"archaeology\\\" or \\\"art history\\\" helps in understanding its scholarly context and the methodologies applied to its study.​
+
+Examples:
+- Archaeology​
+- Art History​
+- Ethnomusicology​
+- Conservation Science\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000015> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000016> (Symbolism)
@@ -396,7 +548,24 @@ SubClassOf(<http://w3id.org/cacao/CACAO_0000015> <http://www.cidoc-crm.org/cidoc
 AnnotationAssertion(dcterms:contributor <http://w3id.org/cacao/CACAO_0000016> <https://orcid.org/0000-0002-0905-7033>)
 AnnotationAssertion(dcterms:date <http://w3id.org/cacao/CACAO_0000016> "2024-12-06T13:43:53Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000016> "Symbolism"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000016> "Scope note:
+This class comprises the concepts, ideas, or qualities that an object, character, or event represents. Symbolism provides a deeper, often abstract, meaning that transcends the literal interpretation of an entity, reflecting cultural, religious, or historical contexts. It serves to connect a physical or conceptual entity to a broader narrative or ideology.
+
+Examples:
+
+- A dove representing peace.
+- The lion as a symbol of courage and royalty.
+- A skull symbolizing death and mortality (memento mori).")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000016> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000019> (Building)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000019> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000019> "2025-06-06T13:38:37Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000019> "Building"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000019> "Scope note:
+This class comprises man-made structures with a roof and walls, created to stand more or less permanently in one place. It serves as a superclass for more specific types of structures defined by their function or form, such as religious, residential, or ceremonial buildings.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000019> <http://w3id.org/cacao/CACAO_0000046>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000020> (Museum)
 
@@ -415,7 +584,28 @@ Examples:
 - The Metropolitan Museum of Art​
 - The National Museum of Denmark"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000020> "Museum"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000020> "rdfs:comment \"Scope note:
+This class comprises organizations that are established to collect, preserve, research, interpret, and exhibit tangible and intangible cultural heritage for the purposes of education, study, and enjoyment. Museums operate as collective entities, often encompassing various departments and professionals, and may be public or private institutions.​
+
+As instances of E74 Group, museums are characterized by their organizational structure and collective actions aimed at the stewardship of cultural artifacts and information. They may also engage in activities such as publishing, educational programming, and community outreach.​
+
+Museums can vary widely in scope and specialization, including but not limited to art museums, history museums, science museums, and ethnographic museums. Their defining feature is the systematic curation and presentation of collections to the public or specific audiences.​
+
+Examples:
+- The British Museum​
+- The Louvre​
+- The Metropolitan Museum of Art​
+- The National Museum of Denmark\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000020> <http://www.cidoc-crm.org/cidoc-crm/E74_Group>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000021> (Religious Buildings)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000021> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000021> "2025-06-06T13:45:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000021> "Religious Buildings"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000021> "Scope note:
+This class comprises structures designed and utilized for religious or spiritual activities, including worship, ceremony, and contemplation. These buildings are often characterized by specific architectural forms and iconographic elements that reflect the beliefs and practices of a particular faith or denomination.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000021> <http://w3id.org/cacao/CACAO_0000019>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000022> (Artist)
 
@@ -434,6 +624,18 @@ Examples:
 - William Shakespeare
 - Maya Deren"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000022> "Artist"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000022> "Scope note:
+This class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).
+
+Artists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.
+
+In bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.
+
+Examples:
+- Leonardo da Vinci
+- Frida Kahlo
+- William Shakespeare
+- Maya Deren")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000022> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000023> (Physical Artefact)
@@ -509,6 +711,21 @@ Examples:
 - Renaissance Art (artistic genre)​
 - Science Fiction (literary genre)"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000027> "Genre"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000027> "rdfs:comment \"Scope note:
+The Genre class encompasses concepts that denote specific categories or styles of creative works, including but not limited to:​
+
+- Music Genres: Such as classical, jazz, rock, or electronic.​
+- Film Genres: Including drama, comedy, thriller, or documentary.​
+- Artistic Genres: Like impressionism, surrealism, or abstract expressionism.​
+- Literary Genres: Such as fiction, non-fiction, poetry, or drama.​
+
+Instances of the Genre class provide a means to classify and contextualize creative works within their respective domains, enhancing the discovery and analysis of cultural heritage materials based on their genre-specific characteristics.​
+
+Examples:
+- Jazz (music genre)​
+- Film Noir (film genre)​
+- Renaissance Art (artistic genre)​
+- Science Fiction (literary genre)\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000027> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000028> (Field Of Work)
@@ -526,7 +743,26 @@ Examples:
 - Engineering​
 - Performing Arts​"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000028> "Field Of Work"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000028> "rdfs:comment \"Scope note:
+This class comprises concepts that denote areas of professional, academic, or creative activity in which individuals, groups, or organizations engage. Instances of Field of Work represent specific domains of expertise or practice, such as \\\"architecture,\\\" \\\"literature,\\\" or \\\"engineering,\\\" and are used to classify and contextualize the roles, contributions, or affiliations of persons within the CIDOC CRM framework.​
+
+By associating persons with a Field of Work, one can provide semantic context regarding the nature of their activities or specializations. 
+
+Examples:
+- Architecture​
+- Literature​
+- Engineering​
+- Performing Arts​\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000028> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000029> (Churches)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000029> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000029> "2025-06-06T13:45:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000029> "Churches"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000029> "Scope note:
+This class comprises buildings specifically designed and used for public Christian worship, prayer, and ceremony. The architectural form and features of a church are often symbolic of Christian beliefs and liturgical practices.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000029> <http://w3id.org/cacao/CACAO_0000021>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000036> (Movement)
 
@@ -541,23 +777,429 @@ Examples:
 - Modernism
 - Existentialism"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000036> "Movement"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000036> "rdfs:comment \"Scope note:
+This class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. 
+
+Examples:
+- Impressionism
+- Romanticism
+- Modernism
+- Existentialism\"@en")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000036> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E21_Person> (E21 Person)
+# Class: <http://w3id.org/cacao/CACAO_0000037> (Basilicas)
 
-EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <https://schema.org/Person>)
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000037> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000037> "2025-06-06T13:46:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000037> "Basilicas"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000037> "Scope note:
+This class comprises churches that have been granted special privileges by the Pope due to their historical, spiritual, or architectural significance. In architectural terms, it can also refer to a building style characterized by a rectangular plan with a central nave and aisles, and an apse at one or both ends.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000037> <http://w3id.org/cacao/CACAO_0000029>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E30_Right> (E30 权限)
+# Class: <http://w3id.org/cacao/CACAO_0000041> (Cathedrals)
 
-EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E30_Right> <http://www.w3.org/ns/odrl/2/Policy>)
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000041> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000041> "2025-06-06T13:46:32Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000041> "Cathedrals"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000041> "This class comprises the principal church of a diocese, containing the bishop's official throne (cathedra). Cathedrals serve as the central church of a region and are often among the most architecturally significant and historically important buildings in their area.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000041> <http://w3id.org/cacao/CACAO_0000029>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> (E39 Дeйствующий Субъeкт)
+# Class: <http://w3id.org/cacao/CACAO_0000042> (Chapels)
 
-EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E39_Actor> <http://www.w3.org/ns/odrl/2/Party>)
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000042> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000042> "2025-06-06T13:47:51Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000042> "Chapels"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000042> "Scope note:
+This class comprises small places of Christian worship, which may be part of a larger institution (like a cathedral, palace, or hospital), or can be a standalone building. They are often intended for private prayer or smaller services.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000042> <http://w3id.org/cacao/CACAO_0000021>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> (E72 Νομικό Αντικείμενο)
+# Class: <http://w3id.org/cacao/CACAO_0000043> (Temples)
 
-EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> <http://www.w3.org/ns/odrl/2/Asset>)
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000043> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000043> "2025-06-06T13:48:27Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000043> "Temples"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000043> "Scope note:
+This class comprises buildings reserved for religious or spiritual rituals and activities such as prayer and sacrifice. It is a term used for houses of worship in many different religions.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000043> <http://w3id.org/cacao/CACAO_0000021>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000044> (Domus Ecclesiae)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000044> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000044> "2025-06-06T13:48:42Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000044> "Domus Ecclesiae"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000044> "Scope note:
+This class comprises private buildings adapted for Christian worship. These \"house churches\" were the earliest places of public worship for the Christian community, often established within existing residential structures.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000044> <http://w3id.org/cacao/CACAO_0000021>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000045> (Mosques)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000045> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000045> "2025-06-06T13:49:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000045> "Mosques"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000045> "Scope note:
+This class comprises buildings that serve as places of worship for Muslims. Mosques are characterized by specific features such as a mihrab (prayer niche indicating the direction of Mecca) and a minbar (pulpit).")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000045> <http://w3id.org/cacao/CACAO_0000021>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000046> (Structures)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000046> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000046> "2025-06-06T13:50:08Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000046> "Structures"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000046> "Scope note:
+This class comprises man-made objects that are constructed or organized in a particular way, often on a large scale. This class is a superclass for buildings and other constructed entities that may not be fully enclosed.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000046> <http://w3id.org/cacao/CACAO_0000023>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000049> (Mosaics)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000049> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000049> "2025-06-06T13:52:27Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000049> "Mosaics"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000049> "Scope note:
+This class comprises artworks created by assembling small pieces of material, such as stone, glass, or ceramic, known as tesserae. These pieces are set into an adhesive surface, such as plaster or mortar, to form an image or pattern. Mosaics are typically used to decorate floors, walls, or ceilings.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000049> <http://w3id.org/cacao/CACAO_0000024>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000050> (Open Spaces)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000050> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000050> "2025-06-06T13:54:47Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000050> "Open Spaces"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000050> "Scope note:
+This class comprises unenclosed areas within a built environment that are designed for public use, gathering, or passage. These spaces are defined by the architectural and landscape elements that surround them.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000050> <http://w3id.org/cacao/CACAO_0000023>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000051> (Forums)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000051> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000051> "2025-06-06T13:54:51Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000051> "Forums"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000051> "Scope note:
+This class comprises public squares or marketplaces in ancient Roman cities, which served as the center for judicial, civic, and commercial activities. They were typically surrounded by public buildings and colonnades.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000051> <http://w3id.org/cacao/CACAO_0000050>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000052> (Residential Buildings)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000052> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000052> "2025-06-06T13:55:50Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000052> "Residential Buildings"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000052> "Scope note:
+This class comprises buildings designed and used for human habitation. It encompasses various forms of domestic architecture, from single-family homes to larger, more complex dwellings.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000052> <http://w3id.org/cacao/CACAO_0000019>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000053> (Houses)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000053> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000053> "2025-06-06T13:56:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000053> "Houses"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000053> "Scope note:
+This class comprises buildings designed as a dwelling for a single family or a small group of individuals. It is a fundamental unit of residential architecture.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000053> <http://w3id.org/cacao/CACAO_0000052>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000054> (Villas)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000054> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000054> "2025-06-06T13:56:22Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000054> "Villas"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000054> "Scope note:
+This class comprises large, luxurious country houses with substantial grounds. Originally referring to large Roman country estates, the term is now used for significant rural or suburban residences.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000054> <http://w3id.org/cacao/CACAO_0000053>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000055> (Domus)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000055> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000055> "2025-06-06T13:56:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000055> "Domus"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000055> "Scope note:
+This class comprises a type of house occupied by the upper classes and some wealthy freedmen during the Roman Republic and Empire.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000055> <http://w3id.org/cacao/CACAO_0000053>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000056> (Complexes)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000056> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000056> "2025-06-06T13:58:09Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000056> "Complexes"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000056> "Scope note:
+This class comprises groups of interrelated buildings and structures that are designed to function as a single, integrated unit. These can be defined by a common purpose, architectural style, or historical period.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000056> <http://w3id.org/cacao/CACAO_0000023>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000057> (Cemeteries)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000057> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000057> "2025-06-06T13:58:22Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000057> "Cemeteries"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000057> "Scope note:
+This class comprises designated areas where the remains of deceased people are buried or otherwise interred. They are characterized by the presence of graves, tombs, or other forms of funerary monuments.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000057> <http://w3id.org/cacao/CACAO_0000056>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000058> (Necropolis)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000058> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000058> "2025-06-06T13:58:31Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000058> "Necropolis"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000058> "Scope note:
+This class comprises large, designed cemeteries or burial sites from ancient civilizations. The term literally means \"city of the dead,\" and these sites often feature elaborate tomb structures.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000058> <http://w3id.org/cacao/CACAO_0000057>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000059> (Ceremonial Buildings)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000059> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000059> "2025-06-06T14:02:06Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000059> "Ceremonial Buildings"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000059> "Scope note:
+This class comprises buildings designed primarily for holding rites, ceremonies, or formal public events. Their function may be religious, civic, or commemorative in nature.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000059> <http://w3id.org/cacao/CACAO_0000019>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000060> (Tombs)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000060> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000060> "2025-06-06T14:02:13Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000060> "Tombs"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000060> "Scope note:
+This class comprises structures or chambers used for the burial or interment of the dead. Tombs can range from simple graves to elaborate mausoleums and pyramids.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000060> <http://w3id.org/cacao/CACAO_0000059>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000061> (Painting)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000061> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000061> "2025-06-06T14:10:26Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000061> "Painting"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000061> "Scope note:
+This class comprises artworks created by applying paint, pigment, color or other medium to a solid surface (called the \"matrix\" or \"support\") such as a canvas, wall, or panel. The medium is commonly applied to the base with a brush, but other implements, such as knives, sponges, and airbrushes, can be used.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000061> <http://w3id.org/cacao/CACAO_0000024>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000062> (Clothing)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000062> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000062> "2025-06-06T16:01:48Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000062> "Clothing"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000062> "Scope note:
+This class comprises items worn on the body. Typically, clothing is made of fabrics or textiles, but over time it has included garments made from animal skin and other thin sheets of materials and natural products found in the environment, put together.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000062> <http://w3id.org/cacao/CACAO_0000023>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000063> (Main Garments)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000063> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000063> "2025-06-06T16:03:15Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000063> "Main Garments"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000063> "Scope note:
+This class comprises the primary items of clothing that form the basis of an outfit, covering the torso and/or lower body.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000063> <http://w3id.org/cacao/CACAO_0000062>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000064> (Outerwear)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000064> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000064> "2025-06-06T16:03:22Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000064> "Outerwear"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000064> "Scope note:
+This class comprises garments worn over other clothes, especially for warmth or protection when outdoors.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000064> <http://w3id.org/cacao/CACAO_0000062>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000065> (Underwear)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000065> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000065> "2025-06-06T16:03:30Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000065> "Underwear"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000065> "Scope note:
+This class comprises garments worn next to the skin, underneath other clothing.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000065> <http://w3id.org/cacao/CACAO_0000062>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000066> (Dresses)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000066> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000066> "2025-06-06T16:03:44Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000066> "Dresses"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000066> "Scope note:
+This class comprises one-piece garments for a woman or girl that consist of a bodice and a skirt.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000066> <http://w3id.org/cacao/CACAO_0000063>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000067> (Coats)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000067> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000067> "2025-06-06T16:04:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000067> "Coats"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000067> "Scope note:
+This class comprises outer garments with sleeves, worn outdoors over other clothes for warmth or protection.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000067> <http://w3id.org/cacao/CACAO_0000063>)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000067> <http://w3id.org/cacao/CACAO_0000064>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000068> (Plaids)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000068> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000068> "2025-06-06T16:04:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000068> "Plaids"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000068> "Scope note:
+This class comprises a piece of cloth, typically with a tartan pattern, worn as part of Scottish Highland dress. It is draped over the shoulder as an accessory or used as a blanket.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000068> <http://w3id.org/cacao/CACAO_0000063>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000069> (Robes)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000069> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000069> "2025-06-06T16:04:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000069> "Robes"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000069> "Scope note:
+This class comprises long, loose outer garments, often worn as a sign of office or for ceremonial occasions, or informally at home.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000069> <http://w3id.org/cacao/CACAO_0000063>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000070> (Suits)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000070> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000070> "2025-06-06T16:04:39Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000070> "Suits"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000070> "Scope note:
+This class comprises a set of outer clothes made of the same fabric and designed to be worn together, typically consisting of at least a jacket and trousers or a skirt.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000070> <http://w3id.org/cacao/CACAO_0000063>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000071> (Tunics)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000071> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000071> "2025-06-06T16:04:46Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000071> "Tunics"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000071> "Scope note:
+This class comprises a simple garment, typically sleeveless or with short sleeves, that hangs from the shoulders to a length between the hips and the knees. It was a common garment in ancient Greece and Rome and remains a feature of some modern clothing styles.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000071> <http://w3id.org/cacao/CACAO_0000063>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000072> (Cloaks)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000072> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000072> "2025-06-06T16:06:41Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000072> "Cloaks"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000072> "Scope note:
+This class comprises sleeveless outdoor overgarments which drape from the shoulders. They are worn for warmth, protection, or as part of ceremonial or formal dress.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000072> <http://w3id.org/cacao/CACAO_0000064>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000074> (Chemises)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000074> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000074> "2025-06-06T16:08:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000074> "Chemises"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000074> "Scope note:
+This class comprises a simple, loose-fitting garment worn next to the skin, serving as a shirt or undergarment for both men and women in various historical periods. It protected outer garments from sweat and body oils.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000074> <http://w3id.org/cacao/CACAO_0000065>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000075> (Underpants)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000075> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000075> "2025-06-06T16:08:38Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000075> "Underpants"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000075> "Scope note:
+This class comprises undergarments worn on the lower part of the body.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000075> <http://w3id.org/cacao/CACAO_0000065>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000076> (Underdresses)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000076> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000076> "2025-06-06T16:08:46Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000076> "Underdresses"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000076> "Scope note:
+This class comprises a simple dress-like garment worn underneath a more elaborate outer dress, either for warmth, to provide structure, or to protect the outer layer.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000076> <http://w3id.org/cacao/CACAO_0000065>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000077> (Lingerie)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000077> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000077> "2025-06-06T16:09:03Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000077> "Lingerie"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000077> "Scope note:
+This class comprises women's underwear and nightclothes, often characterized by being lightweight, decorative, and made from fine materials.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000077> <http://w3id.org/cacao/CACAO_0000065>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000078> (Underskirts)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000078> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000078> "2025-06-06T16:09:13Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000078> "Underskirts"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000078> "Scope note:
+This class comprises skirts worn underneath an outer skirt for warmth, modesty, or to give the outer skirt a desired shape and volume.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000078> <http://w3id.org/cacao/CACAO_0000065>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000079> (Documents)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000079> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000079> "2025-06-06T16:16:03Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000079> "Documents"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000079> "Scope note:
+This class comprises physical artefacts consisting of a piece of written, printed, or electronic matter that provides information or evidence or that serves as an official record.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000079> <http://w3id.org/cacao/CACAO_0000023>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000080> (Letters)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000080> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000080> "2025-06-06T16:16:12Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000080> "Letters"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000080> "Scope note:
+This class comprises written messages from one person or group to another, conveyed by a postal service or by hand. They are a form of personal or official communication recorded on a physical medium.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000080> <http://w3id.org/cacao/CACAO_0000079>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000081> (Medals)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000081> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000081> "2025-06-06T16:18:13Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000081> "Medals"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000081> "Scope note:
+This class comprises small, portable artistic objects, typically made of metal and circular in shape, issued to commemorate a person or event, or as an award for distinction.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000081> <http://w3id.org/cacao/CACAO_0000024>)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000081> <http://w3id.org/cacao/CACAO_0000082>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000082> (Awards)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000082> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000082> "2025-06-06T16:23:00Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000082> "Awards"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000082> "Scope note:
+This class comprises tangible items given to a person or group in recognition of excellence in a certain field. They serve as a physical token of an honor or prize.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000082> <http://w3id.org/cacao/CACAO_0000023>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000083> (Cup)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000083> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000083> "2025-06-06T16:23:05Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000083> "Cup"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000083> "Scope note:
+This class comprises trophy cups, which are awards in the form of a drinking vessel, often made of precious metal and mounted on a base, given as a prize in a competition.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000083> <http://w3id.org/cacao/CACAO_0000082>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000086> (Image)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000086> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000086> "2025-06-06T17:06:03Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000086> "Image"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000086> "Scope note:
+This class comprises digital artefacts that represent visual information, such as a photograph, drawing, or graphic. They are stored as a raster or vector file format.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000086> <http://w3id.org/cacao/CACAO_0000003>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000087> (3D Object)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000087> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000087> "2025-06-06T17:06:09Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000087> "3D Object"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000087> "Scope note:
+This class comprises digital artefacts that represent a three-dimensional object using a collection of points in 3D space, connected by various geometric entities such as triangles, lines, and curved surfaces.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000087> <http://w3id.org/cacao/CACAO_0000003>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000088> (Video)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000088> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000088> "2025-06-06T17:06:14Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000088> "Video"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000088> "Scope note:
+This class comprises digital artefacts consisting of a recording of moving visual images. It can include synchronized audio.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000088> <http://w3id.org/cacao/CACAO_0000003>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000089> (Audio)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000089> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000089> "2025-06-06T17:06:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000089> "Audio"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000089> "Scope note:
+This class comprises digital artefacts consisting of sound recordings. This includes music, spoken word, and other forms of auditory information stored in a digital format.")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000089> <http://w3id.org/cacao/CACAO_0000003>)
+
+# Class: <http://www.w3.org/ns/odrl/2/Asset> (Asset)
+
+SubClassOf(<http://www.w3.org/ns/odrl/2/Asset> <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object>)
+
+# Class: <http://www.w3.org/ns/odrl/2/Party> (Party)
+
+SubClassOf(<http://www.w3.org/ns/odrl/2/Party> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
 
 
 )
