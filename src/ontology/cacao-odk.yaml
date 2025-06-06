@@ -28,9 +28,6 @@ documentation:
   documentation_system: mkdocs
 robot_java_args: "-Xmx8G"
 robot_report:
-  use_labels: TRUE
-  fail_on: null
-  custom_profile: TRUE
-  report_on:
-    - edit
-  ensure_owl2dl_profile: FALSE
+  custom_sparql_exports:
+    - basic-report
+    - competency-questions
