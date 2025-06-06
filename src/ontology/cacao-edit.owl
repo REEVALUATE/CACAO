@@ -58,6 +58,22 @@ Declaration(Class(<http://w3id.org/cacao/CACAO_0000058>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000059>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000060>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000061>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000062>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000063>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000064>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000065>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000066>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000067>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000068>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000069>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000070>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000071>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000072>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000074>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000075>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000076>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000077>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000078>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E21_Person>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E30_Right>))
@@ -737,9 +753,118 @@ AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000061> "2025-06-06T1
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000061> "Painting"@en)
 SubClassOf(<http://w3id.org/cacao/CACAO_0000061> <http://w3id.org/cacao/CACAO_0000024>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E21_Person> (E21 Person)
+# Class: <http://w3id.org/cacao/CACAO_0000062> (Clothing)
 
-EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <https://schema.org/Person>)
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000062> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000062> "2025-06-06T16:01:48Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000062> "Clothing"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000062> <http://w3id.org/cacao/CACAO_0000023>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000063> (Main Garments)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000063> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000063> "2025-06-06T16:03:15Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000063> "Main Garments"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000063> <http://w3id.org/cacao/CACAO_0000062>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000064> (Outerwear)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000064> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000064> "2025-06-06T16:03:22Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000064> "Outerwear"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000064> <http://w3id.org/cacao/CACAO_0000062>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000065> (Underwear)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000065> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000065> "2025-06-06T16:03:30Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000065> "Underwear"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000065> <http://w3id.org/cacao/CACAO_0000062>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000066> (Dresses)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000066> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000066> "2025-06-06T16:03:44Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000066> "Dresses"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000066> <http://w3id.org/cacao/CACAO_0000063>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000067> (Coats)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000067> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000067> "2025-06-06T16:04:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000067> "Coats"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000067> <http://w3id.org/cacao/CACAO_0000063>)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000067> <http://w3id.org/cacao/CACAO_0000064>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000068> (Plaids)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000068> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000068> "2025-06-06T16:04:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000068> "Plaids"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000068> <http://w3id.org/cacao/CACAO_0000063>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000069> (Robes)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000069> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000069> "2025-06-06T16:04:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000069> "Robes"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000069> <http://w3id.org/cacao/CACAO_0000063>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000070> (Suits)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000070> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000070> "2025-06-06T16:04:39Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000070> "Suits"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000070> <http://w3id.org/cacao/CACAO_0000063>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000071> (Tunics)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000071> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000071> "2025-06-06T16:04:46Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000071> "Tunics"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000071> <http://w3id.org/cacao/CACAO_0000063>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000072> (Cloaks)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000072> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000072> "2025-06-06T16:06:41Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000072> "Cloaks"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000072> <http://w3id.org/cacao/CACAO_0000064>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000074> (Chemises)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000074> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000074> "2025-06-06T16:08:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000074> "Chemises"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000074> <http://w3id.org/cacao/CACAO_0000065>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000075> (Underpants)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000075> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000075> "2025-06-06T16:08:38Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000075> "Underpants"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000075> <http://w3id.org/cacao/CACAO_0000065>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000076> (Underdresses)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000076> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000076> "2025-06-06T16:08:46Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000076> "Underdresses"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000076> <http://w3id.org/cacao/CACAO_0000065>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000077> (Lingerie)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000077> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000077> "2025-06-06T16:09:03Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000077> "Lingerie"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000077> <http://w3id.org/cacao/CACAO_0000065>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000078> (Underskirts)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000078> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000078> "2025-06-06T16:09:13Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000078> "Underskirts"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000078> <http://w3id.org/cacao/CACAO_0000065>)
 
 # Class: <http://www.w3.org/ns/odrl/2/Asset> (Asset)
 
