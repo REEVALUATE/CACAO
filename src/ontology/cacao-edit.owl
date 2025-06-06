@@ -27,14 +27,37 @@ Declaration(Class(<http://w3id.org/cacao/CACAO_0000013>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000014>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000015>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000016>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000019>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000020>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000021>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000022>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000023>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000024>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000025>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000027>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000028>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000029>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000036>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000037>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000041>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000042>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000043>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000044>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000045>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000046>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000049>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000050>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000051>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000052>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000053>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000054>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000055>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000056>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000057>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000058>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000059>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000060>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000061>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E21_Person>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E30_Right>))
@@ -63,6 +86,8 @@ Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000035>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000038>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000039>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000040>))
+Declaration(AnnotationProperty(dce:creator))
+Declaration(AnnotationProperty(dce:date))
 Declaration(AnnotationProperty(dcterms:contributor))
 Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
@@ -406,6 +431,13 @@ AnnotationAssertion(dcterms:date <http://w3id.org/cacao/CACAO_0000016> "2024-12-
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000016> "Symbolism"@en)
 SubClassOf(<http://w3id.org/cacao/CACAO_0000016> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
+# Class: <http://w3id.org/cacao/CACAO_0000019> (Building)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000019> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000019> "2025-06-06T13:38:37Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000019> "Building"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000019> <http://w3id.org/cacao/CACAO_0000046>)
+
 # Class: <http://w3id.org/cacao/CACAO_0000020> (Museum)
 
 AnnotationAssertion(dcterms:contributor <http://w3id.org/cacao/CACAO_0000020> <https://orcid.org/0000-0002-0905-7033>)
@@ -424,6 +456,13 @@ Examples:
 - The National Museum of Denmark"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000020> "Museum"@en)
 SubClassOf(<http://w3id.org/cacao/CACAO_0000020> <http://www.cidoc-crm.org/cidoc-crm/E74_Group>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000021> (Religious Buildings)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000021> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000021> "2025-06-06T13:45:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000021> "Religious Buildings"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000021> <http://w3id.org/cacao/CACAO_0000019>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000022> (Artist)
 
@@ -536,6 +575,13 @@ Examples:
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000028> "Field Of Work"@en)
 SubClassOf(<http://w3id.org/cacao/CACAO_0000028> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
+# Class: <http://w3id.org/cacao/CACAO_0000029> (Churches)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000029> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000029> "2025-06-06T13:45:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000029> "Churches"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000029> <http://w3id.org/cacao/CACAO_0000021>)
+
 # Class: <http://w3id.org/cacao/CACAO_0000036> (Movement)
 
 AnnotationAssertion(dcterms:contributor <http://w3id.org/cacao/CACAO_0000036> <https://orcid.org/0000-0002-0905-7033>)
@@ -550,6 +596,146 @@ Examples:
 - Existentialism"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000036> "Movement"@en)
 SubClassOf(<http://w3id.org/cacao/CACAO_0000036> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000037> (Basilicas)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000037> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000037> "2025-06-06T13:46:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000037> "Basilicas"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000037> <http://w3id.org/cacao/CACAO_0000029>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000041> (Cathedrals)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000041> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000041> "2025-06-06T13:46:32Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000041> "Cathedrals"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000041> <http://w3id.org/cacao/CACAO_0000029>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000042> (Chapels)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000042> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000042> "2025-06-06T13:47:51Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000042> "Chapels"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000042> <http://w3id.org/cacao/CACAO_0000021>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000043> (Temples)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000043> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000043> "2025-06-06T13:48:27Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000043> "Temples"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000043> <http://w3id.org/cacao/CACAO_0000021>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000044> (Domus Ecclesiae)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000044> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000044> "2025-06-06T13:48:42Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000044> "Domus Ecclesiae"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000044> <http://w3id.org/cacao/CACAO_0000021>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000045> (Mosques)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000045> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000045> "2025-06-06T13:49:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000045> "Mosques"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000045> <http://w3id.org/cacao/CACAO_0000021>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000046> (Structure)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000046> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000046> "2025-06-06T13:50:08Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000046> "Structure"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000046> <http://w3id.org/cacao/CACAO_0000023>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000049> (Mosaics)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000049> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000049> "2025-06-06T13:52:27Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000049> "Mosaics"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000049> <http://w3id.org/cacao/CACAO_0000024>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000050> (Open Spaces)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000050> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000050> "2025-06-06T13:54:47Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000050> "Open Spaces"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000050> <http://w3id.org/cacao/CACAO_0000023>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000051> (Forums)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000051> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000051> "2025-06-06T13:54:51Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000051> "Forums"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000051> <http://w3id.org/cacao/CACAO_0000050>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000052> (Residential Buildings)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000052> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000052> "2025-06-06T13:55:50Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000052> "Residential Buildings"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000052> <http://w3id.org/cacao/CACAO_0000019>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000053> (Houses)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000053> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000053> "2025-06-06T13:56:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000053> "Houses"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000053> <http://w3id.org/cacao/CACAO_0000052>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000054> (Villas)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000054> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000054> "2025-06-06T13:56:22Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000054> "Villas"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000054> <http://w3id.org/cacao/CACAO_0000053>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000055> (Domus)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000055> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000055> "2025-06-06T13:56:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000055> "Domus"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000055> <http://w3id.org/cacao/CACAO_0000053>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000056> (Complexes)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000056> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000056> "2025-06-06T13:58:09Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000056> "Complexes"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000056> <http://w3id.org/cacao/CACAO_0000023>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000057> (Cemeteries)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000057> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000057> "2025-06-06T13:58:22Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000057> "Cemeteries"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000057> <http://w3id.org/cacao/CACAO_0000056>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000058> (Necropolis)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000058> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000058> "2025-06-06T13:58:31Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000058> "Necropolis"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000058> <http://w3id.org/cacao/CACAO_0000057>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000059> (Ceremonial Buildings)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000059> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000059> "2025-06-06T14:02:06Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000059> "Ceremonial Buildings"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000059> <http://w3id.org/cacao/CACAO_0000019>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000060> (Tombs)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000060> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000060> "2025-06-06T14:02:13Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000060> "Tombs"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000060> <http://w3id.org/cacao/CACAO_0000059>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000061> (Painting)
+
+AnnotationAssertion(dce:creator <http://w3id.org/cacao/CACAO_0000061> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dce:date <http://w3id.org/cacao/CACAO_0000061> "2025-06-06T14:10:26Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000061> "Painting"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000061> <http://w3id.org/cacao/CACAO_0000024>)
 
 # Class: <http://www.cidoc-crm.org/cidoc-crm/E21_Person> (E21 Person)
 
