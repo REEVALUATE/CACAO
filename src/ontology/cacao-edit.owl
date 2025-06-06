@@ -296,6 +296,10 @@ ObjectPropertyRange(<http://w3id.org/cacao/CACAO_0000040> <http://www.cidoc-crm.
 
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> <http://w3id.org/cacao/CACAO_0000020>)
 
+# Object Property: <https://schema.org/nationality> (nationality)
+
+ObjectPropertyDomain(<https://schema.org/nationality> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+
 
 
 ############################
