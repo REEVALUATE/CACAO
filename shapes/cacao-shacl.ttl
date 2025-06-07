@@ -2883,6 +2883,7 @@ In First Order Logic:
         "P102 имeeт названиe"@ru,
         "P102 有题名"@zh ;
     sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:minCount 1 ;
     sh:path <http://www.cidoc-crm.org/cidoc-crm/P102_has_title> .
 
 <http://w3id.org/cacao/shapes/P102i_is_title_of> a sh:PropertyShape ;
