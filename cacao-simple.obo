@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: http://w3id.org/cacao/cacao/releases/2025-06-06/cacao-simple.owl
+data-version: http://w3id.org/cacao/cacao/releases/2025-06-07/cacao-simple.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: ns http://www.w3.org/2003/06/sw-vocab-status/ns# 
 idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: http://w3id.org/cacao/cacao/cacao-simple.owl
-property_value: owl:versionInfo "2025-06-06" xsd:string
+property_value: owl:versionInfo "2025-06-07" xsd:string
 property_value: terms:description "None" xsd:string
 property_value: terms:license https://creativecommons.org/licenses/unspecified
 property_value: terms:title "Cultural Artefact Contextual Ontology" xsd:string

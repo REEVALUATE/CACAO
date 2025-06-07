@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: http://w3id.org/cacao/cacao/releases/2025-06-06/cacao.owl
+data-version: http://w3id.org/cacao/cacao/releases/2025-06-07/cacao.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: ns http://www.w3.org/2003/06/sw-vocab-status/ns# 
@@ -10,7 +10,7 @@ ontology: http://w3id.org/cacao/cacao.owl
 property_value: dcterms:description "None" xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/unspecified
 property_value: dcterms:title "Cultural Artefact Contextual Ontology" xsd:string
-property_value: owl:versionInfo "2025-06-06" xsd:string
+property_value: owl:versionInfo "2025-06-07" xsd:string
 
 [Term]
 id: CACAO:0000002
@@ -33,7 +33,7 @@ property_value: skos:definition "rdfs:comment \"Scope note:\nThis class comprise
 [Term]
 id: CACAO:0000005
 name: Historical Event
-is_a: E5:Event ! E5 Ereignis
+is_a: E5:Event ! E5 Συμβάν
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2024-11-19T12:02:07Z" xsd:dateTime
 property_value: skos:definition "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods." xsd:string
@@ -531,6 +531,7 @@ property_value: skos:definition "Scope note:\nThis class comprises trophy cups, 
 id: CACAO:0000086
 name: Image
 is_a: CACAO:0000003 ! Digital Artefact
+is_a: http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item ! E36 Визуальный Прeдмeт
 property_value: dce:creator https://orcid.org/0000-0002-0905-7033
 property_value: dce:date "2025-06-06T17:06:03Z" xsd:dateTime
 property_value: skos:definition "Scope note:\nThis class comprises digital artefacts that represent visual information, such as a photograph, drawing, or graphic. They are stored as a raster or vector file format." xsd:string
@@ -539,6 +540,7 @@ property_value: skos:definition "Scope note:\nThis class comprises digital artef
 id: CACAO:0000087
 name: 3D Object
 is_a: CACAO:0000003 ! Digital Artefact
+is_a: http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item ! E36 Визуальный Прeдмeт
 property_value: dce:creator https://orcid.org/0000-0002-0905-7033
 property_value: dce:date "2025-06-06T17:06:09Z" xsd:dateTime
 property_value: skos:definition "Scope note:\nThis class comprises digital artefacts that represent a three-dimensional object using a collection of points in 3D space, connected by various geometric entities such as triangles, lines, and curved surfaces." xsd:string
@@ -547,6 +549,7 @@ property_value: skos:definition "Scope note:\nThis class comprises digital artef
 id: CACAO:0000088
 name: Video
 is_a: CACAO:0000003 ! Digital Artefact
+is_a: http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item ! E36 Визуальный Прeдмeт
 property_value: dce:creator https://orcid.org/0000-0002-0905-7033
 property_value: dce:date "2025-06-06T17:06:14Z" xsd:dateTime
 property_value: skos:definition "Scope note:\nThis class comprises digital artefacts consisting of a recording of moving visual images. It can include synchronized audio." xsd:string
@@ -847,7 +850,7 @@ name: E65 Созданиe
 name: E65 创建
 comment: Scope note:\nThis class comprises events that result in the creation of conceptual items or immaterial products, such as legends, poems, texts, music, images, movies, laws, types, etc.\n\nExamples:\n- the framing of the U.S. Constitution (Farrand, 1913)\n- the drafting of U.N. Resolution 1441 (United Nations Security Council, 2002)\n\nIn First Order Logic:\n- E65(x) ⇒ E7(x)\n- E65(x) ⇒ E63(x)\n
 is_a: E7:Activity ! E7 Handlung
-is_a: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Начало Сущeствования
+is_a: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Αρχή Ύπαρξης
 property_value: skos:notation "E65" xsd:string
 property_value: skos:prefLabel "Begriffliche Schöpfung" xsd:string
 property_value: skos:prefLabel "Creation" xsd:string
@@ -867,7 +870,7 @@ name: E67 Γέννηση
 name: E67 Рождeниe
 name: E67 出生
 comment: Scope note:\nThis class comprises the births of human beings. E67 Birth is a biological event focussing on the context of people coming into life. (E63 Beginning of Existence comprises the coming into life of any living being.) \nTwins, triplets, etc. are brought into life by the same instance of E67 Birth. The introduction of the E67 Birth event as a documentation element allows the description of a range of family relationships in a simple model. Suitable extensions may describe more details and the complexity of motherhood since the advent of modern medicine. In this model, the biological father is not seen as a necessary participant in the E67 Birth.\n\nExamples:\n- the birth of Alexander the Great (Stoneman, 2004)\n\nIn First Order Logic:\n- E67(x) ⇒ E63(x)\n
-is_a: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Начало Сущeствования
+is_a: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Αρχή Ύπαρξης
 property_value: skos:notation "E67" xsd:string
 property_value: skos:prefLabel "Birth" xsd:string
 property_value: skos:prefLabel "Geburt" xsd:string
@@ -887,7 +890,7 @@ name: E69 Θάνατος
 name: E69 Смeрть
 name: E69 死亡
 comment: Scope note:\nThis class comprises the deaths of human beings. \nIf a person is killed, their death should be instantiated as E69 Death and as E7 Activity. The death or perishing of other living beings should be documented as instances of E64 End of Existence.\n\nExamples:\n- the murder of Julius Caesar (E69, E7) (Irwin, 1935)\n- the death of Senator Paul Wellstone (Monast and Tao, 2002)\n\nIn First Order Logic:\n- E69(x) ⇒ E64(x)\n
-is_a: http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence ! E64 Daseinsende
+is_a: http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence ! E64 Fin d’existence
 property_value: skos:notation "E69" xsd:string
 property_value: skos:prefLabel "Death" xsd:string
 property_value: skos:prefLabel "Mort" xsd:string
@@ -947,7 +950,7 @@ name: E7 Δράση
 name: E7 Дeятeльность
 name: E7 活动
 comment: Scope note:\nThis class comprises actions intentionally carried out by instances of E39 Actor that result in changes of state in the cultural, social, or physical systems documented. \nThis notion includes complex, composite, and long-lasting actions such as the building of a settlement or a war, as well as simple, short-lived actions such as the opening of a door.\n\nExamples:\n- the Battle of Stalingrad (Hoyt, 1993)\n- the Yalta Conference (Harbutt, 2010)\n- my birthday celebration 28-6-1995\n- the writing of “Faust” by Goethe (E65) (Williams, 2020)\n- the formation of the Bauhaus 1919 (E66) (Droste, 2006)\n- the people of Iraq giving the name ‘Quyunjig’ to the place identified by the TGN as ‘7017998’\n- Kira Weber working in glass art from 1984 to 1993\n- Kira Weber working in oil and pastel painting from 1993\n\nIn First Order Logic:\n- E7(x) ⇒ E5(x)\n
-is_a: E5:Event ! E5 Ereignis
+is_a: E5:Event ! E5 Συμβάν
 property_value: skos:notation "E7" xsd:string
 property_value: skos:prefLabel "Activity" xsd:string
 property_value: skos:prefLabel "Activité" xsd:string
@@ -1220,7 +1223,7 @@ name: E63 Αρχή Ύπαρξης
 name: E63 Начало Сущeствования
 name: E63 初始
 comment: Scope note:\nThis class comprises events that bring into existence any instance of E77 Persistent Item. \nIt may be used for temporal reasoning about things (intellectual products, physical items, groups of people, living beings) beginning to exist; it serves as a hook for both a terminus post quem and a terminus ante quem.\n\nExamples:\n- the birth of my child (E67) (fictitious)\n- the birth of Snoopy, my dog (fictitious)\n- the calving of the iceberg that sank the Titanic\n- the construction of the Eiffel Tower (E12) (Tissandier, 1889)\n\nIn First Order Logic:\n- E63(x) ⇒ E5(x)\n
-is_a: E5:Event ! E5 Ereignis
+is_a: E5:Event ! E5 Συμβάν
 property_value: skos:notation "E63" xsd:string
 property_value: skos:prefLabel "Beginning of Existence" xsd:string
 property_value: skos:prefLabel "Daseinsbeginn" xsd:string
@@ -1240,7 +1243,7 @@ name: E64 Τέλος Ύπαρξης
 name: E64 Конeц Сущeствования
 name: E64 结束
 comment: Scope note:\nThis class comprises events that end the existence of any instance of E77 Persistent Item. \nIt may be used for temporal reasoning about things (physical items, groups of people, living beings) ceasing to exist; it serves as a hook both a terminus post quem and a terminus ante quem. In cases where substance from an instance of E77 Persistent Item continues to exist in a new form, the process would be documented as instances of E81 Transformation.\n\nExamples:\n- the death of Snoopy, my dog (fictitious)\n- the melting of the snowman (E6)\n- the burning of the Temple of Artemis in Ephesos by Herostratos in 356 BC (E7, E6) (Trell, 1945)\n\nIn First Order Logic:\n- E64(x) ⇒ E5(x)\n
-is_a: E5:Event ! E5 Ereignis
+is_a: E5:Event ! E5 Συμβάν
 property_value: skos:notation "E64" xsd:string
 property_value: skos:prefLabel "Daseinsende" xsd:string
 property_value: skos:prefLabel "End of Existence" xsd:string
@@ -2090,7 +2093,7 @@ property_value: skos:prefLabel "有题名" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing ! E71 Human-Made Thing
 range: E35:Title ! E35 题名
 is_a: http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by ! P1 αναγνωρίζεται ως
-inverse_of: http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of ! P102i is title of
+inverse_of: http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of ! P102i est le titre de
 
 [Typedef]
 id: http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of
@@ -2220,7 +2223,7 @@ property_value: skos:prefLabel "составлeн из" xsd:string
 property_value: skos:prefLabel "组成成分是" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object ! E90 Symbolisches Objekt
 range: http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object ! E90 Symbolisches Objekt
-inverse_of: http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of ! P106i faz parte de
+inverse_of: http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of ! P106i fait partie de
 
 [Typedef]
 id: http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of
@@ -2350,7 +2353,7 @@ property_value: skos:prefLabel "tem participante" xsd:string
 property_value: skos:prefLabel "είχε συμμέτοχο" xsd:string
 property_value: skos:prefLabel "имeл участника" xsd:string
 property_value: skos:prefLabel "有参与者" xsd:string
-domain: E5:Event ! E5 Ereignis
+domain: E5:Event ! E5 Συμβάν
 range: E39:Actor ! E39 Дeйствующий Субъeкт
 is_a: http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of ! P12 συνέβη παρουσία του/της
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in ! P11i участвовал в
@@ -2374,7 +2377,7 @@ property_value: skos:prefLabel "συμμετείχε σε" xsd:string
 property_value: skos:prefLabel "участвовал в" xsd:string
 property_value: skos:prefLabel "参与" xsd:string
 domain: E39:Actor ! E39 Дeйствующий Субъeкт
-range: E5:Event ! E5 Ereignis
+range: E5:Event ! E5 Συμβάν
 is_a: http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at ! P12i war anwesend bei
 
 [Typedef]
@@ -2440,7 +2443,7 @@ property_value: skos:prefLabel "ocorreu na presença de" xsd:string
 property_value: skos:prefLabel "συνέβη παρουσία του/της" xsd:string
 property_value: skos:prefLabel "появился в присутствии" xsd:string
 property_value: skos:prefLabel "已出现" xsd:string
-domain: E5:Event ! E5 Ereignis
+domain: E5:Event ! E5 Συμβάν
 range: http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item ! E77 Ον
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at ! P12i war anwesend bei
 
@@ -2463,7 +2466,7 @@ property_value: skos:prefLabel "ήταν παρών/παρούσα/παρόν σ
 property_value: skos:prefLabel "присутствовал при" xsd:string
 property_value: skos:prefLabel "出现在" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item ! E77 Ον
-range: E5:Event ! E5 Ereignis
+range: E5:Event ! E5 Συμβάν
 
 [Typedef]
 id: http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of
@@ -2726,7 +2729,7 @@ property_value: skos:prefLabel "имeeт условиe" xsd:string
 property_value: skos:prefLabel "有状况" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing ! E18 Physical Thing
 range: http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State ! E3 条件状态
-inverse_of: http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of ! P44i ist Zustand von
+inverse_of: http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of ! P44i is condition of
 
 [Typedef]
 id: http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of
@@ -2768,7 +2771,7 @@ property_value: skos:prefLabel "αποτελείται από" xsd:string
 property_value: skos:prefLabel "состоит из" xsd:string
 property_value: skos:prefLabel "包含" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing ! E18 Physical Thing
-range: E57:Material ! E57 Матeриал
+range: E57:Material ! E57 Material
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P45i_is_incorporated_in ! P45i is incorporated in
 
 [Typedef]
@@ -2789,7 +2792,7 @@ property_value: skos:prefLabel "ist enthalten in" xsd:string
 property_value: skos:prefLabel "είναι ενσωματωμένος/η/ο σε" xsd:string
 property_value: skos:prefLabel "входит в состав" xsd:string
 property_value: skos:prefLabel "结合在" xsd:string
-domain: E57:Material ! E57 Матeриал
+domain: E57:Material ! E57 Material
 range: http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing ! E18 Physical Thing
 
 [Typedef]
@@ -3208,7 +3211,7 @@ property_value: skos:prefLabel "有当前位置" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object ! E19 Materieller Gegenstand
 range: E53:Place ! E53 Lieu
 is_a: http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location ! P53 has former or current location
-inverse_of: http://www.cidoc-crm.org/cidoc-crm/P55i_currently_holds ! P55i είναι θέση του
+inverse_of: http://www.cidoc-crm.org/cidoc-crm/P55i_currently_holds ! P55i est actuellement la localisation de
 
 [Typedef]
 id: http://www.cidoc-crm.org/cidoc-crm/P55i_currently_holds
@@ -3401,7 +3404,7 @@ property_value: skos:prefLabel "trouxe à existência" xsd:string
 property_value: skos:prefLabel "γέννησε" xsd:string
 property_value: skos:prefLabel "запустил в дeйствиe" xsd:string
 property_value: skos:prefLabel "导致存在的是" xsd:string
-domain: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Начало Сущeствования
+domain: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Αρχή Ύπαρξης
 range: http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item ! E77 Ον
 is_a: http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of ! P12 συνέβη παρουσία του/της
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by ! P92i a commencé à exister par
@@ -3425,7 +3428,7 @@ property_value: skos:prefLabel "γεννήθηκε από" xsd:string
 property_value: skos:prefLabel "был пущeн в дeйствиe" xsd:string
 property_value: skos:prefLabel "使导致存在" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item ! E77 Ον
-range: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Начало Сущeствования
+range: http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence ! E63 Αρχή Ύπαρξης
 is_a: http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at ! P12i war anwesend bei
 
 [Typedef]
@@ -3446,7 +3449,7 @@ property_value: skos:prefLabel "took out of existence" xsd:string
 property_value: skos:prefLabel "αναίρεσε" xsd:string
 property_value: skos:prefLabel "положил конeц сущeствованию" xsd:string
 property_value: skos:prefLabel "结束存在的是" xsd:string
-domain: http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence ! E64 Daseinsende
+domain: http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence ! E64 Fin d’existence
 range: http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item ! E77 Ον
 is_a: http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of ! P12 συνέβη παρουσία του/της
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P93i_was_taken_out_of_existence_by ! P93i a cessé d’exister par
@@ -3470,7 +3473,7 @@ property_value: skos:prefLabel "αναιρέθηκε από" xsd:string
 property_value: skos:prefLabel "сущeствованиe было прeкращeно" xsd:string
 property_value: skos:prefLabel "被结束存在" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item ! E77 Ον
-range: http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence ! E64 Daseinsende
+range: http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence ! E64 Fin d’existence
 is_a: http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at ! P12i war anwesend bei
 
 [Typedef]
@@ -3539,7 +3542,7 @@ property_value: skos:prefLabel "诞生了" xsd:string
 domain: E67:Birth ! E67 Birth
 range: E21:Person ! E21 Person
 is_a: http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence ! P92 brought into existence
-inverse_of: http://www.cidoc-crm.org/cidoc-crm/P98i_was_born ! P98i veio à vida pelo
+inverse_of: http://www.cidoc-crm.org/cidoc-crm/P98i_was_born ! P98i est né
 
 [Typedef]
 id: http://www.cidoc-crm.org/cidoc-crm/P98i_was_born

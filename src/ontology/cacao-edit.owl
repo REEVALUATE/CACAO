@@ -1165,6 +1165,7 @@ AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000086> "Image"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000086> "Scope note:
 This class comprises digital artefacts that represent visual information, such as a photograph, drawing, or graphic. They are stored as a raster or vector file format.")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000086> <http://w3id.org/cacao/CACAO_0000003>)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000086> <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000087> (3D Object)
 
@@ -1174,6 +1175,7 @@ AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000087> "3D Object"
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000087> "Scope note:
 This class comprises digital artefacts that represent a three-dimensional object using a collection of points in 3D space, connected by various geometric entities such as triangles, lines, and curved surfaces.")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000087> <http://w3id.org/cacao/CACAO_0000003>)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000087> <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000088> (Video)
 
@@ -1183,6 +1185,7 @@ AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000088> "Video"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000088> "Scope note:
 This class comprises digital artefacts consisting of a recording of moving visual images. It can include synchronized audio.")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000088> <http://w3id.org/cacao/CACAO_0000003>)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000088> <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000089> (Audio)
 

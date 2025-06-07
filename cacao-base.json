@@ -16,9 +16,9 @@
         "val" : "Cultural Artefact Contextual Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-06-06"
+        "val" : "2025-06-07"
       } ],
-      "version" : "http://w3id.org/cacao/cacao/releases/2025-06-06/cacao-base.json"
+      "version" : "http://w3id.org/cacao/cacao/releases/2025-06-07/cacao-base.json"
     },
     "nodes" : [ {
       "id" : "http://w3id.org/cacao/CACAO_0000002",
@@ -1108,6 +1108,9 @@
       "id" : "http://www.cidoc-crm.org/cidoc-crm/E30_Right",
       "type" : "CLASS"
     }, {
+      "id" : "http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item",
+      "type" : "CLASS"
+    }, {
       "id" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
       "type" : "CLASS"
     }, {
@@ -1627,13 +1630,25 @@
       "pred" : "is_a",
       "obj" : "http://w3id.org/cacao/CACAO_0000003"
     }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000086",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"
+    }, {
       "sub" : "http://w3id.org/cacao/CACAO_0000087",
+      "pred" : "is_a",
+      "obj" : "http://w3id.org/cacao/CACAO_0000003"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000087",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000088",
       "pred" : "is_a",
       "obj" : "http://w3id.org/cacao/CACAO_0000003"
     }, {
       "sub" : "http://w3id.org/cacao/CACAO_0000088",
       "pred" : "is_a",
-      "obj" : "http://w3id.org/cacao/CACAO_0000003"
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"
     }, {
       "sub" : "http://w3id.org/cacao/CACAO_0000089",
       "pred" : "is_a",

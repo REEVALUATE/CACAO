@@ -13,11 +13,11 @@
      xmlns:schema="https://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://w3id.org/cacao/cacao.owl">
-        <owl:versionIRI rdf:resource="http://w3id.org/cacao/cacao/releases/2025-06-06/cacao.owl"/>
+        <owl:versionIRI rdf:resource="http://w3id.org/cacao/cacao/releases/2025-06-07/cacao.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Cultural Artefact Contextual Ontology</dcterms:title>
-        <owl:versionInfo>2025-06-06</owl:versionInfo>
+        <owl:versionInfo>2025-06-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5516,6 +5516,7 @@ This class comprises trophy cups, which are awards in the form of a drinking ves
 
     <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000086">
         <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"/>
         <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T17:06:03Z</dce:date>
         <rdfs:label xml:lang="en">Image</rdfs:label>
@@ -5529,6 +5530,7 @@ This class comprises digital artefacts that represent visual information, such a
 
     <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000087">
         <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"/>
         <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T17:06:09Z</dce:date>
         <rdfs:label xml:lang="en">3D Object</rdfs:label>
@@ -5542,6 +5544,7 @@ This class comprises digital artefacts that represent a three-dimensional object
 
     <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000088">
         <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"/>
         <dce:creator rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T17:06:14Z</dce:date>
         <rdfs:label xml:lang="en">Video</rdfs:label>
