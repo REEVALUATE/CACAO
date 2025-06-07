@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                470fa170293cd874acbc324d5a0e4abd8d46d22752ed03492230111d03071773
+CONFIG_HASH=                03992e69ae73640bc6431485aa52a7d0280b03adb2c234eb2e58b0d41a9c4899
 
 
 # ----------------------------------------
@@ -40,12 +40,13 @@ SCRIPTSDIR=                 ../scripts
 UPDATEREPODIR=              target
 SPARQLDIR =                 ../sparql
 COMPONENTSDIR =             components
+ROBOT_PROFILE =             profile.txt
 REPORT_FAIL_ON =            None
 REPORT_LABEL =              -l true
-REPORT_PROFILE_OPTS =       
+REPORT_PROFILE_OPTS =       --profile $(ROBOT_PROFILE)
 OBO_FORMAT_OPTIONS =        
 SPARQL_VALIDATION_CHECKS =  owldef-self-reference iri-range label-with-iri multiple-replaced_by 
-SPARQL_EXPORTS =            basic-report competency-questions 
+SPARQL_EXPORTS =            basic-report class-count-by-prefix edges xrefs obsoletes synonyms 
 ODK_VERSION_MAKEFILE =      v1.5.4
 
 TODAY ?=                    $(shell date +%Y-%m-%d)
@@ -79,7 +80,7 @@ all: all_odk
 all_odk: odkversion config_check test custom_reports all_assets
 
 .PHONY: test
-test: odkversion reason_test sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2dl_$(ONT).owl.txt
+test: odkversion reason_test sparql_test robot_reports 
 	echo "Finished running all tests successfully."
 
 .PHONY: test
@@ -247,9 +248,13 @@ $(REPORTDIR)/$(SRC)-obo-report.tsv: $(SRCMERGED) | $(REPORTDIR)
 $(REPORTDIR)/%-obo-report.tsv: % | $(REPORTDIR)
 	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --print 5 -o $@
 
-check_for_robot_updates:
-	echo "You are not using a custom profile, so you are getting the joy of the latest ROBOT report!"
-
+check_for_robot_updates:	
+	@cut -f2 "/tools/robot_report_profile.txt" | sort > $(TMPDIR)/sorted_tsv2.txt
+	@cut -f2 "$(ROBOT_PROFILE)" | sort > $(TMPDIR)/sorted_tsv1.txt
+	@comm -23 $(TMPDIR)/sorted_tsv2.txt $(TMPDIR)/sorted_tsv1.txt > $(TMPDIR)/missing.txt
+	@echo "Missing tests:"
+	@cat $(TMPDIR)/missing.txt
+	@rm $(TMPDIR)/sorted_tsv1.txt $(TMPDIR)/sorted_tsv2.txt $(TMPDIR)/missing.txt $(TMPDIR)/report_profile_robot.txt
 
 # ----------------------------------------
 # Release assets

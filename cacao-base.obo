@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: http://w3id.org/cacao/cacao/releases/2025-06-06/cacao-base.owl
+data-version: http://w3id.org/cacao/cacao/releases/2025-06-07/cacao-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: skos http://www.w3.org/2004/02/skos/core# 
@@ -8,7 +8,7 @@ property_value: dce:type IAO:8000001
 property_value: dcterms:description "None" xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/unspecified
 property_value: dcterms:title "Cultural Artefact Contextual Ontology" xsd:string
-property_value: owl:versionInfo "2025-06-06" xsd:string
+property_value: owl:versionInfo "2025-06-07" xsd:string
 
 [Term]
 id: CACAO:0000002
@@ -529,6 +529,7 @@ property_value: skos:definition "Scope note:\nThis class comprises trophy cups, 
 id: CACAO:0000086
 name: Image
 is_a: CACAO:0000003 ! Digital Artefact
+is_a: http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item
 property_value: dce:creator https://orcid.org/0000-0002-0905-7033
 property_value: dce:date "2025-06-06T17:06:03Z" xsd:dateTime
 property_value: skos:definition "Scope note:\nThis class comprises digital artefacts that represent visual information, such as a photograph, drawing, or graphic. They are stored as a raster or vector file format." xsd:string
@@ -537,6 +538,7 @@ property_value: skos:definition "Scope note:\nThis class comprises digital artef
 id: CACAO:0000087
 name: 3D Object
 is_a: CACAO:0000003 ! Digital Artefact
+is_a: http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item
 property_value: dce:creator https://orcid.org/0000-0002-0905-7033
 property_value: dce:date "2025-06-06T17:06:09Z" xsd:dateTime
 property_value: skos:definition "Scope note:\nThis class comprises digital artefacts that represent a three-dimensional object using a collection of points in 3D space, connected by various geometric entities such as triangles, lines, and curved surfaces." xsd:string
@@ -545,6 +547,7 @@ property_value: skos:definition "Scope note:\nThis class comprises digital artef
 id: CACAO:0000088
 name: Video
 is_a: CACAO:0000003 ! Digital Artefact
+is_a: http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item
 property_value: dce:creator https://orcid.org/0000-0002-0905-7033
 property_value: dce:date "2025-06-06T17:06:14Z" xsd:dateTime
 property_value: skos:definition "Scope note:\nThis class comprises digital artefacts consisting of a recording of moving visual images. It can include synchronized audio." xsd:string
