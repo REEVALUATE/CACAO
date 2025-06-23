@@ -332,30 +332,35 @@ Examples:
 <http://w3id.org/cacao/shapes/CACAO_0000030> a sh:PropertyShape ;
     rdfs:label "height"@en ;
     sh:name "height"@en ;
+    sh:minLength 0 ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <http://w3id.org/cacao/CACAO_0000030> .
 
 <http://w3id.org/cacao/shapes/CACAO_0000031> a sh:PropertyShape ;
     rdfs:label "width"@en ;
     sh:name "width"@en ;
+    sh:minLength 0 ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <http://w3id.org/cacao/CACAO_0000031> .
 
 <http://w3id.org/cacao/shapes/CACAO_0000032> a sh:PropertyShape ;
     rdfs:label "diameter"@en ;
     sh:name "diameter"@en ;
+    sh:minLength 0 ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <http://w3id.org/cacao/CACAO_0000032> .
 
 <http://w3id.org/cacao/shapes/CACAO_0000033> a sh:PropertyShape ;
     rdfs:label "thickness"@en ;
     sh:name "thickness"@en ;
+    sh:minLength 0 ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <http://w3id.org/cacao/CACAO_0000033> .
 
 <http://w3id.org/cacao/shapes/CACAO_0000034> a sh:PropertyShape ;
     rdfs:label "length"@en ;
     sh:name "length"@en ;
+    sh:minLength 0 ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path <http://w3id.org/cacao/CACAO_0000034> .
 
@@ -2883,7 +2888,6 @@ In First Order Logic:
         "P102 имeeт названиe"@ru,
         "P102 有题名"@zh ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:minCount 1 ;
     sh:path <http://www.cidoc-crm.org/cidoc-crm/P102_has_title> .
 
 <http://w3id.org/cacao/shapes/P102i_is_title_of> a sh:PropertyShape ;
@@ -4267,6 +4271,9 @@ In First Order Logic:
         "P1 идeнтифицируeтся"@ru,
         "P1 被标识为"@zh ;
     sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:minCount 1 ; 
+    sh:minLength 3 ;
+    sh:maxLength 100 ; 
     sh:path <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> .
 
 <http://w3id.org/cacao/shapes/P1i_identifies> a sh:PropertyShape ;
