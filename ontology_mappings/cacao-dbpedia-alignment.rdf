@@ -1,0 +1,754 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='AgreementMakerLight'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>??</type>
+	<onto1>http://w3id.org/cacao/cacao/cacao-full.owl</onto1>
+	<onto2>http://dbpedia.org/ontology/</onto2>
+	<uri1>http://w3id.org/cacao/cacao/cacao-full.owl</uri1>
+	<uri2>http://dbpedia.org/ontology/</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/conflict"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/conflict"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://schema.org/nationality"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/nationality"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000040"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/partner"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000035"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/movement"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/relation"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/relation"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/partOf"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/part"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/operator"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/operator"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000017"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/genre"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://schema.org/Place"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Place"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9995</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000025"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Instrument"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9994</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000061"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Painting"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9993</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000020"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Museum"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9993</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000024"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Artwork"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9993</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Document"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9974</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://schema.org/Person"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Person"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9972</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Person"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9972</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://schema.org/Person"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Person"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9972</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000019"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Building"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9967</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000086"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Image"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9967</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000027"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Genre"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9898</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000022"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Artist"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9898</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Agent"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9893</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/2006/vcard/ns#Agent"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Agent"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9893</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://purl.org/dc/terms/Agent"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Agent"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9893</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://schema.org/Country"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Country"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9885</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://schema.org/Thing"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Thing"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000026"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/field"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8537</measure>
+			<relation> </relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://schema.org/specialty"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/sportSpecialty"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.846</measure>
+			<relation> </relation>
+		</Cell>
+	</map>
+
+	<!-- <map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/action"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/hasJunctionWith"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8397</measure>
+			<relation>=</relation>
+		</Cell>
+	</map> -->
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://xmlns.com/foaf/0.1/interest"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/mainInterest"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8271</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<!-- <map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/target"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/targetAirport"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8262</measure>
+			<relation>=</relation>
+		</Cell>
+	</map> -->
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Type"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8217</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000000"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/domain"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8213</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://schema.org/description"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/pictureDescription"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.813</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Actor"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8118</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E67_Birth"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Birth"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8118</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Activity"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8118</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Event"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8118</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Group"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8118</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E69_Death"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Death"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8118</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<!-- <map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/function"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/otherFunction"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.81</measure>
+			<relation>=</relation>
+		</Cell>
+	</map> -->
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/2004/02/skos/core#member"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/memberOfParliament"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.803</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<!-- <map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/2004/02/skos/core#member"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/MemberOfParliament"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.803</measure>
+			<relation>=</relation>
+		</Cell>
+	</map> -->
+<!-- 
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/and"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/hand"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7714</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/and"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/land"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7714</measure>
+			<relation>=</relation>
+		</Cell>
+	</map> -->
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/currentMember"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7692</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<!-- <map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/dataType"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/type"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7546</measure>
+			<relation>=</relation>
+		</Cell>
+	</map> -->
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/consentingParty"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/party"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</measure>
+			<relation> </relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/informedParty"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/party"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</measure>
+			<relation> </relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/consentedParty"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/party"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</measure>
+			<relation> </relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/attributingParty"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/party"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</measure>
+			<relation> </relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/contractedParty"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/party"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</measure>
+			<relation> </relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/compensatedParty"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/party"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</measure>
+			<relation> </relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/trackedParty"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/party"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</measure>
+			<relation> </relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/attributedParty"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/party"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</measure>
+			<relation> </relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/compensatingParty"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/party"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</measure>
+			<relation> </relation>
+		</Cell>
+	</map>
+
+	<!-- <map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/permission"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/mission"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7412</measure>
+			<relation>=</relation>
+		</Cell>
+	</map> -->
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Organisation"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7367</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://schema.org/Organization"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Organisation"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7367</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Organisation"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7367</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000021"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/ReligiousBuilding"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7324</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/existence"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7273</measure>
+			<relation> </relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P93_took_out_of_existence"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/existence"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7273</measure>
+			<relation> </relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000045"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Mosque"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7101</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000043"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Temple"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7101</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P94_has_created"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/created"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7009</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/isPartOf"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6952</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/participatingIn"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6901</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://w3id.org/cacao/CACAO_0000029"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Church"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6807</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/place"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.678</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://schema.org/MediaObject"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/Media"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.676</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/features"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6733</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/note"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6563</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+<!-- 
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/road"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6545</measure>
+			<relation>=</relation>
+		</Cell>
+	</map> -->
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/value"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.65</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<!-- <map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/consequence"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/event"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6364</measure>
+			<relation>=</relation>
+		</Cell>
+	</map> -->
+
+	<!-- <map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/prohibition"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/promotion"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6203</measure>
+			<relation>=</relation>
+		</Cell>
+	</map> -->
+
+	<!-- <map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/nonFictionSubject"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6071</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/nonFictionSubject"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6071</measure>
+			<relation>=</relation>
+		</Cell>
+	</map> -->
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/currentTeamMember"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.607</measure>
+			<relation> </relation>
+		</Cell>
+	</map>
+
+	<!-- <map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/assignerOf"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/designer"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6024</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/ns/odrl/2/assigner"/>
+			<entity2 rdf:resource="http://dbpedia.org/ontology/designer"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6024</measure>
+			<relation>=</relation>
+		</Cell>
+	</map> -->
+
+</Alignment>
+</rdf:RDF>
