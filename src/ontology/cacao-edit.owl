@@ -1197,6 +1197,18 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3i
 This class comprises digital artefacts consisting of sound recordings. This includes music, spoken word, and other forms of auditory information stored in a digital format.")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000089> <http://w3id.org/cacao/CACAO_0000003>)
 
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E21_Person> (E21 Person)
+
+EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <http://www.w3.org/ns/prov#Person>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> (E70 Chose)
+
+EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E70_Thing> <http://www.w3.org/ns/prov#Entity>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> (E7 Handlung)
+
+EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E7_Activity> <http://www.w3.org/ns/prov#Activity>)
+
 # Class: <http://www.w3.org/ns/odrl/2/Asset> (Asset)
 
 SubClassOf(<http://www.w3.org/ns/odrl/2/Asset> <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object>)
@@ -1204,6 +1216,10 @@ SubClassOf(<http://www.w3.org/ns/odrl/2/Asset> <http://www.cidoc-crm.org/cidoc-c
 # Class: <http://www.w3.org/ns/odrl/2/Party> (Party)
 
 SubClassOf(<http://www.w3.org/ns/odrl/2/Party> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+
+# Class: <http://www.w3.org/ns/prov#Organization> (Organization)
+
+SubClassOf(<http://www.w3.org/ns/prov#Organization> <http://www.cidoc-crm.org/cidoc-crm/E74_Group>)
 
 
 )
