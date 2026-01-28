@@ -22,6 +22,8 @@ import_group:
       mirror_from: https://www.w3.org/ns/odrl/2/ODRL22.ttl
     - id: foaf
       mirror_from: http://xmlns.com/foaf/spec/index.rdf
+    - id: prov
+      mirror_from: https://www.w3.org/ns/prov-o
 ci:
   - github_actions
 documentation:

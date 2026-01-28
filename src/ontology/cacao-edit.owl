@@ -12,6 +12,7 @@ Ontology(<http://w3id.org/cacao/cacao.owl>
 Import(<http://w3id.org/cacao/cacao/imports/crm_import.owl>)
 Import(<http://w3id.org/cacao/cacao/imports/foaf_import.owl>)
 Import(<http://w3id.org/cacao/cacao/imports/odrl_import.owl>)
+Import(<http://w3id.org/cacao/cacao/imports/prov_import.owl>)
 Import(<http://w3id.org/cacao/cacao/imports/schema_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)

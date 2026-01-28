@@ -8,6 +8,7 @@
   <uri name="http://w3id.org/cacao/cacao/imports/schema_import.owl" uri="imports/schema_import.owl"/>
   <uri name="http://w3id.org/cacao/cacao/imports/foaf_import.owl" uri="imports/foaf_import.owl"/>
   <uri name="http://w3id.org/cacao/cacao/imports/odrl_import.owl" uri="imports/odrl_import.owl"/>
+  <uri name="http://w3id.org/cacao/cacao/imports/prov_import.owl" uri="imports/prov_import.owl"/>
   
   
 

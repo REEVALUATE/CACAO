@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://w3id.org/cacao/cacao/imports/schema_import.owl>
-<http://w3id.org/cacao/cacao/releases/2025-06-07/imports/schema_import.owl>
-Annotation(owl:versionInfo "2025-06-07")
+<http://w3id.org/cacao/cacao/releases/2026-01-28/imports/schema_import.owl>
+Annotation(owl:versionInfo "2026-01-28")
 
 Declaration(Class(rdfs:Class))
 Declaration(Class(<https://schema.org/AdministrativeArea>))
@@ -29,6 +29,7 @@ Declaration(Class(<https://schema.org/TextObject>))
 Declaration(Class(<https://schema.org/Thing>))
 Declaration(Class(<https://schema.org/URL>))
 Declaration(Class(<https://schema.org/WebPage>))
+Declaration(Class(<https://www.omg.org/spec/Commons/GeopoliticalEntities/GeopoliticalEntity>))
 Declaration(ObjectProperty(<https://schema.org/description>))
 Declaration(ObjectProperty(<https://schema.org/nationality>))
 Declaration(ObjectProperty(<https://schema.org/roleName>))
@@ -241,6 +242,7 @@ AnnotationAssertion(rdfs:comment <https://schema.org/Country> "A country."@en)
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Country> <https://schema.org/Country>)
 AnnotationAssertion(rdfs:label <https://schema.org/Country> "Country"@en)
 SubClassOf(<https://schema.org/Country> <https://schema.org/AdministrativeArea>)
+SubClassOf(<https://schema.org/Country> <https://www.omg.org/spec/Commons/GeopoliticalEntities/GeopoliticalEntity>)
 
 # Class: <https://schema.org/CreativeWork> (CreativeWork)
 
@@ -302,7 +304,7 @@ SubClassOf(<https://schema.org/Property> <https://schema.org/Intangible>)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/Role> "Represents additional information about a relationship or property. For example a Role can be used to say that a 'member' role linking some SportsTeam to a player occurred during a particular time period. Or that a Person's 'actor' role in a Movie was for some particular characterName. Such properties can be attached to a Role entity, which is then associated with the main entities using ordinary properties like 'member' or 'actor'.<br/><br/>
 
-See also <a href=\"http://blog.schema.org/2014/06/introducing-role.html\">blog post</a>."@en)
+See also <a href=\"https://blog.schema.org/2014/06/16/introducing-role/\">blog post</a>."@en)
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Role> <https://schema.org/Role>)
 AnnotationAssertion(rdfs:label <https://schema.org/Role> "Role"@en)
 SubClassOf(<https://schema.org/Role> <https://schema.org/Intangible>)
@@ -1031,7 +1033,7 @@ AnnotationAssertion(rdfs:label <https://schema.org/provider> "provider"@en)
 
 # Individual: <https://schema.org/recipeIngredient> (recipeIngredient)
 
-AnnotationAssertion(rdfs:comment <https://schema.org/recipeIngredient> "A single ingredient used in the recipe, e.g. sugar, flour or garlic."@en)
+AnnotationAssertion(rdfs:comment <https://schema.org/recipeIngredient> "An ingredient or ordered list of ingredients and potentially quantities used in the recipe, e.g. 1 cup of sugar, flour or garlic.  The ingredients can be represented as free text or more structured values."@en)
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/recipeIngredient> <https://schema.org/recipeIngredient>)
 AnnotationAssertion(rdfs:label <https://schema.org/recipeIngredient> "recipeIngredient"@en)
 
