@@ -13,9 +13,9 @@
         "val" : "Cultural Artefact Contextual Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-06-07"
+        "val" : "2026-01-29"
       } ],
-      "version" : "http://w3id.org/cacao/cacao/releases/2025-06-07/cacao-simple.json"
+      "version" : "http://w3id.org/cacao/cacao/releases/2026-01-29/cacao-simple.json"
     },
     "nodes" : [ {
       "id" : "http://w3id.org/cacao/CACAO_0000002",
@@ -1286,6 +1286,39 @@
         } ]
       }
     }, {
+      "id" : "http://www.cidoc-crm.org/cidoc-crm/P108_has_produced",
+      "lbl" : "P108 已产生了",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Quantification: one to many, necessary, dependent (1,n:1,1)\n\nScope note:\nThis property identifies the instance of E24 Physical Human-Made Thing that came into existence as a result of the instance of E12 Production.\nThe identity of an instance of E24 Physical Human-Made Thing is not defined by its matter, but by its existence as a subject of documentation. An E12 Production can result in the creation of multiple instances of E24 Physical Human-Made Thing.\n\nExamples:\n- The building of Rome (E12) has produced the Colosseum (E24). (Hopkins & Beard, 2011)\n\nIn First Order Logic:\n- P108(x,y) ⇒ E12(x)\n- P108(x,y) ⇒ E24(y)\n- P108(x,y) ⇒ P31(x,y)\n- P108(x,y) ⇒ P92(x,y)\n" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#notation",
+          "val" : "P108"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "a produit"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "has produced"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "hat hergestellt"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "produziu"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "παρήγαγε"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "произвeл"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "已产生了"
+        } ]
+      }
+    }, {
       "id" : "http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator",
       "lbl" : "P109 有当前或以往管理者",
       "type" : "PROPERTY",
@@ -1316,6 +1349,72 @@
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
           "val" : "有当前或以往管理者"
+        } ]
+      }
+    }, {
+      "id" : "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of",
+      "lbl" : "P130 显示特征",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Quantification: many to many (0,n:0,n)\n\nScope note:\nThis property generalises the notions of “copy of” and “similar to” into a directed relationship, where the domain expresses the derivative or influenced item and the range the source or influencing item, if such a direction can be established. The property can also be used to express similarity in cases that can be stated between two objects only, without historical knowledge about its reasons. The property expresses a symmetric relationship in case no direction of influence can be established either from evidence on the item itself or from historical knowledge. This holds in particular for siblings of a derivation process from a common source or non-causal cultural parallels, such as some weaving patterns.\nThe P130.1 kind of similarity property of the P130 shows features of (features are also found on) property enables the relationship between the domain and the range to be further clarified, in the sense from domain to range, if applicable. For example, it may be expressed if both items are product “of the same mould”, or if two texts “contain identical paragraphs”. \nIf the reason for similarity is a sort of derivation process, i.e. that the creator has used or had in mind the form of a particular thing during the creation or production, this process should be explicitly modelled. In these cases, P130 shows features of can be regarded as a shortcut of such a process. However, the current model does not contain any path specific enough to infer this property. Specializations of the CIDOC CRM may however be more explicit, for instance describing the use of moulds etc.\nThis property is not transitive. This property is irreflexive.\n\nExamples:\n- Mary Lamb’s Cymbeline from Charles and Mary Lamb’s Tales from Shakespeare (E89) shows features of William Shakespeare’s Cymbeline (E89). (Carrington, 1954)\n- The audio recording of Dante Alighieri’s La divina commedia read by Enrico de Negri (E73) shows features of the text of Dante Alighieri’s La divina commedia (E89). (Alighieri, 1956)\n\nProperties:\n- P130.1 kind of similarity: E55 Type\n\nIn First Order Logic:\n- P130(x,y) ⇒ E70(x)\n- P130(x,y) ⇒ E70(y) \n- P130(x,y,z) ⇒ [P130(x,y) ∧ E55(z)]\n- ¬P130(x,x)\n" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#notation",
+          "val" : "P130"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "apresenta características de"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "présente les caractéristiques de"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "shows features of"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "zeigt Merkmale von"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "παρουσιάζει χαρακτηριστικά του/της"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "дeмонстрируeт признаки"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "显示特征"
+        } ]
+      }
+    }, {
+      "id" : "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by",
+      "lbl" : "P14 执行者是",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Quantification: many to many, necessary (1,n:0,n)\n\nScope note:\nThis property describes the active participation of an instance of E39 Actor in an instance of E7 Activity. \nIt implies causal or legal responsibility. The P14.1 in the role of property of the property specifies the nature of an Actor’s participation.\n\nExamples:\n- The painting of the Sistine Chapel (E7) carried out by Michelangelo Buonaroti (E21) in the role of master craftsman (E55). (Goldscheider, 1953)\n\nProperties:\n- P14.1 in the role of: E55 Type\n\nIn First Order Logic:\n- P14(x,y) ⇒ E7(x)\n- P14(x,y)⇒ E39(y)\n- P14(x,y) ⇒ P11(x,y)\n- P14(x,y,z) ⇒ [P14(x,y) ∧ E55(z)]\n" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#notation",
+          "val" : "P14"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "a été effectué par"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "carried out by"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "realizada por"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "wurde ausgeführt von"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "πραγματοποιήθηκε από"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "выполнялся"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "执行者是"
         } ]
       }
     }, {
@@ -1382,6 +1481,122 @@
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
           "val" : "观测度量规格"
+        } ]
+      }
+    }, {
+      "id" : "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "lbl" : "wasAssociatedWith",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://www.w3.org/ns/prov-o#"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#category",
+          "val" : "starting-point"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#component",
+          "val" : "agents-responsibility"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#inverse",
+          "val" : "wasAssociateFor"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#qualifiedForm",
+          "val" : "http://www.w3.org/ns/prov#Association"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#qualifiedForm",
+          "val" : "http://www.w3.org/ns/prov#qualifiedAssociation"
+        } ]
+      }
+    }, {
+      "id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+      "lbl" : "wasDerivedFrom",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://www.w3.org/ns/prov-o#"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#category",
+          "val" : "starting-point"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#component",
+          "val" : "derivations"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#definition",
+          "val" : "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#inverse",
+          "val" : "hadDerivation"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#qualifiedForm",
+          "val" : "http://www.w3.org/ns/prov#Derivation"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#qualifiedForm",
+          "val" : "http://www.w3.org/ns/prov#qualifiedDerivation"
+        } ]
+      }
+    }, {
+      "id" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "lbl" : "wasGeneratedBy",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://www.w3.org/ns/prov-o#"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#category",
+          "val" : "starting-point"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#component",
+          "val" : "entities-activities"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#inverse",
+          "val" : "generated"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#qualifiedForm",
+          "val" : "http://www.w3.org/ns/prov#Generation"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#qualifiedForm",
+          "val" : "http://www.w3.org/ns/prov#qualifiedGeneration"
+        } ]
+      }
+    }, {
+      "id" : "http://www.w3.org/ns/prov#wasInfluencedBy",
+      "lbl" : "wasInfluencedBy",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable.", "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://www.w3.org/ns/prov-o#"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#category",
+          "val" : "qualified"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#component",
+          "val" : "agents-responsibility"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#editorialNote",
+          "val" : "The sub-properties of prov:wasInfluencedBy can be elaborated in more detail using the Qualification Pattern. For example, the binary relation :baking prov:used :spoon can be qualified by asserting :baking prov:qualifiedUsage [ a prov:Usage; prov:entity :spoon; prov:atLocation :kitchen ] .\n\nSubproperties of prov:wasInfluencedBy may also be asserted directly without being qualified.\n\nprov:wasInfluencedBy should not be used without also using one of its subproperties. \n"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#inverse",
+          "val" : "influenced"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#qualifiedForm",
+          "val" : "http://www.w3.org/ns/prov#Influence"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#qualifiedForm",
+          "val" : "http://www.w3.org/ns/prov#qualifiedInfluence"
+        }, {
+          "pred" : "http://www.w3.org/ns/prov#sharesDefinitionWith",
+          "val" : "http://www.w3.org/ns/prov#Influence"
         } ]
       }
     }, {
@@ -1468,6 +1683,34 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/ns/prov#category",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/ns/prov#component",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/ns/prov#definition",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/ns/prov#editorialNote",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/ns/prov#inverse",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/ns/prov#qualifiedForm",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/ns/prov#sharesDefinitionWith",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     } ],
@@ -1712,6 +1955,10 @@
       "pred" : "subPropertyOf",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
     }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000035",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/ns/prov#wasInfluencedBy"
+    }, {
       "sub" : "http://w3id.org/cacao/CACAO_0000038",
       "pred" : "subPropertyOf",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"
@@ -1719,6 +1966,26 @@
       "sub" : "http://w3id.org/cacao/CACAO_0000039",
       "pred" : "subPropertyOf",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"
+    }, {
+      "sub" : "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+    }, {
+      "sub" : "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/ns/prov#wasInfluencedBy"
+    }, {
+      "sub" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/ns/prov#wasInfluencedBy"
+    }, {
+      "sub" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/ns/prov#wasInfluencedBy"
+    }, {
+      "sub" : "http://www.cidoc-crm.org/cidoc-crm/P108_has_produced",
+      "pred" : "inverseOf",
+      "obj" : "http://www.w3.org/ns/prov#wasGeneratedBy"
     } ],
     "domainRangeAxioms" : [ {
       "predicateId" : "http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator",

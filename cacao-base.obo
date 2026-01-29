@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: http://w3id.org/cacao/cacao/releases/2025-06-07/cacao-base.owl
+data-version: http://w3id.org/cacao/cacao/releases/2026-01-29/cacao-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: skos http://www.w3.org/2004/02/skos/core# 
@@ -8,7 +8,7 @@ property_value: dce:type IAO:8000001
 property_value: dcterms:description "None" xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/unspecified
 property_value: dcterms:title "Cultural Artefact Contextual Ontology" xsd:string
-property_value: owl:versionInfo "2025-06-07" xsd:string
+property_value: owl:versionInfo "2026-01-29" xsd:string
 
 [Term]
 id: CACAO:0000002
@@ -31,6 +31,7 @@ property_value: skos:definition "rdfs:comment \"Scope note:\nThis class comprise
 [Term]
 id: CACAO:0000005
 name: Historical Event
+is_a: Activity
 is_a: E5:Event
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2024-11-19T12:02:07Z" xsd:dateTime
@@ -132,6 +133,7 @@ id: CACAO:0000022
 name: Artist
 comment: Scope note:\nThis class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).\n\nArtists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.\n\nIn bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.\n\nExamples:\n- Leonardo da Vinci\n- Frida Kahlo\n- William Shakespeare\n- Maya Deren
 is_a: E21:Person
+is_a: Person
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2025-04-11T08:32:18Z" xsd:dateTime
 property_value: skos:definition "Scope note:\nThis class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).\n\nArtists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.\n\nIn bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.\n\nExamples:\n- Leonardo da Vinci\n- Frida Kahlo\n- William Shakespeare\n- Maya Deren" xsd:string
@@ -654,6 +656,7 @@ property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2025-04-12T09:16:19Z" xsd:dateTime
 domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity
 range: CACAO:0000036 ! Movement
+is_a: wasInfluencedBy
 
 [Typedef]
 id: CACAO:0000038
