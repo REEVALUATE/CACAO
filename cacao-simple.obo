@@ -1,11 +1,12 @@
 format-version: 1.2
-data-version: http://w3id.org/cacao/cacao/releases/2025-06-07/cacao-simple.owl
+data-version: http://w3id.org/cacao/cacao/releases/2026-01-29/cacao-simple.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: ns http://www.w3.org/2003/06/sw-vocab-status/ns# 
+idspace: prov http://www.w3.org/ns/prov# 
 idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: http://w3id.org/cacao/cacao/cacao-simple.owl
-property_value: owl:versionInfo "2025-06-07" xsd:string
+property_value: owl:versionInfo "2026-01-29" xsd:string
 property_value: terms:description "None" xsd:string
 property_value: terms:license https://creativecommons.org/licenses/unspecified
 property_value: terms:title "Cultural Artefact Contextual Ontology" xsd:string
@@ -629,6 +630,7 @@ comment: Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property a
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2025-04-12T09:16:19Z" xsd:dateTime
 range: CACAO:0000036 ! Movement
+is_a: prov:wasInfluencedBy ! wasInfluencedBy
 
 [Typedef]
 id: CACAO:0000038
@@ -652,6 +654,26 @@ property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2025-04-12T10:13:16Z" xsd:dateTime
 
 [Typedef]
+id: http://www.cidoc-crm.org/cidoc-crm/P108_has_produced
+name: P108 a produit
+name: P108 has produced
+name: P108 hat hergestellt
+name: P108 produziu
+name: P108 παρήγαγε
+name: P108 произвeл
+name: P108 已产生了
+comment: Quantification: one to many, necessary, dependent (1,n:1,1)\n\nScope note:\nThis property identifies the instance of E24 Physical Human-Made Thing that came into existence as a result of the instance of E12 Production.\nThe identity of an instance of E24 Physical Human-Made Thing is not defined by its matter, but by its existence as a subject of documentation. An E12 Production can result in the creation of multiple instances of E24 Physical Human-Made Thing.\n\nExamples:\n- The building of Rome (E12) has produced the Colosseum (E24). (Hopkins & Beard, 2011)\n\nIn First Order Logic:\n- P108(x,y) ⇒ E12(x)\n- P108(x,y) ⇒ E24(y)\n- P108(x,y) ⇒ P31(x,y)\n- P108(x,y) ⇒ P92(x,y)\n
+property_value: skos:notation "P108" xsd:string
+property_value: skos:prefLabel "a produit" xsd:string
+property_value: skos:prefLabel "has produced" xsd:string
+property_value: skos:prefLabel "hat hergestellt" xsd:string
+property_value: skos:prefLabel "produziu" xsd:string
+property_value: skos:prefLabel "παρήγαγε" xsd:string
+property_value: skos:prefLabel "произвeл" xsd:string
+property_value: skos:prefLabel "已产生了" xsd:string
+inverse_of: prov:wasGeneratedBy ! wasGeneratedBy
+
+[Typedef]
 id: http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator
 name: P109 a pour responsable actuel ou antérieur de la collection
 name: P109 has current or former curator
@@ -670,6 +692,45 @@ property_value: skos:prefLabel "έχει ή είχε επιμελητή" xsd:str
 property_value: skos:prefLabel "имeeт дeйствующeго или бывшeго хранитeля" xsd:string
 property_value: skos:prefLabel "有当前或以往管理者" xsd:string
 domain: CACAO:0000020 ! Museum
+
+[Typedef]
+id: http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of
+name: P130 apresenta características de
+name: P130 présente les caractéristiques de
+name: P130 shows features of
+name: P130 zeigt Merkmale von
+name: P130 παρουσιάζει χαρακτηριστικά του/της
+name: P130 дeмонстрируeт признаки
+name: P130 显示特征
+comment: Quantification: many to many (0,n:0,n)\n\nScope note:\nThis property generalises the notions of “copy of” and “similar to” into a directed relationship, where the domain expresses the derivative or influenced item and the range the source or influencing item, if such a direction can be established. The property can also be used to express similarity in cases that can be stated between two objects only, without historical knowledge about its reasons. The property expresses a symmetric relationship in case no direction of influence can be established either from evidence on the item itself or from historical knowledge. This holds in particular for siblings of a derivation process from a common source or non-causal cultural parallels, such as some weaving patterns.\nThe P130.1 kind of similarity property of the P130 shows features of (features are also found on) property enables the relationship between the domain and the range to be further clarified, in the sense from domain to range, if applicable. For example, it may be expressed if both items are product “of the same mould”, or if two texts “contain identical paragraphs”. \nIf the reason for similarity is a sort of derivation process, i.e. that the creator has used or had in mind the form of a particular thing during the creation or production, this process should be explicitly modelled. In these cases, P130 shows features of can be regarded as a shortcut of such a process. However, the current model does not contain any path specific enough to infer this property. Specializations of the CIDOC CRM may however be more explicit, for instance describing the use of moulds etc.\nThis property is not transitive. This property is irreflexive.\n\nExamples:\n- Mary Lamb’s Cymbeline from Charles and Mary Lamb’s Tales from Shakespeare (E89) shows features of William Shakespeare’s Cymbeline (E89). (Carrington, 1954)\n- The audio recording of Dante Alighieri’s La divina commedia read by Enrico de Negri (E73) shows features of the text of Dante Alighieri’s La divina commedia (E89). (Alighieri, 1956)\n\nProperties:\n- P130.1 kind of similarity: E55 Type\n\nIn First Order Logic:\n- P130(x,y) ⇒ E70(x)\n- P130(x,y) ⇒ E70(y) \n- P130(x,y,z) ⇒ [P130(x,y) ∧ E55(z)]\n- ¬P130(x,x)\n
+property_value: skos:notation "P130" xsd:string
+property_value: skos:prefLabel "apresenta características de" xsd:string
+property_value: skos:prefLabel "présente les caractéristiques de" xsd:string
+property_value: skos:prefLabel "shows features of" xsd:string
+property_value: skos:prefLabel "zeigt Merkmale von" xsd:string
+property_value: skos:prefLabel "παρουσιάζει χαρακτηριστικά του/της" xsd:string
+property_value: skos:prefLabel "дeмонстрируeт признаки" xsd:string
+property_value: skos:prefLabel "显示特征" xsd:string
+is_a: prov:wasDerivedFrom ! wasDerivedFrom
+
+[Typedef]
+id: http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by
+name: P14 a été effectué par
+name: P14 carried out by
+name: P14 realizada por
+name: P14 wurde ausgeführt von
+name: P14 πραγματοποιήθηκε από
+name: P14 выполнялся
+name: P14 执行者是
+comment: Quantification: many to many, necessary (1,n:0,n)\n\nScope note:\nThis property describes the active participation of an instance of E39 Actor in an instance of E7 Activity. \nIt implies causal or legal responsibility. The P14.1 in the role of property of the property specifies the nature of an Actor’s participation.\n\nExamples:\n- The painting of the Sistine Chapel (E7) carried out by Michelangelo Buonaroti (E21) in the role of master craftsman (E55). (Goldscheider, 1953)\n\nProperties:\n- P14.1 in the role of: E55 Type\n\nIn First Order Logic:\n- P14(x,y) ⇒ E7(x)\n- P14(x,y)⇒ E39(y)\n- P14(x,y) ⇒ P11(x,y)\n- P14(x,y,z) ⇒ [P14(x,y) ∧ E55(z)]\n
+property_value: skos:notation "P14" xsd:string
+property_value: skos:prefLabel "a été effectué par" xsd:string
+property_value: skos:prefLabel "carried out by" xsd:string
+property_value: skos:prefLabel "realizada por" xsd:string
+property_value: skos:prefLabel "wurde ausgeführt von" xsd:string
+property_value: skos:prefLabel "πραγματοποιήθηκε από" xsd:string
+property_value: skos:prefLabel "выполнялся" xsd:string
+property_value: skos:prefLabel "执行者是" xsd:string
 
 [Typedef]
 id: http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by
@@ -727,4 +788,54 @@ id: https://schema.org/specialty
 name: specialty
 comment: One of the domain specialities to which this web page's content applies.
 property_value: isDefinedBy https://schema.org/specialty
+
+[Typedef]
+id: prov:wasAssociatedWith
+name: wasAssociatedWith
+comment: An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity.
+property_value: isDefinedBy http://www.w3.org/ns/prov-o#
+property_value: prov:category "starting-point" xsd:string
+property_value: prov:component "agents-responsibility" xsd:string
+property_value: prov:inverse "wasAssociateFor" xsd:string
+property_value: prov:qualifiedForm prov:Association
+property_value: prov:qualifiedForm prov:qualifiedAssociation
+is_a: prov:wasInfluencedBy ! wasInfluencedBy
+
+[Typedef]
+id: prov:wasDerivedFrom
+name: wasDerivedFrom
+comment: The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable.
+property_value: isDefinedBy http://www.w3.org/ns/prov-o#
+property_value: prov:category "starting-point" xsd:string
+property_value: prov:component "derivations" xsd:string
+property_value: prov:definition "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity." xsd:string
+property_value: prov:inverse "hadDerivation" xsd:string
+property_value: prov:qualifiedForm prov:Derivation
+property_value: prov:qualifiedForm prov:qualifiedDerivation
+is_a: prov:wasInfluencedBy ! wasInfluencedBy
+
+[Typedef]
+id: prov:wasGeneratedBy
+name: wasGeneratedBy
+property_value: isDefinedBy http://www.w3.org/ns/prov-o#
+property_value: prov:category "starting-point" xsd:string
+property_value: prov:component "entities-activities" xsd:string
+property_value: prov:inverse "generated" xsd:string
+property_value: prov:qualifiedForm prov:Generation
+property_value: prov:qualifiedForm prov:qualifiedGeneration
+is_a: prov:wasInfluencedBy ! wasInfluencedBy
+
+[Typedef]
+id: prov:wasInfluencedBy
+name: wasInfluencedBy
+comment: Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable.
+comment: This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href="#owl-profile">PROV-O OWL Profile</a>.
+property_value: isDefinedBy http://www.w3.org/ns/prov-o#
+property_value: prov:category "qualified" xsd:string
+property_value: prov:component "agents-responsibility" xsd:string
+property_value: prov:editorialNote "The sub-properties of prov:wasInfluencedBy can be elaborated in more detail using the Qualification Pattern. For example, the binary relation :baking prov:used :spoon can be qualified by asserting :baking prov:qualifiedUsage [ a prov:Usage; prov:entity :spoon; prov:atLocation :kitchen ] .\n\nSubproperties of prov:wasInfluencedBy may also be asserted directly without being qualified.\n\nprov:wasInfluencedBy should not be used without also using one of its subproperties. \n" xsd:string
+property_value: prov:inverse "influenced" xsd:string
+property_value: prov:qualifiedForm prov:Influence
+property_value: prov:qualifiedForm prov:qualifiedInfluence
+property_value: prov:sharesDefinitionWith prov:Influence
 

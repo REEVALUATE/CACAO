@@ -16,9 +16,9 @@
         "val" : "Cultural Artefact Contextual Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-06-07"
+        "val" : "2026-01-29"
       } ],
-      "version" : "http://w3id.org/cacao/cacao/releases/2025-06-07/cacao-base.json"
+      "version" : "http://w3id.org/cacao/cacao/releases/2026-01-29/cacao-base.json"
     },
     "nodes" : [ {
       "id" : "http://w3id.org/cacao/CACAO_0000002",
@@ -1132,6 +1132,12 @@
       "id" : "http://www.w3.org/ns/odrl/2/Policy",
       "type" : "CLASS"
     }, {
+      "id" : "http://www.w3.org/ns/prov#Activity",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.w3.org/ns/prov#Person",
+      "type" : "CLASS"
+    }, {
       "id" : "http://w3id.org/cacao/CACAO_0000000",
       "lbl" : "hasDomain",
       "type" : "PROPERTY",
@@ -1333,6 +1339,10 @@
       "type" : "PROPERTY",
       "propertyType" : "OBJECT"
     }, {
+      "id" : "http://www.w3.org/ns/prov#wasInfluencedBy",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
       "id" : "http://purl.org/dc/elements/1.1/creator",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
@@ -1382,6 +1392,10 @@
       "pred" : "is_a",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
     }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000005",
+      "pred" : "is_a",
+      "obj" : "http://www.w3.org/ns/prov#Activity"
+    }, {
       "sub" : "http://w3id.org/cacao/CACAO_0000010",
       "pred" : "is_a",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
@@ -1425,6 +1439,10 @@
       "sub" : "http://w3id.org/cacao/CACAO_0000022",
       "pred" : "is_a",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000022",
+      "pred" : "is_a",
+      "obj" : "http://www.w3.org/ns/prov#Person"
     }, {
       "sub" : "http://w3id.org/cacao/CACAO_0000023",
       "pred" : "is_a",
@@ -1697,6 +1715,10 @@
       "sub" : "http://w3id.org/cacao/CACAO_0000035",
       "pred" : "subPropertyOf",
       "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000035",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/ns/prov#wasInfluencedBy"
     }, {
       "sub" : "http://w3id.org/cacao/CACAO_0000038",
       "pred" : "subPropertyOf",

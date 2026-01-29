@@ -584,7 +584,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <htt
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <http://www.cidoc-crm.org/cidoc-crm/E35_Title>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> (P102i is title of)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> (P102i est le titre de)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> "Quantification of the inverse property: many to many (0,n:0,n)
 
@@ -869,7 +869,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of>
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> (P106i fait partie de)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> (P106i faz parte de)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> "Quantification of the inverse property: many to many (0,n:0,n)
 
@@ -1210,7 +1210,7 @@ SubObjectPropertyOf(<http://www.cidoc-crm.org/cidoc-crm/P10i_contains> <http://w
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P10i_contains> <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P10i_contains> <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P110_augmented> (P110 a augmenté)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P110_augmented> (P110 augmented)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P110_augmented> "Quantification: many to many, necessary (1,n:0,n)
 
@@ -1460,7 +1460,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P113_removed> <http:
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P113_removed> <http://www.cidoc-crm.org/cidoc-crm/E80_Part_Removal>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P113_removed> <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P113i_was_removed_by> (P113i wurde entfernt durch)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P113i_was_removed_by> (P113i foi removido por)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P113i_was_removed_by> "Quantification of the inverse property: many to many, necessary (1,n:0,n)
 
@@ -1824,7 +1824,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P125_used_object_of_
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P125_used_object_of_type> <http://www.cidoc-crm.org/cidoc-crm/E7_Activity>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P125_used_object_of_type> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P125i_was_type_of_object_used_in> (P125i foi tipo do objeto usado em)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P125i_was_type_of_object_used_in> (P125i was type of object used in)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P125i_was_type_of_object_used_in> "Quantification of the inverse property: many to many (0,n:0,n)
 
@@ -2347,7 +2347,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P133_is_spatiotemporally_separated_from> <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P133_is_spatiotemporally_separated_from> <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P134_continued> (P134 继续)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P134_continued> (P134 setzte sich fort in)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P134_continued> "Quantification: many to many (0,n:0,n)
 
@@ -3077,7 +3077,7 @@ SubObjectPropertyOf(<http://www.cidoc-crm.org/cidoc-crm/P142i_was_used_in> <http
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P142i_was_used_in> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P142i_was_used_in> <http://www.cidoc-crm.org/cidoc-crm/E15_Identifier_Assignment>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P143_joined> (P143 a fait adhérer)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P143_joined> (P143 joined)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P143_joined> "Quantification: many to many, necessary (1,n:0,n)
 
@@ -3476,7 +3476,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> (P14 wurde ausgeführt von)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> (P14 carried out by)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> "Quantification: many to many, necessary (1,n:0,n)
 
@@ -5122,7 +5122,7 @@ SubObjectPropertyOf(<http://www.cidoc-crm.org/cidoc-crm/P183i_starts_after_the_e
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P183i_starts_after_the_end_of> <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P183i_starts_after_the_end_of> <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P184_ends_before_or_with_the_end_of> (P184 ends before or with the end of)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P184_ends_before_or_with_the_end_of> (P184 se termine avant ou au moment de la fin de)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P184_ends_before_or_with_the_end_of> "Quantification: many to many (0,n:0,n)
 
@@ -5697,7 +5697,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P197_covered_parts_o
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P197_covered_parts_of> <http://www.cidoc-crm.org/cidoc-crm/E93_Presence>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P197_covered_parts_of> <http://www.cidoc-crm.org/cidoc-crm/E53_Place>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P197i_was_partially_covered_by> (P197i был частично покрыт)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P197i_was_partially_covered_by> (P197i a été partiellement couvert par)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P197i_was_partially_covered_by> "Quantification of the inverse property: many to many (0,n:0,n)
 
@@ -6235,7 +6235,7 @@ SubObjectPropertyOf(<http://www.cidoc-crm.org/cidoc-crm/P23i_surrendered_title_t
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P23i_surrendered_title_through> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P23i_surrendered_title_through> <http://www.cidoc-crm.org/cidoc-crm/E8_Acquisition>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P24_transferred_title_of> (P24 a transféré le titre de propriété de)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P24_transferred_title_of> (P24 transferiu os direitos de propriedade sobre o)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P24_transferred_title_of> "Quantification: many to many, necessary (1,n:0,n)
 
@@ -7711,7 +7711,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P44_has_condition> <
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P44_has_condition> <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P44_has_condition> <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of> (P44i ist Zustand von)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of> (P44i is condition of)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of> "Quantification of the inverse property: one to many, dependent (0,n:1,1)
 
@@ -8590,7 +8590,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P56_bears_feature> <
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P56_bears_feature> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P56_bears_feature> <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P56i_is_found_on> (P56i 发现于)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P56i_is_found_on> (P56i βρίσκεται σε)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P56i_is_found_on> "Quantification of the inverse property: one to many, dependent (0,n:1,1)
 
@@ -8844,7 +8844,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P62i_is_depicted_by> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P62i_is_depicted_by> <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P65_shows_visual_item> (P65 展示可视项)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P65_shows_visual_item> (P65 показываeт визуальный прeдмeт)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P65_shows_visual_item> "Quantification: many to many (0,n:0,n)
 
@@ -9064,7 +9064,7 @@ SubObjectPropertyOf(<http://www.cidoc-crm.org/cidoc-crm/P68i_use_foreseen_by> <h
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P68i_use_foreseen_by> <http://www.cidoc-crm.org/cidoc-crm/E57_Material>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P68i_use_foreseen_by> <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P69_has_association_with> (P69 关联)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P69_has_association_with> (P69 ist verbunden mit)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P69_has_association_with> "Quantification: many to many (0,n:0,n)
 
@@ -9140,7 +9140,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P69i_is_associated_with> <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P69i_is_associated_with> <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P70_documents> (P70 докумeнтируeт)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P70_documents> (P70 documents)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P70_documents> "Quantification: many to many, necessary (1,n:0,n)
 
@@ -10584,7 +10584,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P9_consists_of> <htt
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P9_consists_of> <http://www.cidoc-crm.org/cidoc-crm/E4_Period>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P9_consists_of> <http://www.cidoc-crm.org/cidoc-crm/E4_Period>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P9i_forms_part_of> (P9i faz parte de)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P9i_forms_part_of> (P9i fait partie de)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P9i_forms_part_of> "Quantification of the inverse property: many to many (0,n:0,n)
 
@@ -11307,7 +11307,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "物质对象"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> (E1 Entité CRM)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> (E1 Οντότητα CIDOC CRM)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> "Scope note:
 This class comprises all things in the universe of discourse of the CIDOC Conceptual Reference Model. 
@@ -12438,7 +12438,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence> "初始"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence> <http://www.cidoc-crm.org/cidoc-crm/E5_Event>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence> (E64 Daseinsende)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence> (E64 Fin d’existence)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence> "Scope note:
 This class comprises events that end the existence of any instance of E77 Persistent Item. 
