@@ -269,6 +269,7 @@ Examples:
 - A literary work might be classified under the movement Romanticism."@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000035> "movement"@en)
 SubObjectPropertyOf(<http://w3id.org/cacao/CACAO_0000035> owl:topObjectProperty)
+SubObjectPropertyOf(<http://w3id.org/cacao/CACAO_0000035> <http://www.w3.org/ns/prov#wasInfluencedBy>)
 ObjectPropertyDomain(<http://w3id.org/cacao/CACAO_0000035> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
 ObjectPropertyRange(<http://w3id.org/cacao/CACAO_0000035> <http://w3id.org/cacao/CACAO_0000036>)
 
@@ -297,9 +298,21 @@ SubObjectPropertyOf(<http://w3id.org/cacao/CACAO_0000040> owl:topObjectProperty)
 ObjectPropertyDomain(<http://w3id.org/cacao/CACAO_0000040> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
 ObjectPropertyRange(<http://w3id.org/cacao/CACAO_0000040> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
 
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P108_has_produced> (P108 has produced)
+
+InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P108_has_produced> <http://www.w3.org/ns/prov#wasGeneratedBy>)
+
 # Object Property: <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> (P109 έχει ή είχε επιμελητή)
 
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> <http://w3id.org/cacao/CACAO_0000020>)
+
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> (P130 shows features of)
+
+SubObjectPropertyOf(<http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> <http://www.w3.org/ns/prov#wasDerivedFrom>)
+
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> (P14 carried out by)
+
+EquivalentObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.w3.org/ns/prov#wasAssociatedWith>)
 
 # Object Property: <http://xmlns.com/foaf/0.1/interest> (interest)
 
@@ -1201,13 +1214,13 @@ SubClassOf(<http://w3id.org/cacao/CACAO_0000089> <http://w3id.org/cacao/CACAO_00
 
 EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <http://www.w3.org/ns/prov#Person>)
 
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E5_Event> (E5 Συμβάν)
+
+EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E5_Event> <http://www.w3.org/ns/prov#Activity>)
+
 # Class: <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> (E70 Chose)
 
 EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E70_Thing> <http://www.w3.org/ns/prov#Entity>)
-
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> (E7 Handlung)
-
-EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E7_Activity> <http://www.w3.org/ns/prov#Activity>)
 
 # Class: <http://www.w3.org/ns/odrl/2/Asset> (Asset)
 
