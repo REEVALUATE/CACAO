@@ -21,6 +21,8 @@ Annotation(dcterms:title "Cultural Artefact Contextual Ontology")
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000002>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000003>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000005>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000007>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000008>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000010>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000011>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000012>))
@@ -310,7 +312,7 @@ ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_for
 
 SubObjectPropertyOf(<http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> <http://www.w3.org/ns/prov#wasDerivedFrom>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> (P14 carried out by)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> (P14 wurde ausgeführt von)
 
 EquivalentObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.w3.org/ns/prov#wasAssociatedWith>)
 
@@ -395,6 +397,18 @@ AnnotationAssertion(dcterms:date <http://w3id.org/cacao/CACAO_0000005> "2024-11-
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000005> "Historical Event"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000005> "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.")
 SubClassOf(<http://w3id.org/cacao/CACAO_0000005> <http://www.cidoc-crm.org/cidoc-crm/E5_Event>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000007> (Footwear)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000007> "Footwear"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000007> "Coverings for the feet that sometimes extend above the ankle; generally made of durable materials. Distinguished from \"hosiery,\" which is primarily leg coverings. (aat note)")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000007> <http://w3id.org/cacao/CACAO_0000062>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000008> (Shoes)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000008> "Shoes"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://w3id.org/cacao/CACAO_0000008> "Footwear with a relatively stiff sole and heel, and generally covering the foot at or below the ankle joint. (aat note)")
+SubClassOf(<http://w3id.org/cacao/CACAO_0000008> <http://w3id.org/cacao/CACAO_0000007>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000010> (Social movement)
 
@@ -1214,7 +1228,7 @@ SubClassOf(<http://w3id.org/cacao/CACAO_0000089> <http://w3id.org/cacao/CACAO_00
 
 EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <http://www.w3.org/ns/prov#Person>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E5_Event> (E5 Συμβάν)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E5_Event> (E5 Ereignis)
 
 EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E5_Event> <http://www.w3.org/ns/prov#Activity>)
 
