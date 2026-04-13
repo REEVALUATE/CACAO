@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: http://w3id.org/cacao/cacao/releases/2026-01-29/cacao-base.owl
+data-version: http://w3id.org/cacao/cacao/releases/2026-04-13/cacao-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: skos http://www.w3.org/2004/02/skos/core# 
@@ -8,7 +8,7 @@ property_value: dce:type IAO:8000001
 property_value: dcterms:description "None" xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/unspecified
 property_value: dcterms:title "Cultural Artefact Contextual Ontology" xsd:string
-property_value: owl:versionInfo "2026-01-29" xsd:string
+property_value: owl:versionInfo "2026-04-13" xsd:string
 
 [Term]
 id: CACAO:0000002
@@ -36,6 +36,18 @@ is_a: E5:Event
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2024-11-19T12:02:07Z" xsd:dateTime
 property_value: skos:definition "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods." xsd:string
+
+[Term]
+id: CACAO:0000007
+name: Footwear
+is_a: CACAO:0000062 ! Clothing
+property_value: skos:definition "Coverings for the feet that sometimes extend above the ankle; generally made of durable materials. Distinguished from \"hosiery,\" which is primarily leg coverings. (aat note)" xsd:string
+
+[Term]
+id: CACAO:0000008
+name: Shoes
+is_a: CACAO:0000007 ! Footwear
+property_value: skos:definition "Footwear with a relatively stiff sole and heel, and generally covering the foot at or below the ankle joint. (aat note)" xsd:string
 
 [Term]
 id: CACAO:0000010

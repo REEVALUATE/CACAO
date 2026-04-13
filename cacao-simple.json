@@ -13,9 +13,9 @@
         "val" : "Cultural Artefact Contextual Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-01-29"
+        "val" : "2026-04-13"
       } ],
-      "version" : "http://w3id.org/cacao/cacao/releases/2026-01-29/cacao-simple.json"
+      "version" : "http://w3id.org/cacao/cacao/releases/2026-04-13/cacao-simple.json"
     },
     "nodes" : [ {
       "id" : "http://w3id.org/cacao/CACAO_0000002",
@@ -65,6 +65,26 @@
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
           "val" : "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods."
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000007",
+      "lbl" : "Footwear",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "Coverings for the feet that sometimes extend above the ankle; generally made of durable materials. Distinguished from \"hosiery,\" which is primarily leg coverings. (aat note)"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000008",
+      "lbl" : "Shoes",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "Footwear with a relatively stiff sole and heel, and generally covering the foot at or below the ankle joint. (aat note)"
         } ]
       }
     }, {
@@ -1715,6 +1735,14 @@
       "propertyType" : "ANNOTATION"
     } ],
     "edges" : [ {
+      "sub" : "http://w3id.org/cacao/CACAO_0000007",
+      "pred" : "is_a",
+      "obj" : "http://w3id.org/cacao/CACAO_0000062"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000008",
+      "pred" : "is_a",
+      "obj" : "http://w3id.org/cacao/CACAO_0000007"
+    }, {
       "sub" : "http://w3id.org/cacao/CACAO_0000011",
       "pred" : "is_a",
       "obj" : "http://w3id.org/cacao/CACAO_0000010"
