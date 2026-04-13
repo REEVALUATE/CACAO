@@ -14,11 +14,11 @@
      xmlns:schema="https://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://w3id.org/cacao/cacao.owl">
-        <owl:versionIRI rdf:resource="http://w3id.org/cacao/cacao/releases/2026-01-29/cacao.owl"/>
+        <owl:versionIRI rdf:resource="http://w3id.org/cacao/cacao/releases/2026-04-13/cacao.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Cultural Artefact Contextual Ontology</dcterms:title>
-        <owl:versionInfo>2026-01-29</owl:versionInfo>
+        <owl:versionInfo>2026-04-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -14024,6 +14024,26 @@ Examples:
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:02:07Z</dcterms:date>
         <rdfs:label xml:lang="en">Historical Event</rdfs:label>
         <skos:definition>A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000007 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000007">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000062"/>
+        <rdfs:label xml:lang="en">Footwear</rdfs:label>
+        <skos:definition>Coverings for the feet that sometimes extend above the ankle; generally made of durable materials. Distinguished from &quot;hosiery,&quot; which is primarily leg coverings. (aat note)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/cacao/CACAO_0000008 -->
+
+    <owl:Class rdf:about="http://w3id.org/cacao/CACAO_0000008">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/cacao/CACAO_0000007"/>
+        <rdfs:label xml:lang="en">Shoes</rdfs:label>
+        <skos:definition>Footwear with a relatively stiff sole and heel, and generally covering the foot at or below the ankle joint. (aat note)</skos:definition>
     </owl:Class>
     
 
