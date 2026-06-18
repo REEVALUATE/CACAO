@@ -1,0 +1,8 @@
+PREFIX cacao: <http://w3id.org/cacao/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT DISTINCT ?artefact ?material WHERE {
+  ?artefact a cacao:CACAO_0000023 ;
+            crm:P45_consists_of ?material .
+}
+LIMIT 20

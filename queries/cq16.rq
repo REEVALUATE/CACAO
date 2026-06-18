@@ -1,0 +1,15 @@
+PREFIX cacao: <http://w3id.org/cacao/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+
+SELECT DISTINCT ?right ?policy ?ruleType ?rule WHERE {
+  ?right a crm:E30_Right ;
+         cacao:CACAO_0000006 ?policy .
+  VALUES (?ruleProperty ?ruleType) {
+    (odrl:permission odrl:Permission)
+    (odrl:prohibition odrl:Prohibition)
+    (odrl:obligation odrl:Duty)
+  }
+  ?policy ?ruleProperty ?rule .
+}
+LIMIT 20

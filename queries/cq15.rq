@@ -1,0 +1,9 @@
+PREFIX cacao: <http://w3id.org/cacao/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT DISTINCT ?artefact ?right ?policy WHERE {
+  ?artefact crm:P104_is_subject_to ?right .
+  ?right a crm:E30_Right ;
+         cacao:CACAO_0000006 ?policy .
+}
+LIMIT 20

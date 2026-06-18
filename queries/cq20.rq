@@ -1,0 +1,8 @@
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+
+SELECT DISTINCT ?policy ?rule ?party WHERE {
+  VALUES ?ruleProperty { odrl:permission odrl:prohibition odrl:obligation }
+  ?policy ?ruleProperty ?rule .
+  ?rule odrl:assignee ?party .
+}
+LIMIT 20

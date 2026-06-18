@@ -1,0 +1,18 @@
+PREFIX cacao: <http://w3id.org/cacao/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+
+SELECT DISTINCT ?physicalArtefact ?digitalArtefact ?action ?purpose WHERE {
+  ?physicalArtefact crm:P138i_has_representation ?digitalArtefact .
+  ?digitalArtefact a cacao:CACAO_0000003 ;
+                   crm:P104_is_subject_to ?right .
+  ?right cacao:CACAO_0000006 ?policy .
+  ?policy odrl:permission ?permission .
+  ?permission odrl:action ?action .
+  OPTIONAL {
+    ?permission odrl:constraint ?constraint .
+    ?constraint odrl:leftOperand odrl:purpose ;
+                odrl:rightOperand ?purpose .
+  }
+}
+LIMIT 20

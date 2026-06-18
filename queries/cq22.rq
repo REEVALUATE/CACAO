@@ -1,0 +1,8 @@
+PREFIX cacao: <http://w3id.org/cacao/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT DISTINCT ?artefact ?event WHERE {
+  ?artefact crm:P12i_was_present_at ?event .
+  ?event a cacao:CACAO_0000005 .
+}
+LIMIT 20

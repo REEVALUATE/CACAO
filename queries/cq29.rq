@@ -1,0 +1,11 @@
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+
+SELECT DISTINCT ?policy ?action ?operator ?purpose WHERE {
+  ?policy odrl:permission ?permission .
+  ?permission odrl:action ?action ;
+              odrl:constraint ?constraint .
+  ?constraint odrl:leftOperand odrl:purpose ;
+              odrl:operator ?operator ;
+              odrl:rightOperand ?purpose .
+}
+LIMIT 20

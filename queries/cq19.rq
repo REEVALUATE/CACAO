@@ -1,0 +1,7 @@
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+
+SELECT DISTINCT ?policy ?duty ?action WHERE {
+  ?policy odrl:obligation ?duty .
+  ?duty odrl:action ?action .
+}
+LIMIT 20

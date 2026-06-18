@@ -1,0 +1,14 @@
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT DISTINCT ?artefact ?creation ?timeSpan ?date WHERE {
+  {
+    ?artefact crm:P108i_was_produced_by ?creation .
+  }
+  UNION
+  {
+    ?artefact crm:P94i_was_created_by ?creation .
+  }
+  ?creation crm:P4_has_time-span ?timeSpan .
+  ?timeSpan crm:P82_at_some_time_within ?date .
+}
+LIMIT 20

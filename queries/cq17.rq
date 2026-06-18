@@ -1,0 +1,7 @@
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+
+SELECT DISTINCT ?policy ?permission ?action WHERE {
+  ?policy odrl:permission ?permission .
+  ?permission odrl:action ?action .
+}
+LIMIT 20

@@ -1,0 +1,6 @@
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT DISTINCT ?artefact ?location WHERE {
+  ?artefact crm:P53_has_former_or_current_location ?location .
+}
+LIMIT 20
