@@ -1244,6 +1244,10 @@ SubClassOf(<http://www.w3.org/ns/odrl/2/Asset> <http://www.cidoc-crm.org/cidoc-c
 
 SubClassOf(<http://www.w3.org/ns/odrl/2/Party> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
 
+# Class: <http://www.w3.org/ns/odrl/2/PartyCollection> (Party Collection)
+
+SubClassOf(<http://www.w3.org/ns/odrl/2/PartyCollection> <http://www.cidoc-crm.org/cidoc-crm/E74_Group>)
+
 # Class: <http://www.w3.org/ns/prov#Organization> (Organization)
 
 SubClassOf(<http://www.w3.org/ns/prov#Organization> <http://www.cidoc-crm.org/cidoc-crm/E74_Group>)
