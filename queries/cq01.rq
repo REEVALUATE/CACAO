@@ -1,0 +1,9 @@
+PREFIX cacao: <http://w3id.org/cacao/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?artefact ?type WHERE {
+  VALUES ?root { cacao:CACAO_0000023 cacao:CACAO_0000003 }
+  ?artefact a ?type .
+  ?type rdfs:subClassOf* ?root .
+}
+LIMIT 20

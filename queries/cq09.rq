@@ -1,0 +1,13 @@
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT DISTINCT ?artefact ?creation ?creator WHERE {
+  {
+    ?artefact crm:P108i_was_produced_by ?creation .
+  }
+  UNION
+  {
+    ?artefact crm:P94i_was_created_by ?creation .
+  }
+  ?creation crm:P14_carried_out_by ?creator .
+}
+LIMIT 20

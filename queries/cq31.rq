@@ -1,0 +1,13 @@
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+
+SELECT DISTINCT ?policy ?leftOperand ?operator ?rightOperand WHERE {
+  ?policy odrl:permission ?permission .
+  ?permission odrl:action odrl:modify .
+  OPTIONAL {
+    ?permission odrl:constraint ?constraint .
+    ?constraint odrl:leftOperand ?leftOperand ;
+                odrl:operator ?operator ;
+                odrl:rightOperand ?rightOperand .
+  }
+}
+LIMIT 20

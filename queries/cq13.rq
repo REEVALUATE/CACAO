@@ -1,0 +1,8 @@
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT DISTINCT ?artefact ?collection WHERE {
+  { ?artefact crm:P46i_forms_part_of ?collection }
+  UNION
+  { ?artefact crm:P106i_forms_part_of ?collection }
+}
+LIMIT 20

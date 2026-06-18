@@ -1,0 +1,6 @@
+PREFIX cacao: <http://w3id.org/cacao/>
+
+SELECT DISTINCT ?artefact ?movement WHERE {
+  ?artefact cacao:CACAO_0000018 ?movement .
+}
+LIMIT 20

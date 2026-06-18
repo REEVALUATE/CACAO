@@ -1,0 +1,11 @@
+PREFIX cacao: <http://w3id.org/cacao/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT DISTINCT ?artefact ?dimension ?dimensionType ?value ?unit WHERE {
+  ?artefact a cacao:CACAO_0000023 ;
+            crm:P43_has_dimension ?dimension .
+  ?dimension crm:P90_has_value ?value .
+  OPTIONAL { ?dimension crm:P2_has_type ?dimensionType }
+  OPTIONAL { ?dimension crm:P91_has_unit ?unit }
+}
+LIMIT 20

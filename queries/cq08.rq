@@ -1,0 +1,9 @@
+PREFIX cacao: <http://w3id.org/cacao/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT DISTINCT ?digitalArtefact ?physicalArtefact WHERE {
+  ?digitalArtefact a cacao:CACAO_0000003 .
+  ?physicalArtefact a cacao:CACAO_0000023 ;
+                    crm:P138i_has_representation ?digitalArtefact .
+}
+LIMIT 20

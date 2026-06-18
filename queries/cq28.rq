@@ -1,0 +1,11 @@
+PREFIX cacao: <http://w3id.org/cacao/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?artefact ?shape ?meaning WHERE {
+  ?artefact crm:P2_has_type ?shape ;
+            cacao:CACAO_0000004 ?meaning .
+  ?shape rdfs:label ?shapeLabel .
+  FILTER(REGEX(STR(?shapeLabel), "shape|form|pattern", "i"))
+}
+LIMIT 20

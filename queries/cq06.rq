@@ -1,0 +1,8 @@
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT DISTINCT ?artefact ?whole WHERE {
+  { ?artefact crm:P106i_forms_part_of ?whole }
+  UNION
+  { ?whole crm:P106_is_composed_of ?artefact }
+}
+LIMIT 20

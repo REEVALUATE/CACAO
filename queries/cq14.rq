@@ -1,0 +1,6 @@
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT DISTINCT ?artefact ?owner WHERE {
+  ?artefact crm:P52_has_current_owner ?owner .
+}
+LIMIT 20

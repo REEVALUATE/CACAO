@@ -1,0 +1,14 @@
+PREFIX cacao: <http://w3id.org/cacao/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?artefact ?value ?unit WHERE {
+  ?artefact a cacao:CACAO_0000003 ;
+            crm:P43_has_dimension ?dimension .
+  ?dimension crm:P90_has_value ?value ;
+             crm:P2_has_type ?dimensionType .
+  ?dimensionType rdfs:label ?label .
+  OPTIONAL { ?dimension crm:P91_has_unit ?unit }
+  FILTER(REGEX(STR(?label), "file[ _-]?size", "i"))
+}
+LIMIT 20

@@ -1,0 +1,11 @@
+PREFIX cacao: <http://w3id.org/cacao/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?artefact ?format ?label WHERE {
+  ?artefact a cacao:CACAO_0000003 ;
+            crm:P2_has_type ?format .
+  ?format rdfs:label ?label .
+  FILTER(REGEX(STR(?label), "format|mime|jpeg|png|tiff|mp3|wav|mp4|gltf|obj", "i"))
+}
+LIMIT 20

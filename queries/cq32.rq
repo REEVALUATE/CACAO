@@ -1,0 +1,12 @@
+PREFIX cacao: <http://w3id.org/cacao/>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+
+SELECT ?physicalArtefact (COUNT(DISTINCT ?policy) AS ?policyCount) WHERE {
+  ?physicalArtefact crm:P138i_has_representation ?digitalArtefact .
+  ?digitalArtefact a cacao:CACAO_0000003 ;
+                   crm:P104_is_subject_to ?right .
+  ?right cacao:CACAO_0000006 ?policy .
+}
+GROUP BY ?physicalArtefact
+HAVING(COUNT(DISTINCT ?policy) > 1)
+LIMIT 20
