@@ -14,11 +14,11 @@
      xmlns:schema="https://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://w3id.org/cacao/cacao.owl">
-        <owl:versionIRI rdf:resource="http://w3id.org/cacao/cacao/releases/2026-04-13/cacao.owl"/>
+        <owl:versionIRI rdf:resource="http://w3id.org/cacao/cacao/releases/2026-11-12/cacao.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Cultural Artefact Contextual Ontology</dcterms:title>
-        <owl:versionInfo>2026-04-13</owl:versionInfo>
+        <owl:versionInfo>2026-11-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -18029,6 +18029,7 @@ In First Order Logic:
     <!-- http://www.w3.org/ns/odrl/2/PartyCollection -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/PartyCollection">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Party"/>
     </owl:Class>
     
@@ -22602,7 +22603,7 @@ Unregistered or niche encoding and file formats can be indicated instead via the
 
     <owl:NamedIndividual rdf:about="https://schema.org/hasMerchantReturnPolicy">
         <rdfs:comment xml:lang="en">Specifies a MerchantReturnPolicy that may be applicable.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/hasMerchantReturnPolicy"/>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/hasMerchantReturnPolicy"/>
         <rdfs:label xml:lang="en">hasMerchantReturnPolicy</rdfs:label>
     </owl:NamedIndividual>
     
@@ -22613,7 +22614,7 @@ Unregistered or niche encoding and file formats can be indicated instead via the
     <owl:NamedIndividual rdf:about="https://schema.org/hasProductReturnPolicy">
         <schema:supersededBy rdf:resource="https://schema.org/hasMerchantReturnPolicy"/>
         <rdfs:comment xml:lang="en">Indicates a ProductReturnPolicy that may be applicable.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://attic.schema.org/hasProductReturnPolicy"/>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/hasProductReturnPolicy"/>
         <rdfs:label xml:lang="en">hasProductReturnPolicy</rdfs:label>
     </owl:NamedIndividual>
     
@@ -22834,7 +22835,7 @@ Unregistered or niche encoding and file formats can be indicated instead via the
 
     <owl:NamedIndividual rdf:about="https://schema.org/merchantReturnDays">
         <rdfs:comment xml:lang="en">Specifies either a fixed return date or the number of days (from the delivery date) that a product can be returned. Used when the &lt;a class=&quot;localLink&quot; href=&quot;/returnPolicyCategory&quot;&gt;returnPolicyCategory&lt;/a&gt; property is specified as &lt;a class=&quot;localLink&quot; href=&quot;/MerchantReturnFiniteReturnWindow&quot;&gt;MerchantReturnFiniteReturnWindow&lt;/a&gt;.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/merchantReturnDays"/>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/merchantReturnDays"/>
         <rdfs:label xml:lang="en">merchantReturnDays</rdfs:label>
     </owl:NamedIndividual>
     
@@ -22844,7 +22845,7 @@ Unregistered or niche encoding and file formats can be indicated instead via the
 
     <owl:NamedIndividual rdf:about="https://schema.org/merchantReturnLink">
         <rdfs:comment xml:lang="en">Specifies a Web page or service by URL, for product returns.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/merchantReturnLink"/>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/merchantReturnLink"/>
         <rdfs:label xml:lang="en">merchantReturnLink</rdfs:label>
     </owl:NamedIndividual>
     
@@ -23014,7 +23015,7 @@ Unregistered or niche encoding and file formats can be indicated instead via the
     <owl:NamedIndividual rdf:about="https://schema.org/productReturnDays">
         <schema:supersededBy rdf:resource="https://schema.org/merchantReturnDays"/>
         <rdfs:comment xml:lang="en">The productReturnDays property indicates the number of days (from purchase) within which relevant product return policy is applicable.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://attic.schema.org/productReturnDays"/>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/productReturnDays"/>
         <rdfs:label xml:lang="en">productReturnDays</rdfs:label>
     </owl:NamedIndividual>
     
@@ -23025,7 +23026,7 @@ Unregistered or niche encoding and file formats can be indicated instead via the
     <owl:NamedIndividual rdf:about="https://schema.org/productReturnLink">
         <schema:supersededBy rdf:resource="https://schema.org/merchantReturnLink"/>
         <rdfs:comment xml:lang="en">Indicates a Web page or service by URL, for product return.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://attic.schema.org/productReturnLink"/>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/productReturnLink"/>
         <rdfs:label xml:lang="en">productReturnLink</rdfs:label>
     </owl:NamedIndividual>
     
@@ -23035,7 +23036,7 @@ Unregistered or niche encoding and file formats can be indicated instead via the
 
     <owl:NamedIndividual rdf:about="https://schema.org/provider">
         <rdfs:comment xml:lang="en">The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/provider"/>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/provider"/>
         <rdfs:label xml:lang="en">provider</rdfs:label>
     </owl:NamedIndividual>
     

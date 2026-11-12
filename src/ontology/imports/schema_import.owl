@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://w3id.org/cacao/cacao/imports/schema_import.owl>
-<http://w3id.org/cacao/cacao/releases/2026-04-13/imports/schema_import.owl>
-Annotation(owl:versionInfo "2026-04-13")
+<http://w3id.org/cacao/cacao/releases/2026-11-12/imports/schema_import.owl>
+Annotation(owl:versionInfo "2026-11-12")
 
 Declaration(Class(rdfs:Class))
 Declaration(Class(<https://schema.org/AdministrativeArea>))
@@ -759,13 +759,13 @@ AnnotationAssertion(rdfs:label <https://schema.org/hasMenu> "hasMenu"@en)
 # Individual: <https://schema.org/hasMerchantReturnPolicy> (hasMerchantReturnPolicy)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/hasMerchantReturnPolicy> "Specifies a MerchantReturnPolicy that may be applicable."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/hasMerchantReturnPolicy> <https://pending.schema.org/hasMerchantReturnPolicy>)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/hasMerchantReturnPolicy> <https://schema.org/hasMerchantReturnPolicy>)
 AnnotationAssertion(rdfs:label <https://schema.org/hasMerchantReturnPolicy> "hasMerchantReturnPolicy"@en)
 
 # Individual: <https://schema.org/hasProductReturnPolicy> (hasProductReturnPolicy)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/hasProductReturnPolicy> "Indicates a ProductReturnPolicy that may be applicable."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/hasProductReturnPolicy> <https://attic.schema.org/hasProductReturnPolicy>)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/hasProductReturnPolicy> <https://schema.org/hasProductReturnPolicy>)
 AnnotationAssertion(rdfs:label <https://schema.org/hasProductReturnPolicy> "hasProductReturnPolicy"@en)
 ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/hasProductReturnPolicy> <https://schema.org/hasMerchantReturnPolicy>)
 
@@ -903,13 +903,13 @@ ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/me
 # Individual: <https://schema.org/merchantReturnDays> (merchantReturnDays)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/merchantReturnDays> "Specifies either a fixed return date or the number of days (from the delivery date) that a product can be returned. Used when the <a class=\"localLink\" href=\"/returnPolicyCategory\">returnPolicyCategory</a> property is specified as <a class=\"localLink\" href=\"/MerchantReturnFiniteReturnWindow\">MerchantReturnFiniteReturnWindow</a>."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/merchantReturnDays> <https://pending.schema.org/merchantReturnDays>)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/merchantReturnDays> <https://schema.org/merchantReturnDays>)
 AnnotationAssertion(rdfs:label <https://schema.org/merchantReturnDays> "merchantReturnDays"@en)
 
 # Individual: <https://schema.org/merchantReturnLink> (merchantReturnLink)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/merchantReturnLink> "Specifies a Web page or service by URL, for product returns."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/merchantReturnLink> <https://pending.schema.org/merchantReturnLink>)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/merchantReturnLink> <https://schema.org/merchantReturnLink>)
 AnnotationAssertion(rdfs:label <https://schema.org/merchantReturnLink> "merchantReturnLink"@en)
 
 # Individual: <https://schema.org/musicGroupMember> (musicGroupMember)
@@ -1014,21 +1014,21 @@ ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/pr
 # Individual: <https://schema.org/productReturnDays> (productReturnDays)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/productReturnDays> "The productReturnDays property indicates the number of days (from purchase) within which relevant product return policy is applicable."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/productReturnDays> <https://attic.schema.org/productReturnDays>)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/productReturnDays> <https://schema.org/productReturnDays>)
 AnnotationAssertion(rdfs:label <https://schema.org/productReturnDays> "productReturnDays"@en)
 ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/productReturnDays> <https://schema.org/merchantReturnDays>)
 
 # Individual: <https://schema.org/productReturnLink> (productReturnLink)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/productReturnLink> "Indicates a Web page or service by URL, for product return."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/productReturnLink> <https://attic.schema.org/productReturnLink>)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/productReturnLink> <https://schema.org/productReturnLink>)
 AnnotationAssertion(rdfs:label <https://schema.org/productReturnLink> "productReturnLink"@en)
 ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/productReturnLink> <https://schema.org/merchantReturnLink>)
 
 # Individual: <https://schema.org/provider> (provider)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/provider> "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/provider> <https://pending.schema.org/provider>)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/provider> <https://schema.org/provider>)
 AnnotationAssertion(rdfs:label <https://schema.org/provider> "provider"@en)
 
 # Individual: <https://schema.org/recipeIngredient> (recipeIngredient)

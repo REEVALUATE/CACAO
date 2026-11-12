@@ -13,9 +13,9 @@
         "val" : "Cultural Artefact Contextual Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-04-13"
+        "val" : "2026-11-12"
       } ],
-      "version" : "http://w3id.org/cacao/cacao/releases/2026-04-13/cacao-simple.json"
+      "version" : "http://w3id.org/cacao/cacao/releases/2026-11-12/cacao-simple.json"
     },
     "nodes" : [ {
       "id" : "http://w3id.org/cacao/CACAO_0000002",

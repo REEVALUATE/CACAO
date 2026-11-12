@@ -13,9 +13,9 @@
         "val" : "Cultural Artefact Contextual Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-04-13"
+        "val" : "2026-11-12"
       } ],
-      "version" : "http://w3id.org/cacao/cacao/releases/2026-04-13/cacao.json"
+      "version" : "http://w3id.org/cacao/cacao/releases/2026-11-12/cacao.json"
     },
     "nodes" : [ {
       "id" : "http://purl.org/dc/terms/Agent",
@@ -20324,7 +20324,7 @@
         "comments" : [ "Specifies a MerchantReturnPolicy that may be applicable." ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "val" : "https://pending.schema.org/hasMerchantReturnPolicy"
+          "val" : "https://schema.org/hasMerchantReturnPolicy"
         } ]
       }
     }, {
@@ -20335,7 +20335,7 @@
         "comments" : [ "Indicates a ProductReturnPolicy that may be applicable." ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "val" : "https://attic.schema.org/hasProductReturnPolicy"
+          "val" : "https://schema.org/hasProductReturnPolicy"
         } ]
       }
     }, {
@@ -20566,7 +20566,7 @@
         "comments" : [ "Specifies either a fixed return date or the number of days (from the delivery date) that a product can be returned. Used when the <a class=\"localLink\" href=\"/returnPolicyCategory\">returnPolicyCategory</a> property is specified as <a class=\"localLink\" href=\"/MerchantReturnFiniteReturnWindow\">MerchantReturnFiniteReturnWindow</a>." ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "val" : "https://pending.schema.org/merchantReturnDays"
+          "val" : "https://schema.org/merchantReturnDays"
         } ]
       }
     }, {
@@ -20577,7 +20577,7 @@
         "comments" : [ "Specifies a Web page or service by URL, for product returns." ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "val" : "https://pending.schema.org/merchantReturnLink"
+          "val" : "https://schema.org/merchantReturnLink"
         } ]
       }
     }, {
@@ -20753,7 +20753,7 @@
         "comments" : [ "The productReturnDays property indicates the number of days (from purchase) within which relevant product return policy is applicable." ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "val" : "https://attic.schema.org/productReturnDays"
+          "val" : "https://schema.org/productReturnDays"
         } ]
       }
     }, {
@@ -20764,7 +20764,7 @@
         "comments" : [ "Indicates a Web page or service by URL, for product return." ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "val" : "https://attic.schema.org/productReturnLink"
+          "val" : "https://schema.org/productReturnLink"
         } ]
       }
     }, {
@@ -20775,7 +20775,7 @@
         "comments" : [ "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller." ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "val" : "https://pending.schema.org/provider"
+          "val" : "https://schema.org/provider"
         } ]
       }
     }, {
@@ -21973,6 +21973,10 @@
       "sub" : "http://www.w3.org/ns/odrl/2/Party",
       "pred" : "is_a",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+    }, {
+      "sub" : "http://www.w3.org/ns/odrl/2/PartyCollection",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E74_Group"
     }, {
       "sub" : "http://www.w3.org/ns/odrl/2/PartyCollection",
       "pred" : "is_a",

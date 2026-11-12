@@ -12,11 +12,11 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://w3id.org/cacao/cacao/cacao-simple.owl">
-        <owl:versionIRI rdf:resource="http://w3id.org/cacao/cacao/releases/2026-04-13/cacao-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://w3id.org/cacao/cacao/releases/2026-11-12/cacao-simple.owl"/>
         <terms:description>None</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>Cultural Artefact Contextual Ontology</terms:title>
-        <owl:versionInfo>2026-04-13</owl:versionInfo>
+        <owl:versionInfo>2026-11-12</owl:versionInfo>
     </owl:Ontology>
     
 
